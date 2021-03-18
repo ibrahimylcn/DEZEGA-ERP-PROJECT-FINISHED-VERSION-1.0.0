@@ -410,6 +410,7 @@ namespace StockMaintenanceSystem
             this.Name = "ExtractedStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExtractedStock";
+            this.Load += new System.EventHandler(this.ExtractedStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

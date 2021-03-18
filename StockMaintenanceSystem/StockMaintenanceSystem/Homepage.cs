@@ -30,5 +30,10 @@ namespace StockMaintenanceSystem
             ms.Show();
             this.Hide();
         }
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            // test
+        }
     }
 }

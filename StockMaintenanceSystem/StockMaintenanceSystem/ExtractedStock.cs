@@ -62,5 +62,10 @@ namespace StockMaintenanceSystem
             this.Controls.Clear();
             this.InitializeComponent();
         }
+
+        private void ExtractedStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
