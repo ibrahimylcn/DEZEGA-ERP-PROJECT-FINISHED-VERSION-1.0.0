@@ -33,7 +33,7 @@ namespace StockMaintenanceSystem
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-            // test
+           
         }
     }
 }
