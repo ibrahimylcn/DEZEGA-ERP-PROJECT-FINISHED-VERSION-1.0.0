@@ -24,6 +24,7 @@ namespace StockMaintenanceSystem
 
         private void btnYeniCikan_Click(object sender, EventArgs e)
         {
+            // Button Yeni Çıkan --> Çıkan Form
             ExtractedStock es = new ExtractedStock();
             es.Show();
             this.Hide();
@@ -31,6 +32,7 @@ namespace StockMaintenanceSystem
 
         private void btnYeniGelen_Click(object sender, EventArgs e)
         {
+            // Button Yeni Gelen --> Gelen Form
             AddedStock added = new AddedStock();
             added.Show();
             this.Hide();
@@ -38,6 +40,7 @@ namespace StockMaintenanceSystem
 
         private void btnYeniSorgula_Click(object sender, EventArgs e)
         {
+            // Button Yeni Sorgula
             Inquire inq = new Inquire();
             inq.Show();
             this.Hide();
@@ -45,6 +48,7 @@ namespace StockMaintenanceSystem
 
         private void btnYeniAnasayfa_Click(object sender, EventArgs e)
         {
+            // Button Yeni Anasayfa
             Homepage hp = new Homepage();
             hp.Show();
             this.Hide();
@@ -52,13 +56,25 @@ namespace StockMaintenanceSystem
 
         private void btnYeniKaydet_Click(object sender, EventArgs e)
         {
+            // Button Yeni Kaydet
             MessageBox.Show("İşlem Başarılı!!");
         }
 
         private void BtnYeniTemizle_Click(object sender, EventArgs e)
         {
+            // Button Yeni Temizle
             this.Controls.Clear();
             this.InitializeComponent();
+        }
+
+        private void btnYeni_Click(object sender, EventArgs e)
+        {
+            // Buton Yeni
+        }
+
+        private void StockSystem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

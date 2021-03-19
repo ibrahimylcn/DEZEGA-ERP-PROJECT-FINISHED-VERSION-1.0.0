@@ -36,22 +36,27 @@ namespace StockMaintenanceSystem
             this.lblpswd = new System.Windows.Forms.Label();
             this.txtpswd = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUser = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // lbluser
             // 
             this.lbluser.AutoSize = true;
-            this.lbluser.Location = new System.Drawing.Point(56, 128);
+            this.lbluser.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluser.Location = new System.Drawing.Point(107, 128);
             this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(32, 13);
+            this.lbluser.Size = new System.Drawing.Size(38, 15);
             this.lbluser.TabIndex = 0;
             this.lbluser.Text = "User:";
             // 
             // txtuser
             // 
             this.txtuser.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtuser.Location = new System.Drawing.Point(160, 125);
+            this.txtuser.Location = new System.Drawing.Point(211, 125);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(123, 20);
             this.txtuser.TabIndex = 1;
@@ -60,9 +65,10 @@ namespace StockMaintenanceSystem
             // 
             this.btnlogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnlogin.BackColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(160, 244);
+            this.btnlogin.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Location = new System.Drawing.Point(211, 244);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(123, 31);
+            this.btnlogin.Size = new System.Drawing.Size(123, 44);
             this.btnlogin.TabIndex = 2;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -71,17 +77,19 @@ namespace StockMaintenanceSystem
             // lblpswd
             // 
             this.lblpswd.AutoSize = true;
-            this.lblpswd.Location = new System.Drawing.Point(56, 201);
+            this.lblpswd.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpswd.Location = new System.Drawing.Point(107, 201);
             this.lblpswd.Name = "lblpswd";
-            this.lblpswd.Size = new System.Drawing.Size(56, 13);
+            this.lblpswd.Size = new System.Drawing.Size(69, 15);
             this.lblpswd.TabIndex = 3;
             this.lblpswd.Text = "Password:";
             this.lblpswd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblpswd.Click += new System.EventHandler(this.lblpswd_Click);
             // 
             // txtpswd
             // 
             this.txtpswd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtpswd.Location = new System.Drawing.Point(160, 198);
+            this.txtpswd.Location = new System.Drawing.Point(211, 198);
             this.txtpswd.Name = "txtpswd";
             this.txtpswd.PasswordChar = '*';
             this.txtpswd.Size = new System.Drawing.Size(123, 20);
@@ -98,6 +106,28 @@ namespace StockMaintenanceSystem
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBoxUser
+            // 
+            this.pictureBoxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUser.Image")));
+            this.pictureBoxUser.Location = new System.Drawing.Point(48, 110);
+            this.pictureBoxUser.Name = "pictureBoxUser";
+            this.pictureBoxUser.Size = new System.Drawing.Size(53, 51);
+            this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxUser.TabIndex = 46;
+            this.pictureBoxUser.TabStop = false;
+            // 
+            // pictureBoxPassword
+            // 
+            this.pictureBoxPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxPassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPassword.Image")));
+            this.pictureBoxPassword.Location = new System.Drawing.Point(48, 183);
+            this.pictureBoxPassword.Name = "pictureBoxPassword";
+            this.pictureBoxPassword.Size = new System.Drawing.Size(53, 51);
+            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxPassword.TabIndex = 47;
+            this.pictureBoxPassword.TabStop = false;
+            // 
             // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -105,6 +135,8 @@ namespace StockMaintenanceSystem
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(379, 356);
+            this.Controls.Add(this.pictureBoxPassword);
+            this.Controls.Add(this.pictureBoxUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtpswd);
             this.Controls.Add(this.lblpswd);
@@ -118,6 +150,8 @@ namespace StockMaintenanceSystem
             this.Text = "Login Screen";
             this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +165,8 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label lblpswd;
         private System.Windows.Forms.TextBox txtpswd;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxUser;
+        private System.Windows.Forms.PictureBox pictureBoxPassword;
     }
 }
 

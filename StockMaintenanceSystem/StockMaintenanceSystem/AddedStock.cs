@@ -19,11 +19,12 @@ namespace StockMaintenanceSystem
 
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
-
+            // Buton Gelen
         }
 
         private void btnGelenCikan_Click(object sender, EventArgs e)
         {
+            // Button Gelen Çikan --> Çıkan Form
             ExtractedStock es = new ExtractedStock();
             es.Show();
             this.Hide();
@@ -31,6 +32,7 @@ namespace StockMaintenanceSystem
 
         private void btnGelenYeni_Click(object sender, EventArgs e)
         {
+            // Gelen Yeni Butonu
             StockSystem ss = new StockSystem();
             ss.Show();
             this.Hide();
@@ -38,6 +40,7 @@ namespace StockMaintenanceSystem
 
         private void btnGelenSorgula_Click(object sender, EventArgs e)
         {
+            // Gelen Sorgula
             Inquire inq = new Inquire();
             inq.Show();
             this.Hide();
@@ -45,6 +48,7 @@ namespace StockMaintenanceSystem
 
         private void btnGelenAnasayfa_Click(object sender, EventArgs e)
         {
+            // Buton Gelen Anasayfa
             Homepage hp = new Homepage();
             hp.Show();
             this.Hide();
@@ -58,11 +62,13 @@ namespace StockMaintenanceSystem
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
         {
+            // Button Gelen Kaydet
             MessageBox.Show("İşlem Başarılı!!");
         }
 
         private void BtnGelenTemizle_Click(object sender, EventArgs e)
         {
+            // Button Gelen Temizle
             this.Controls.Clear();
             this.InitializeComponent();
         }

@@ -75,12 +75,16 @@ namespace StockMaintenanceSystem
             // 
             // btnGelenSorgula
             // 
-            this.btnGelenSorgula.BackColor = System.Drawing.Color.White;
-            this.btnGelenSorgula.Location = new System.Drawing.Point(872, 162);
+            this.btnGelenSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenSorgula.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenSorgula.Image")));
+            this.btnGelenSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGelenSorgula.Location = new System.Drawing.Point(872, 156);
             this.btnGelenSorgula.Name = "btnGelenSorgula";
-            this.btnGelenSorgula.Size = new System.Drawing.Size(111, 41);
+            this.btnGelenSorgula.Size = new System.Drawing.Size(111, 47);
             this.btnGelenSorgula.TabIndex = 63;
-            this.btnGelenSorgula.Text = "Sorgula";
+            this.btnGelenSorgula.Text = "SORGULA";
+            this.btnGelenSorgula.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGelenSorgula.UseVisualStyleBackColor = false;
             this.btnGelenSorgula.Click += new System.EventHandler(this.btnGelenSorgula_Click);
             // 
@@ -275,77 +279,92 @@ namespace StockMaintenanceSystem
             // 
             // btnGelenCikan
             // 
-            this.btnGelenCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenCikan.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenCikan.Image")));
             this.btnGelenCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGelenCikan.Location = new System.Drawing.Point(872, 107);
+            this.btnGelenCikan.Location = new System.Drawing.Point(872, 105);
             this.btnGelenCikan.Name = "btnGelenCikan";
             this.btnGelenCikan.Size = new System.Drawing.Size(111, 45);
             this.btnGelenCikan.TabIndex = 40;
             this.btnGelenCikan.Text = "ÇIKAN";
             this.btnGelenCikan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGelenCikan.UseVisualStyleBackColor = true;
+            this.btnGelenCikan.UseVisualStyleBackColor = false;
             this.btnGelenCikan.Click += new System.EventHandler(this.btnGelenCikan_Click);
             // 
             // btnGelenGelen
             // 
-            this.btnGelenGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenGelen.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenGelen.Image")));
             this.btnGelenGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnGelenGelen.Location = new System.Drawing.Point(872, 56);
             this.btnGelenGelen.Name = "btnGelenGelen";
-            this.btnGelenGelen.Size = new System.Drawing.Size(111, 45);
+            this.btnGelenGelen.Size = new System.Drawing.Size(111, 46);
             this.btnGelenGelen.TabIndex = 39;
             this.btnGelenGelen.Text = "GELEN";
             this.btnGelenGelen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGelenGelen.UseVisualStyleBackColor = true;
+            this.btnGelenGelen.UseVisualStyleBackColor = false;
             this.btnGelenGelen.Click += new System.EventHandler(this.btnGelenGelen_Click);
             // 
             // btnGelenYeni
             // 
-            this.btnGelenYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenYeni.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnGelenYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenYeni.Image")));
             this.btnGelenYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnGelenYeni.Location = new System.Drawing.Point(872, 4);
             this.btnGelenYeni.Name = "btnGelenYeni";
-            this.btnGelenYeni.Size = new System.Drawing.Size(111, 45);
+            this.btnGelenYeni.Size = new System.Drawing.Size(111, 46);
             this.btnGelenYeni.TabIndex = 38;
             this.btnGelenYeni.Text = "YENİ";
             this.btnGelenYeni.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGelenYeni.UseVisualStyleBackColor = true;
+            this.btnGelenYeni.UseVisualStyleBackColor = false;
             this.btnGelenYeni.Click += new System.EventHandler(this.btnGelenYeni_Click);
             // 
             // BtnGelenTemizle
             // 
-            this.BtnGelenTemizle.BackColor = System.Drawing.Color.White;
-            this.BtnGelenTemizle.Location = new System.Drawing.Point(872, 398);
+            this.BtnGelenTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnGelenTemizle.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGelenTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGelenTemizle.Image")));
+            this.BtnGelenTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnGelenTemizle.Location = new System.Drawing.Point(872, 370);
             this.BtnGelenTemizle.Name = "BtnGelenTemizle";
-            this.BtnGelenTemizle.Size = new System.Drawing.Size(111, 41);
+            this.BtnGelenTemizle.Size = new System.Drawing.Size(111, 53);
             this.BtnGelenTemizle.TabIndex = 37;
-            this.BtnGelenTemizle.Text = "Temizle";
+            this.BtnGelenTemizle.Text = "TEMİZLE";
+            this.BtnGelenTemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnGelenTemizle.UseVisualStyleBackColor = false;
             this.BtnGelenTemizle.Click += new System.EventHandler(this.BtnGelenTemizle_Click);
             // 
             // btnGelenAnasayfa
             // 
-            this.btnGelenAnasayfa.BackColor = System.Drawing.Color.Lime;
-            this.btnGelenAnasayfa.Location = new System.Drawing.Point(872, 445);
+            this.btnGelenAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenAnasayfa.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenAnasayfa.Image")));
+            this.btnGelenAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGelenAnasayfa.Location = new System.Drawing.Point(872, 438);
             this.btnGelenAnasayfa.Name = "btnGelenAnasayfa";
-            this.btnGelenAnasayfa.Size = new System.Drawing.Size(111, 41);
+            this.btnGelenAnasayfa.Size = new System.Drawing.Size(111, 48);
             this.btnGelenAnasayfa.TabIndex = 36;
-            this.btnGelenAnasayfa.Text = "Anasayfa";
+            this.btnGelenAnasayfa.Text = "ANASAYFA";
+            this.btnGelenAnasayfa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGelenAnasayfa.UseVisualStyleBackColor = false;
             this.btnGelenAnasayfa.Click += new System.EventHandler(this.btnGelenAnasayfa_Click);
             // 
             // btnGelenKaydet
             // 
-            this.btnGelenKaydet.BackColor = System.Drawing.Color.White;
-            this.btnGelenKaydet.Location = new System.Drawing.Point(872, 351);
+            this.btnGelenKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenKaydet.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGelenKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenKaydet.Image")));
+            this.btnGelenKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGelenKaydet.Location = new System.Drawing.Point(872, 299);
             this.btnGelenKaydet.Name = "btnGelenKaydet";
-            this.btnGelenKaydet.Size = new System.Drawing.Size(111, 41);
+            this.btnGelenKaydet.Size = new System.Drawing.Size(111, 53);
             this.btnGelenKaydet.TabIndex = 35;
-            this.btnGelenKaydet.Text = "Kaydet";
+            this.btnGelenKaydet.Text = "KAYDET";
+            this.btnGelenKaydet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGelenKaydet.UseVisualStyleBackColor = false;
             this.btnGelenKaydet.Click += new System.EventHandler(this.btnGelenKaydet_Click);
             // 
@@ -408,7 +427,7 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "AddedStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddedStock";
+            this.Text = "STOK TAKİP GELEN";
             this.Load += new System.EventHandler(this.AddedStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGelen)).EndInit();
             this.ResumeLayout(false);

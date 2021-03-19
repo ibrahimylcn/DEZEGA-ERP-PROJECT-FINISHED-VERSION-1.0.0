@@ -19,6 +19,7 @@ namespace StockMaintenanceSystem
 
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
+            // Button Çıkan Yeni
             StockSystem ss = new StockSystem();
             ss.Show();
             this.Hide();
@@ -26,13 +27,16 @@ namespace StockMaintenanceSystem
 
         private void btnCikanCikan_Click(object sender, EventArgs e)
         {
+            // Button Çıkan Çıkan
+            /*
             AddedStock added = new AddedStock();
             added.Show();
-            this.Hide();
+            this.Hide(); */
         }
 
         private void btnCikanSorgula_Click(object sender, EventArgs e)
         {
+            // Çıkan Sorgula
             Inquire inq = new Inquire();
             inq.Show();
             this.Hide();
@@ -47,6 +51,7 @@ namespace StockMaintenanceSystem
 
         private void btnCikanGelen_Click(object sender, EventArgs e)
         {
+            // Button Çıkan Gelen
             AddedStock added = new AddedStock();
             added.Show();
             this.Hide();

@@ -49,5 +49,10 @@ namespace StockMaintenanceSystem
         {
 
         }
+
+        private void lblpswd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

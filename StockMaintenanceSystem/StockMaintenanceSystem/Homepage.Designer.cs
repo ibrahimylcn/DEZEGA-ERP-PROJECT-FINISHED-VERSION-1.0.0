@@ -67,7 +67,7 @@ namespace StockMaintenanceSystem
             this.btnStokTakip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStokTakip.AutoSize = true;
             this.btnStokTakip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnStokTakip.Location = new System.Drawing.Point(537, 183);
+            this.btnStokTakip.Location = new System.Drawing.Point(552, 183);
             this.btnStokTakip.Name = "btnStokTakip";
             this.btnStokTakip.Size = new System.Drawing.Size(224, 61);
             this.btnStokTakip.TabIndex = 5;

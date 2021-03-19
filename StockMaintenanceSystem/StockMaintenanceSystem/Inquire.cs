@@ -32,7 +32,7 @@ namespace StockMaintenanceSystem
 
         private void Inquire_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

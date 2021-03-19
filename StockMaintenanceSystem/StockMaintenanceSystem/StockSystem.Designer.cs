@@ -75,195 +75,211 @@ namespace StockMaintenanceSystem
             // lblYeniKategori
             // 
             this.lblYeniKategori.AutoSize = true;
-            this.lblYeniKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniKategori.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniKategori.Location = new System.Drawing.Point(38, 24);
             this.lblYeniKategori.Name = "lblYeniKategori";
-            this.lblYeniKategori.Size = new System.Drawing.Size(65, 15);
+            this.lblYeniKategori.Size = new System.Drawing.Size(63, 15);
             this.lblYeniKategori.TabIndex = 1;
             this.lblYeniKategori.Text = "Kategori:";
             // 
             // btnYeniKaydet
             // 
-            this.btnYeniKaydet.BackColor = System.Drawing.Color.White;
-            this.btnYeniKaydet.Location = new System.Drawing.Point(872, 351);
+            this.btnYeniKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniKaydet.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniKaydet.Image")));
+            this.btnYeniKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnYeniKaydet.Location = new System.Drawing.Point(872, 299);
             this.btnYeniKaydet.Name = "btnYeniKaydet";
-            this.btnYeniKaydet.Size = new System.Drawing.Size(111, 41);
+            this.btnYeniKaydet.Size = new System.Drawing.Size(111, 51);
             this.btnYeniKaydet.TabIndex = 2;
-            this.btnYeniKaydet.Text = "Kaydet";
+            this.btnYeniKaydet.Text = "KAYDET";
+            this.btnYeniKaydet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnYeniKaydet.UseVisualStyleBackColor = false;
             this.btnYeniKaydet.Click += new System.EventHandler(this.btnYeniKaydet_Click);
             // 
             // btnYeniAnasayfa
             // 
-            this.btnYeniAnasayfa.BackColor = System.Drawing.Color.Lime;
-            this.btnYeniAnasayfa.Location = new System.Drawing.Point(872, 445);
+            this.btnYeniAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniAnasayfa.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniAnasayfa.Image")));
+            this.btnYeniAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnYeniAnasayfa.Location = new System.Drawing.Point(872, 437);
             this.btnYeniAnasayfa.Name = "btnYeniAnasayfa";
-            this.btnYeniAnasayfa.Size = new System.Drawing.Size(111, 41);
+            this.btnYeniAnasayfa.Size = new System.Drawing.Size(111, 50);
             this.btnYeniAnasayfa.TabIndex = 3;
-            this.btnYeniAnasayfa.Text = "Anasayfa";
+            this.btnYeniAnasayfa.Text = "ANASAYFA";
+            this.btnYeniAnasayfa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnYeniAnasayfa.UseVisualStyleBackColor = false;
             this.btnYeniAnasayfa.Click += new System.EventHandler(this.btnYeniAnasayfa_Click);
             // 
             // BtnYeniTemizle
             // 
-            this.BtnYeniTemizle.BackColor = System.Drawing.Color.White;
-            this.BtnYeniTemizle.Location = new System.Drawing.Point(872, 398);
+            this.BtnYeniTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnYeniTemizle.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnYeniTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnYeniTemizle.Image")));
+            this.BtnYeniTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnYeniTemizle.Location = new System.Drawing.Point(872, 369);
             this.BtnYeniTemizle.Name = "BtnYeniTemizle";
-            this.BtnYeniTemizle.Size = new System.Drawing.Size(111, 41);
+            this.BtnYeniTemizle.Size = new System.Drawing.Size(111, 50);
             this.BtnYeniTemizle.TabIndex = 4;
-            this.BtnYeniTemizle.Text = "Temizle";
+            this.BtnYeniTemizle.Text = "TEMİZLE";
+            this.BtnYeniTemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnYeniTemizle.UseVisualStyleBackColor = false;
             this.BtnYeniTemizle.Click += new System.EventHandler(this.BtnYeniTemizle_Click);
             // 
             // btnYeni
             // 
-            this.btnYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeni.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnYeni.Image")));
             this.btnYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeni.Location = new System.Drawing.Point(872, 4);
+            this.btnYeni.Location = new System.Drawing.Point(872, 6);
             this.btnYeni.Name = "btnYeni";
-            this.btnYeni.Size = new System.Drawing.Size(111, 45);
+            this.btnYeni.Size = new System.Drawing.Size(111, 46);
             this.btnYeni.TabIndex = 5;
             this.btnYeni.Text = "YENİ";
             this.btnYeni.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnYeni.UseVisualStyleBackColor = true;
+            this.btnYeni.UseVisualStyleBackColor = false;
+            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
             // 
             // btnYeniGelen
             // 
-            this.btnYeniGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniGelen.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniGelen.Image")));
             this.btnYeniGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeniGelen.Location = new System.Drawing.Point(872, 56);
+            this.btnYeniGelen.Location = new System.Drawing.Point(872, 57);
             this.btnYeniGelen.Name = "btnYeniGelen";
-            this.btnYeniGelen.Size = new System.Drawing.Size(111, 45);
+            this.btnYeniGelen.Size = new System.Drawing.Size(111, 46);
             this.btnYeniGelen.TabIndex = 6;
             this.btnYeniGelen.Text = "GELEN";
             this.btnYeniGelen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnYeniGelen.UseVisualStyleBackColor = true;
+            this.btnYeniGelen.UseVisualStyleBackColor = false;
             this.btnYeniGelen.Click += new System.EventHandler(this.btnYeniGelen_Click);
             // 
             // btnYeniCikan
             // 
-            this.btnYeniCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniCikan.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniCikan.Image")));
             this.btnYeniCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeniCikan.Location = new System.Drawing.Point(872, 107);
+            this.btnYeniCikan.Location = new System.Drawing.Point(872, 109);
             this.btnYeniCikan.Name = "btnYeniCikan";
             this.btnYeniCikan.Size = new System.Drawing.Size(111, 45);
             this.btnYeniCikan.TabIndex = 7;
             this.btnYeniCikan.Text = "ÇIKAN";
             this.btnYeniCikan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnYeniCikan.UseVisualStyleBackColor = true;
+            this.btnYeniCikan.UseVisualStyleBackColor = false;
             this.btnYeniCikan.Click += new System.EventHandler(this.btnYeniCikan_Click);
             // 
             // lblYeniAmacNeden
             // 
             this.lblYeniAmacNeden.AutoSize = true;
-            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAmacNeden.Location = new System.Drawing.Point(438, 226);
             this.lblYeniAmacNeden.Name = "lblYeniAmacNeden";
-            this.lblYeniAmacNeden.Size = new System.Drawing.Size(93, 15);
+            this.lblYeniAmacNeden.Size = new System.Drawing.Size(90, 15);
             this.lblYeniAmacNeden.TabIndex = 8;
             this.lblYeniAmacNeden.Text = "Amaç-Neden:";
             // 
             // lblYeniSiparisKodu
             // 
             this.lblYeniSiparisKodu.AutoSize = true;
-            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniSiparisKodu.Location = new System.Drawing.Point(438, 183);
             this.lblYeniSiparisKodu.Name = "lblYeniSiparisKodu";
-            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(93, 15);
+            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(88, 15);
             this.lblYeniSiparisKodu.TabIndex = 9;
             this.lblYeniSiparisKodu.Text = "Sipariş Kodu:";
             // 
             // lblYeniFirma
             // 
             this.lblYeniFirma.AutoSize = true;
-            this.lblYeniFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniFirma.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniFirma.Location = new System.Drawing.Point(438, 141);
             this.lblYeniFirma.Name = "lblYeniFirma";
-            this.lblYeniFirma.Size = new System.Drawing.Size(48, 15);
+            this.lblYeniFirma.Size = new System.Drawing.Size(46, 15);
             this.lblYeniFirma.TabIndex = 10;
             this.lblYeniFirma.Text = "Firma:";
             // 
             // lblYeniAdet
             // 
             this.lblYeniAdet.AutoSize = true;
-            this.lblYeniAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAdet.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAdet.Location = new System.Drawing.Point(438, 98);
             this.lblYeniAdet.Name = "lblYeniAdet";
-            this.lblYeniAdet.Size = new System.Drawing.Size(39, 15);
+            this.lblYeniAdet.Size = new System.Drawing.Size(40, 15);
             this.lblYeniAdet.TabIndex = 11;
             this.lblYeniAdet.Text = "Adet:";
             // 
             // lblYeniSerino
             // 
             this.lblYeniSerino.AutoSize = true;
-            this.lblYeniSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniSerino.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniSerino.Location = new System.Drawing.Point(438, 63);
             this.lblYeniSerino.Name = "lblYeniSerino";
-            this.lblYeniSerino.Size = new System.Drawing.Size(103, 15);
+            this.lblYeniSerino.Size = new System.Drawing.Size(97, 15);
             this.lblYeniSerino.TabIndex = 12;
             this.lblYeniSerino.Text = "Seri Numarası:";
             // 
             // lblYeniModel
             // 
             this.lblYeniModel.AutoSize = true;
-            this.lblYeniModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniModel.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniModel.Location = new System.Drawing.Point(38, 183);
             this.lblYeniModel.Name = "lblYeniModel";
-            this.lblYeniModel.Size = new System.Drawing.Size(111, 15);
+            this.lblYeniModel.Size = new System.Drawing.Size(106, 15);
             this.lblYeniModel.TabIndex = 13;
             this.lblYeniModel.Text = "Ekipman Model:";
             // 
             // lblYeniMarka
             // 
             this.lblYeniMarka.AutoSize = true;
-            this.lblYeniMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniMarka.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniMarka.Location = new System.Drawing.Point(38, 144);
             this.lblYeniMarka.Name = "lblYeniMarka";
-            this.lblYeniMarka.Size = new System.Drawing.Size(111, 15);
+            this.lblYeniMarka.Size = new System.Drawing.Size(105, 15);
             this.lblYeniMarka.TabIndex = 14;
             this.lblYeniMarka.Text = "Ekipman Marka:";
             // 
             // lblYeniKod
             // 
             this.lblYeniKod.AutoSize = true;
-            this.lblYeniKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniKod.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniKod.Location = new System.Drawing.Point(38, 63);
             this.lblYeniKod.Name = "lblYeniKod";
-            this.lblYeniKod.Size = new System.Drawing.Size(104, 15);
+            this.lblYeniKod.Size = new System.Drawing.Size(100, 15);
             this.lblYeniKod.TabIndex = 15;
             this.lblYeniKod.Text = "Ekipman Kodu:";
             // 
             // lnlYeniTarih
             // 
             this.lnlYeniTarih.AutoSize = true;
-            this.lnlYeniTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lnlYeniTarih.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnlYeniTarih.Location = new System.Drawing.Point(438, 32);
             this.lnlYeniTarih.Name = "lnlYeniTarih";
-            this.lnlYeniTarih.Size = new System.Drawing.Size(44, 15);
+            this.lnlYeniTarih.Size = new System.Drawing.Size(43, 15);
             this.lnlYeniTarih.TabIndex = 17;
             this.lnlYeniTarih.Text = "Tarih:";
             // 
             // lblYeniAlan
             // 
             this.lblYeniAlan.AutoSize = true;
-            this.lblYeniAlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAlan.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAlan.Location = new System.Drawing.Point(38, 226);
             this.lblYeniAlan.Name = "lblYeniAlan";
-            this.lblYeniAlan.Size = new System.Drawing.Size(112, 15);
+            this.lblYeniAlan.Size = new System.Drawing.Size(109, 15);
             this.lblYeniAlan.TabIndex = 18;
             this.lblYeniAlan.Text = "Bulunduğu Alan:";
             // 
             // lblYeniAdi
             // 
             this.lblYeniAdi.AutoSize = true;
-            this.lblYeniAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAdi.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAdi.Location = new System.Drawing.Point(38, 105);
             this.lblYeniAdi.Name = "lblYeniAdi";
-            this.lblYeniAdi.Size = new System.Drawing.Size(91, 15);
+            this.lblYeniAdi.Size = new System.Drawing.Size(89, 15);
             this.lblYeniAdi.TabIndex = 19;
             this.lblYeniAdi.Text = "Ekipman Adı:";
             // 
@@ -348,12 +364,16 @@ namespace StockMaintenanceSystem
             // 
             // btnYeniSorgula
             // 
-            this.btnYeniSorgula.BackColor = System.Drawing.Color.White;
-            this.btnYeniSorgula.Location = new System.Drawing.Point(872, 162);
+            this.btnYeniSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniSorgula.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniSorgula.Image")));
+            this.btnYeniSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnYeniSorgula.Location = new System.Drawing.Point(872, 160);
             this.btnYeniSorgula.Name = "btnYeniSorgula";
-            this.btnYeniSorgula.Size = new System.Drawing.Size(111, 41);
+            this.btnYeniSorgula.Size = new System.Drawing.Size(111, 46);
             this.btnYeniSorgula.TabIndex = 31;
-            this.btnYeniSorgula.Text = "Sorgula";
+            this.btnYeniSorgula.Text = "SORGULA";
+            this.btnYeniSorgula.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnYeniSorgula.UseVisualStyleBackColor = false;
             this.btnYeniSorgula.Click += new System.EventHandler(this.btnYeniSorgula_Click);
             // 
@@ -362,7 +382,7 @@ namespace StockMaintenanceSystem
             this.txtYeniAmacNeden.Location = new System.Drawing.Point(559, 226);
             this.txtYeniAmacNeden.Multiline = true;
             this.txtYeniAmacNeden.Name = "txtYeniAmacNeden";
-            this.txtYeniAmacNeden.Size = new System.Drawing.Size(211, 67);
+            this.txtYeniAmacNeden.Size = new System.Drawing.Size(286, 67);
             this.txtYeniAmacNeden.TabIndex = 32;
             this.txtYeniAmacNeden.TextChanged += new System.EventHandler(this.txtYeni_TextChanged);
             // 
@@ -408,7 +428,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "StockSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StockSystem";
+            this.Text = "STOK TAKİP YENİ";
+            this.Load += new System.EventHandler(this.StockSystem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYeni)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
