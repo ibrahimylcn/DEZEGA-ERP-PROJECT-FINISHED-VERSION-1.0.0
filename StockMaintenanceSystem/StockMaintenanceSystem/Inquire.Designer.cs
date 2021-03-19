@@ -47,7 +47,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblSorgulaEkipmanKodu.AutoSize = true;
             this.lblSorgulaEkipmanKodu.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSorgulaEkipmanKodu.Location = new System.Drawing.Point(421, 28);
+            this.lblSorgulaEkipmanKodu.Location = new System.Drawing.Point(143, 26);
             this.lblSorgulaEkipmanKodu.Name = "lblSorgulaEkipmanKodu";
             this.lblSorgulaEkipmanKodu.Size = new System.Drawing.Size(114, 18);
             this.lblSorgulaEkipmanKodu.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace StockMaintenanceSystem
             // txtSorgulaEkipmanKod
             // 
             this.txtSorgulaEkipmanKod.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorgulaEkipmanKod.Location = new System.Drawing.Point(564, 26);
+            this.txtSorgulaEkipmanKod.Location = new System.Drawing.Point(286, 24);
             this.txtSorgulaEkipmanKod.Name = "txtSorgulaEkipmanKod";
             this.txtSorgulaEkipmanKod.Size = new System.Drawing.Size(256, 22);
             this.txtSorgulaEkipmanKod.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace StockMaintenanceSystem
             // txtSorgulaSerino
             // 
             this.txtSorgulaSerino.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorgulaSerino.Location = new System.Drawing.Point(564, 81);
+            this.txtSorgulaSerino.Location = new System.Drawing.Point(286, 79);
             this.txtSorgulaSerino.Name = "txtSorgulaSerino";
             this.txtSorgulaSerino.Size = new System.Drawing.Size(256, 22);
             this.txtSorgulaSerino.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace StockMaintenanceSystem
             this.btnSorgulaSorgula.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSorgulaSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgulaSorgula.Image")));
             this.btnSorgulaSorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSorgulaSorgula.Location = new System.Drawing.Point(984, 11);
+            this.btnSorgulaSorgula.Location = new System.Drawing.Point(655, 12);
             this.btnSorgulaSorgula.Name = "btnSorgulaSorgula";
             this.btnSorgulaSorgula.Size = new System.Drawing.Size(115, 49);
             this.btnSorgulaSorgula.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblSorgulaSerino.AutoSize = true;
             this.lblSorgulaSerino.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSorgulaSerino.Location = new System.Drawing.Point(424, 83);
+            this.lblSorgulaSerino.Location = new System.Drawing.Point(146, 81);
             this.lblSorgulaSerino.Name = "lblSorgulaSerino";
             this.lblSorgulaSerino.Size = new System.Drawing.Size(112, 18);
             this.lblSorgulaSerino.TabIndex = 4;
@@ -97,7 +97,7 @@ namespace StockMaintenanceSystem
             this.btnSorgulaTemizle.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSorgulaTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgulaTemizle.Image")));
             this.btnSorgulaTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSorgulaTemizle.Location = new System.Drawing.Point(984, 66);
+            this.btnSorgulaTemizle.Location = new System.Drawing.Point(655, 67);
             this.btnSorgulaTemizle.Name = "btnSorgulaTemizle";
             this.btnSorgulaTemizle.Size = new System.Drawing.Size(115, 48);
             this.btnSorgulaTemizle.TabIndex = 5;
@@ -108,17 +108,16 @@ namespace StockMaintenanceSystem
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 146);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1552, 803);
+            this.dataGridView1.Size = new System.Drawing.Size(1245, 803);
             this.dataGridView1.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1288, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(981, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(275, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +129,7 @@ namespace StockMaintenanceSystem
             this.btnSorgulaAnasayfayadon.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSorgulaAnasayfayadon.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgulaAnasayfayadon.Image")));
             this.btnSorgulaAnasayfayadon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSorgulaAnasayfayadon.Location = new System.Drawing.Point(1485, 99);
+            this.btnSorgulaAnasayfayadon.Location = new System.Drawing.Point(1178, 99);
             this.btnSorgulaAnasayfayadon.Name = "btnSorgulaAnasayfayadon";
             this.btnSorgulaAnasayfayadon.Size = new System.Drawing.Size(78, 41);
             this.btnSorgulaAnasayfayadon.TabIndex = 47;
@@ -145,7 +144,7 @@ namespace StockMaintenanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1575, 961);
+            this.ClientSize = new System.Drawing.Size(1277, 955);
             this.Controls.Add(this.btnSorgulaAnasayfayadon);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);

@@ -19,8 +19,8 @@ namespace StockMaintenanceSystem
 
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
-            StockSystem ss = new StockSystem();
-            ss.Show();
+            StockSystem sS = new StockSystem();
+            sS.Show();
             this.Hide();
         }
 
