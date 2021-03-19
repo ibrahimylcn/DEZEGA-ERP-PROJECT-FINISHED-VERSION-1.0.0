@@ -111,7 +111,7 @@ namespace StockMaintenanceSystem
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 146);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1245, 803);
+            this.dataGridView1.Size = new System.Drawing.Size(1245, 484);
             this.dataGridView1.TabIndex = 6;
             // 
             // pictureBox1
@@ -144,7 +144,7 @@ namespace StockMaintenanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1277, 955);
+            this.ClientSize = new System.Drawing.Size(1277, 648);
             this.Controls.Add(this.btnSorgulaAnasayfayadon);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
