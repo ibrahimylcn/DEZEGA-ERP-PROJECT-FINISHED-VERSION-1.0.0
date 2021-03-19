@@ -60,6 +60,7 @@ namespace StockMaintenanceSystem
             this.txtSorgulaEkipmanKod.Name = "txtSorgulaEkipmanKod";
             this.txtSorgulaEkipmanKod.Size = new System.Drawing.Size(256, 22);
             this.txtSorgulaEkipmanKod.TabIndex = 1;
+            this.txtSorgulaEkipmanKod.TextChanged += new System.EventHandler(this.txtSorgulaEkipmanKod_TextChanged);
             // 
             // txtSorgulaSerino
             // 
@@ -81,6 +82,7 @@ namespace StockMaintenanceSystem
             this.btnSorgulaSorgula.Text = "Sorgula";
             this.btnSorgulaSorgula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSorgulaSorgula.UseVisualStyleBackColor = true;
+            this.btnSorgulaSorgula.Click += new System.EventHandler(this.btnSorgulaSorgula_Click);
             // 
             // lblSorgulaSerino
             // 
@@ -144,7 +146,7 @@ namespace StockMaintenanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1277, 648);
+            this.ClientSize = new System.Drawing.Size(1276, 648);
             this.Controls.Add(this.btnSorgulaAnasayfayadon);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
@@ -159,7 +161,6 @@ namespace StockMaintenanceSystem
             this.Name = "Inquire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " STOK TAKİP SORGULAMA";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Inquire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -48,3 +48,4 @@ C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMainte
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.csproj.CoreCompileInputs.cache
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.exe
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.pdb
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.MaintenanceInquire.resources

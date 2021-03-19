@@ -44,5 +44,12 @@ namespace StockMaintenanceSystem
         {
 
         }
+
+        private void btn_msorgula_Click(object sender, EventArgs e)
+        {
+            MaintenanceInquire maintenanceInquire = new MaintenanceInquire();
+            maintenanceInquire.Show();
+            this.Hide();
+        }
     }
 }

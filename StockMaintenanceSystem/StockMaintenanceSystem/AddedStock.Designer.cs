@@ -70,7 +70,7 @@ namespace StockMaintenanceSystem
             this.txtGelenAmacNeden.Location = new System.Drawing.Point(559, 226);
             this.txtGelenAmacNeden.Multiline = true;
             this.txtGelenAmacNeden.Name = "txtGelenAmacNeden";
-            this.txtGelenAmacNeden.Size = new System.Drawing.Size(211, 67);
+            this.txtGelenAmacNeden.Size = new System.Drawing.Size(286, 67);
             this.txtGelenAmacNeden.TabIndex = 64;
             // 
             // btnGelenSorgula

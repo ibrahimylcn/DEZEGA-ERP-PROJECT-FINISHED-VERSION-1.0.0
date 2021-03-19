@@ -34,5 +34,15 @@ namespace StockMaintenanceSystem
         {
 
         }
+
+        private void txtSorgulaEkipmanKod_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSorgulaSorgula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

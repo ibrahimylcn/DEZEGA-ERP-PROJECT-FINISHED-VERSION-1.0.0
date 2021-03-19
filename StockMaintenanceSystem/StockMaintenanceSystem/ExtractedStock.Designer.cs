@@ -70,7 +70,7 @@ namespace StockMaintenanceSystem
             this.txtCikanAmacNeden.Location = new System.Drawing.Point(559, 226);
             this.txtCikanAmacNeden.Multiline = true;
             this.txtCikanAmacNeden.Name = "txtCikanAmacNeden";
-            this.txtCikanAmacNeden.Size = new System.Drawing.Size(211, 67);
+            this.txtCikanAmacNeden.Size = new System.Drawing.Size(286, 67);
             this.txtCikanAmacNeden.TabIndex = 64;
             // 
             // btnCikanSorgula

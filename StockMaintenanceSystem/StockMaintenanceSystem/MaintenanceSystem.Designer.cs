@@ -41,9 +41,6 @@ namespace StockMaintenanceSystem
             this.label8 = new System.Windows.Forms.Label();
             this.cmbBakimİsTürü = new System.Windows.Forms.ComboBox();
             this.lblBakimİsTürü = new System.Windows.Forms.Label();
-            this.radioButtonIT = new System.Windows.Forms.RadioButton();
-            this.radioButtonEquipment = new System.Windows.Forms.RadioButton();
-            this.radioButtonFacility = new System.Windows.Forms.RadioButton();
             this.lblBakimİsAlani = new System.Windows.Forms.Label();
             this.cmbBakimİletimYolu = new System.Windows.Forms.ComboBox();
             this.lblBakimİletimYolu = new System.Windows.Forms.Label();
@@ -69,30 +66,38 @@ namespace StockMaintenanceSystem
             this.txtBakimEkimpanKodu = new System.Windows.Forms.TextBox();
             this.lblBakimEkipmanKod = new System.Windows.Forms.Label();
             this.lblBakimEkipmanAdi = new System.Windows.Forms.Label();
+            this.btn_msorgula = new System.Windows.Forms.Button();
+            this.cmbBakımIsalani = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBakimAnasayfa
             // 
-            this.btnBakimAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimAnasayfa.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimAnasayfa.Image")));
+            this.btnBakimAnasayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBakimAnasayfa.Location = new System.Drawing.Point(717, 226);
             this.btnBakimAnasayfa.Name = "btnBakimAnasayfa";
             this.btnBakimAnasayfa.Size = new System.Drawing.Size(146, 39);
             this.btnBakimAnasayfa.TabIndex = 51;
-            this.btnBakimAnasayfa.Text = "Anasayfa";
+            this.btnBakimAnasayfa.Text = "ANASAYFA";
+            this.btnBakimAnasayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBakimAnasayfa.UseVisualStyleBackColor = true;
             this.btnBakimAnasayfa.Click += new System.EventHandler(this.btnBakimAnasayfa_Click);
             // 
             // btnBakimCikis
             // 
-            this.btnBakimCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBakimCikis.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakimCikis.ForeColor = System.Drawing.Color.Red;
+            this.btnBakimCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimCikis.Image")));
+            this.btnBakimCikis.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBakimCikis.Location = new System.Drawing.Point(717, 271);
             this.btnBakimCikis.Name = "btnBakimCikis";
             this.btnBakimCikis.Size = new System.Drawing.Size(146, 34);
             this.btnBakimCikis.TabIndex = 50;
-            this.btnBakimCikis.Text = "Çıkış";
+            this.btnBakimCikis.Text = "ÇIKIŞ";
+            this.btnBakimCikis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBakimCikis.UseVisualStyleBackColor = true;
             this.btnBakimCikis.Click += new System.EventHandler(this.btnBakimCikis_Click);
             // 
@@ -127,23 +132,29 @@ namespace StockMaintenanceSystem
             // 
             // btnBakimTemizle
             // 
-            this.btnBakimTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimTemizle.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimTemizle.Image")));
+            this.btnBakimTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBakimTemizle.Location = new System.Drawing.Point(717, 181);
             this.btnBakimTemizle.Name = "btnBakimTemizle";
             this.btnBakimTemizle.Size = new System.Drawing.Size(146, 39);
             this.btnBakimTemizle.TabIndex = 46;
-            this.btnBakimTemizle.Text = " Ekranı Temizle";
+            this.btnBakimTemizle.Text = "EKRANI TEMİZLE\r\n";
+            this.btnBakimTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBakimTemizle.UseVisualStyleBackColor = true;
             this.btnBakimTemizle.Click += new System.EventHandler(this.btnBakimTemizle_Click);
             // 
             // btnBakimKaydet
             // 
-            this.btnBakimKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimKaydet.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakimKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimKaydet.Image")));
+            this.btnBakimKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBakimKaydet.Location = new System.Drawing.Point(717, 136);
             this.btnBakimKaydet.Name = "btnBakimKaydet";
             this.btnBakimKaydet.Size = new System.Drawing.Size(146, 39);
             this.btnBakimKaydet.TabIndex = 45;
-            this.btnBakimKaydet.Text = "Sisteme Kaydet";
+            this.btnBakimKaydet.Text = "KAYDET";
+            this.btnBakimKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBakimKaydet.UseVisualStyleBackColor = true;
             this.btnBakimKaydet.Click += new System.EventHandler(this.btnBakimKaydet_Click);
             // 
@@ -190,47 +201,11 @@ namespace StockMaintenanceSystem
             this.lblBakimİsTürü.TabIndex = 40;
             this.lblBakimİsTürü.Text = "İş Türü : ";
             // 
-            // radioButtonIT
-            // 
-            this.radioButtonIT.AutoSize = true;
-            this.radioButtonIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonIT.Location = new System.Drawing.Point(400, 243);
-            this.radioButtonIT.Name = "radioButtonIT";
-            this.radioButtonIT.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonIT.TabIndex = 39;
-            this.radioButtonIT.TabStop = true;
-            this.radioButtonIT.Text = "IT";
-            this.radioButtonIT.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonEquipment
-            // 
-            this.radioButtonEquipment.AutoSize = true;
-            this.radioButtonEquipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonEquipment.Location = new System.Drawing.Point(280, 241);
-            this.radioButtonEquipment.Name = "radioButtonEquipment";
-            this.radioButtonEquipment.Size = new System.Drawing.Size(94, 19);
-            this.radioButtonEquipment.TabIndex = 38;
-            this.radioButtonEquipment.TabStop = true;
-            this.radioButtonEquipment.Text = "Equipment";
-            this.radioButtonEquipment.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonFacility
-            // 
-            this.radioButtonFacility.AutoSize = true;
-            this.radioButtonFacility.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFacility.Location = new System.Drawing.Point(196, 241);
-            this.radioButtonFacility.Name = "radioButtonFacility";
-            this.radioButtonFacility.Size = new System.Drawing.Size(70, 19);
-            this.radioButtonFacility.TabIndex = 37;
-            this.radioButtonFacility.TabStop = true;
-            this.radioButtonFacility.Text = "Facility";
-            this.radioButtonFacility.UseVisualStyleBackColor = true;
-            // 
             // lblBakimİsAlani
             // 
             this.lblBakimİsAlani.AutoSize = true;
             this.lblBakimİsAlani.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBakimİsAlani.Location = new System.Drawing.Point(42, 243);
+            this.lblBakimİsAlani.Location = new System.Drawing.Point(42, 238);
             this.lblBakimİsAlani.Name = "lblBakimİsAlani";
             this.lblBakimİsAlani.Size = new System.Drawing.Size(66, 15);
             this.lblBakimİsAlani.TabIndex = 36;
@@ -458,12 +433,40 @@ namespace StockMaintenanceSystem
             this.lblBakimEkipmanAdi.TabIndex = 69;
             this.lblBakimEkipmanAdi.Text = "Ekipman Adı :";
             // 
+            // btn_msorgula
+            // 
+            this.btn_msorgula.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_msorgula.Image = ((System.Drawing.Image)(resources.GetObject("btn_msorgula.Image")));
+            this.btn_msorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_msorgula.Location = new System.Drawing.Point(717, 91);
+            this.btn_msorgula.Name = "btn_msorgula";
+            this.btn_msorgula.Size = new System.Drawing.Size(146, 39);
+            this.btn_msorgula.TabIndex = 70;
+            this.btn_msorgula.Text = "SORGULA";
+            this.btn_msorgula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_msorgula.UseVisualStyleBackColor = true;
+            this.btn_msorgula.Click += new System.EventHandler(this.btn_msorgula_Click);
+            // 
+            // cmbBakımIsalani
+            // 
+            this.cmbBakımIsalani.FormattingEnabled = true;
+            this.cmbBakımIsalani.Items.AddRange(new object[] {
+            "Facility",
+            "Equipment",
+            "IT"});
+            this.cmbBakımIsalani.Location = new System.Drawing.Point(196, 237);
+            this.cmbBakımIsalani.Name = "cmbBakımIsalani";
+            this.cmbBakımIsalani.Size = new System.Drawing.Size(121, 21);
+            this.cmbBakımIsalani.TabIndex = 71;
+            // 
             // MaintenanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(927, 520);
+            this.Controls.Add(this.cmbBakımIsalani);
+            this.Controls.Add(this.btn_msorgula);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBakimAnasayfa);
             this.Controls.Add(this.btnBakimCikis);
@@ -476,9 +479,6 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cmbBakimİsTürü);
             this.Controls.Add(this.lblBakimİsTürü);
-            this.Controls.Add(this.radioButtonIT);
-            this.Controls.Add(this.radioButtonEquipment);
-            this.Controls.Add(this.radioButtonFacility);
             this.Controls.Add(this.lblBakimİsAlani);
             this.Controls.Add(this.cmbBakimİletimYolu);
             this.Controls.Add(this.lblBakimİletimYolu);
@@ -517,9 +517,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbBakimİsTürü;
         private System.Windows.Forms.Label lblBakimİsTürü;
-        private System.Windows.Forms.RadioButton radioButtonIT;
-        private System.Windows.Forms.RadioButton radioButtonEquipment;
-        private System.Windows.Forms.RadioButton radioButtonFacility;
         private System.Windows.Forms.Label lblBakimİsAlani;
         private System.Windows.Forms.ComboBox cmbBakimİletimYolu;
         private System.Windows.Forms.Label lblBakimİletimYolu;
@@ -545,5 +542,7 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtBakimEkimpanKodu;
         private System.Windows.Forms.Label lblBakimEkipmanKod;
         private System.Windows.Forms.Label lblBakimEkipmanAdi;
+        private System.Windows.Forms.Button btn_msorgula;
+        private System.Windows.Forms.ComboBox cmbBakımIsalani;
     }
 }

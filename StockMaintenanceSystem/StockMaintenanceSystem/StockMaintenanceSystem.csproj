@@ -70,6 +70,12 @@
     <Compile Include="Load.Designer.cs">
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaintenanceInquire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceInquire.Designer.cs">
+      <DependentUpon>MaintenanceInquire.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Load.resx">
       <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceInquire.resx">
+      <DependentUpon>MaintenanceInquire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
