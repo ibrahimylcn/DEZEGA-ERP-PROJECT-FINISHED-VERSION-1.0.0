@@ -56,6 +56,7 @@ namespace StockMaintenanceSystem
             AddedStock added = new AddedStock();
             added.Show();
             this.Hide();
+            // test test
         }
 
         private void btnCikanKaydet_Click(object sender, EventArgs e)
