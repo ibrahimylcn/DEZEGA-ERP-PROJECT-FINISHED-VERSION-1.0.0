@@ -34,5 +34,20 @@ namespace StockMaintenanceSystem
             maintenanceSystem.Show();
             this.Hide();
         }
+
+        private void MaintenanceInquire_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeBaslangicSorgula_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn2SorgulaSorgula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

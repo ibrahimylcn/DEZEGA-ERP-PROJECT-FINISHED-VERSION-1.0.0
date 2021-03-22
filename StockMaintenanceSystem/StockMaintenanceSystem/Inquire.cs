@@ -7,16 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+// using System.Data.SqlClient;
 
 namespace StockMaintenanceSystem
 {
     public partial class Inquire : Form
     {
-        public Inquire()
+        public Inquire() 
         {
             InitializeComponent();
         }
-
+        // public 
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
