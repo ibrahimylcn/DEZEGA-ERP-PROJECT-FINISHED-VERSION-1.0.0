@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace StockMaintenanceSystem
 {
@@ -16,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
             // Buton Gelen
@@ -57,7 +59,19 @@ namespace StockMaintenanceSystem
 
         private void AddedStock_Load(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT *FROM tblCategory";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
 
+            SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbGelen.Items.Add(dr["CategoryName"]);
+            }
+            conn.Close();
         }
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbStockModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblEquipmentStock">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EquipmentCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentBrand" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentModel" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentSerialNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentOrderCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentCompany" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentExtractedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentAddedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="PurposeWhy" Type="nvarchar" MaxLength="50" />
+    <Property Name="EquipmentStockNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblMaintenance">
+    <Key>
+      <PropertyRef Name="MaintenanceID" />
+    </Key>
+    <Property Name="MaintenanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartingDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="DueDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="TransmissionRoot" Type="nvarchar" MaxLength="50" />
+    <Property Name="BusinessArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="JobType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblMaintnncEquipment">
+    <Key>
+      <PropertyRef Name="mEquipmentID" />
+    </Key>
+    <Property Name="mEquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mEquipmentName" Type="nvarchar" MaxLength="50" />
+    <Property Name="mEquipmentCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="mNumberOfEquipment" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblUsedObject">
+    <Key>
+      <PropertyRef Name="UsedObjectID" />
+    </Key>
+    <Property Name="UsedObjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UsedObjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UsedObjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="NumberOfUsedObject" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Admin" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="dbStockModelStoreContainer">
+    <EntitySet Name="tblCategory" EntityType="Self.tblCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMaintnncEquipment" EntityType="Self.tblMaintnncEquipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUsedObject" EntityType="Self.tblUsedObject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

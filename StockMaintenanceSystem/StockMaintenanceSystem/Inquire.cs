@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-// using System.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace StockMaintenanceSystem
 {
@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        // public 
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
@@ -43,7 +43,8 @@ namespace StockMaintenanceSystem
 
         private void btnSorgulaSorgula_Click(object sender, EventArgs e)
         {
-
+            dbStockEntities se = new dbStockEntities();
+            dataGridView1.DataSource = se.tblEquipmentStock.ToList();
         }
     }
 }

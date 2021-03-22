@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbStockModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblEquipmentStock">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EquipmentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentSerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentOrderCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentExtractedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentAddedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PurposeWhy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentStockNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblMaintenance">
+    <Key>
+      <PropertyRef Name="MaintenanceID" />
+    </Key>
+    <Property Name="MaintenanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartingDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DueDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EndTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TransmissionRoot" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BusinessArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="JobType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblMaintnncEquipment">
+    <Key>
+      <PropertyRef Name="mEquipmentID" />
+    </Key>
+    <Property Name="mEquipmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mEquipmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mEquipmentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mNumberOfEquipment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblUsedObject">
+    <Key>
+      <PropertyRef Name="UsedObjectID" />
+    </Key>
+    <Property Name="UsedObjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsedObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UsedObjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NumberOfUsedObject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="dbStockEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCategory" EntityType="Self.tblCategory" />
+    <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" />
+    <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" />
+    <EntitySet Name="tblMaintnncEquipment" EntityType="Self.tblMaintnncEquipment" />
+    <EntitySet Name="tblUsedObject" EntityType="Self.tblUsedObject" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" />
+  </EntityContainer>
+</Schema>

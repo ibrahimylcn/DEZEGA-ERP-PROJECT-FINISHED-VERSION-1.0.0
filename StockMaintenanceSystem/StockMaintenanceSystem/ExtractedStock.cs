@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace StockMaintenanceSystem
 {
@@ -16,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
             // Button Çıkan Yeni
@@ -59,7 +60,8 @@ namespace StockMaintenanceSystem
 
         private void btnCikanKaydet_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("İşlem Başarılı!!");
+          
+        
         }
 
         private void BtnCikanTemizle_Click(object sender, EventArgs e)
@@ -70,7 +72,19 @@ namespace StockMaintenanceSystem
 
         private void ExtractedStock_Load(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT *FROM tblCategory";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
 
+            SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbCikan.Items.Add(dr["CategoryName"]);
+            }
+            conn.Close();
         }
     }
 }

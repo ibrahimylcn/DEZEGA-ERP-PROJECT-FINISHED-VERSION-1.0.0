@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace StockMaintenanceSystem
 {
@@ -17,9 +17,9 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        // SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnlogin_Click(object sender, EventArgs e)
-        {/*
+        {
             conn.Open();
             SqlCommand komut = new SqlCommand("select * from tblUser u where u.Admin=@u1 and u.Password=@u2", conn);
             komut.Parameters.AddWithValue("@u1", txtuser.Text );
@@ -39,10 +39,6 @@ namespace StockMaintenanceSystem
             conn.Close();
 
 
-        }*/
-            Homepage hp = new Homepage();
-            hp.Show();
-            this.Hide();
         }
 
         private void User_Load(object sender, EventArgs e)

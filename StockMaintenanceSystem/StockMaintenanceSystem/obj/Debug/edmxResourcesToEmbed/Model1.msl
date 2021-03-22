@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities">
+    <EntitySetMapping Name="tblCategory">
+      <EntityTypeMapping TypeName="dbStockModel.tblCategory">
+        <MappingFragment StoreEntitySet="tblCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEquipmentStock">
+      <EntityTypeMapping TypeName="dbStockModel.tblEquipmentStock">
+        <MappingFragment StoreEntitySet="tblEquipmentStock">
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EquipmentCode" ColumnName="EquipmentCode" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EquipmentArea" ColumnName="EquipmentArea" />
+          <ScalarProperty Name="EquipmentBrand" ColumnName="EquipmentBrand" />
+          <ScalarProperty Name="EquipmentModel" ColumnName="EquipmentModel" />
+          <ScalarProperty Name="EquipmentSerialNumber" ColumnName="EquipmentSerialNumber" />
+          <ScalarProperty Name="EquipmentOrderCode" ColumnName="EquipmentOrderCode" />
+          <ScalarProperty Name="EquipmentCompany" ColumnName="EquipmentCompany" />
+          <ScalarProperty Name="EquipmentExtractedDate" ColumnName="EquipmentExtractedDate" />
+          <ScalarProperty Name="EquipmentAddedDate" ColumnName="EquipmentAddedDate" />
+          <ScalarProperty Name="EquipmentCategory" ColumnName="EquipmentCategory" />
+          <ScalarProperty Name="PurposeWhy" ColumnName="PurposeWhy" />
+          <ScalarProperty Name="EquipmentStockNumber" ColumnName="EquipmentStockNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMaintenance">
+      <EntityTypeMapping TypeName="dbStockModel.tblMaintenance">
+        <MappingFragment StoreEntitySet="tblMaintenance">
+          <ScalarProperty Name="MaintenanceID" ColumnName="MaintenanceID" />
+          <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="TransmissionRoot" ColumnName="TransmissionRoot" />
+          <ScalarProperty Name="BusinessArea" ColumnName="BusinessArea" />
+          <ScalarProperty Name="JobType" ColumnName="JobType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMaintnncEquipment">
+      <EntityTypeMapping TypeName="dbStockModel.tblMaintnncEquipment">
+        <MappingFragment StoreEntitySet="tblMaintnncEquipment">
+          <ScalarProperty Name="mEquipmentID" ColumnName="mEquipmentID" />
+          <ScalarProperty Name="mEquipmentName" ColumnName="mEquipmentName" />
+          <ScalarProperty Name="mEquipmentCode" ColumnName="mEquipmentCode" />
+          <ScalarProperty Name="mNumberOfEquipment" ColumnName="mNumberOfEquipment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsedObject">
+      <EntityTypeMapping TypeName="dbStockModel.tblUsedObject">
+        <MappingFragment StoreEntitySet="tblUsedObject">
+          <ScalarProperty Name="UsedObjectID" ColumnName="UsedObjectID" />
+          <ScalarProperty Name="UsedObjectName" ColumnName="UsedObjectName" />
+          <ScalarProperty Name="UsedObjectCode" ColumnName="UsedObjectCode" />
+          <ScalarProperty Name="NumberOfUsedObject" ColumnName="NumberOfUsedObject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUser">
+      <EntityTypeMapping TypeName="dbStockModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
