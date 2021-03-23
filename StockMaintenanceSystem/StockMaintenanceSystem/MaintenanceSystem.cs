@@ -19,7 +19,33 @@ namespace StockMaintenanceSystem
 
         private void btnBakimKaydet_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("İşlem Başarılı!!");
+            dbStockEntities db = new dbStockEntities();
+
+            tblMaintenance m = new tblMaintenance();
+
+            m.StartingDate = dateTimeBakimBaslangic.Text;
+            m.StartTime = txtBakimBasSaati.Text;
+            m.DueDate = dateTimeBakimBitis.Text;
+            m.EndTime = txtBakimBitisSaati.Text;
+            m.BusinessArea = cmbBakımIsalani.Text;
+            m.JobType = cmbBakimİsTürü.Text;
+            m.TransmissionRoot = cmbBakimİletimYolu.Text;
+
+            tblMaintnncEquipment me = new tblMaintnncEquipment();
+            me.mEquipmentCode = txtBakimEkimpanKodu.Text;
+            me.mEquipmentName = txtBakimEkipmanAdi.Text;
+            me.mNumberOfEquipment = txtBakimKisiSayisi.Text;
+
+            tblUsedObject u = new tblUsedObject();
+            u.UsedObjectCode = txtBakimKullanilanParKodu.Text;
+            u.UsedObjectName = txtBakimKullanilanParAdi.Text;
+            u.NumberOfUsedObject = txtBakimKullanilanParSayisi.Text;
+
+            db.tblMaintenance.Add(m);
+            db.tblMaintnncEquipment.Add(me);
+            db.tblUsedObject.Add(u);
+            db.SaveChanges();
+            MessageBox.Show("Bakım-Onarım başarıyla kaydedilmiştir.");
         }
 
         private void btnBakimTemizle_Click(object sender, EventArgs e)

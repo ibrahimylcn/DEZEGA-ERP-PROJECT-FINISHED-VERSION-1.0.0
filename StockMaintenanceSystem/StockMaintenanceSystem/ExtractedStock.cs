@@ -61,8 +61,35 @@ namespace StockMaintenanceSystem
 
         private void btnCikanKaydet_Click(object sender, EventArgs e)
         {
-          
-        
+            /* int id = 8;
+             SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber=EquipmentStockNumber-1 where EquipmentID=@eqId", conn);
+             cmd.Parameters.AddWithValue("@eqId", id);
+             try
+             {
+                 conn.Open();
+                 cmd.ExecuteNonQuery();
+             }
+             catch (Exception hata)
+             {
+                 MessageBox.Show(hata.ToString());
+             }
+
+             finally
+             {
+                 conn.Close();
+             } */
+            dbStockEntities db = new dbStockEntities();
+            tblEquipmentStock tes = new tblEquipmentStock();
+
+            int z = Convert.ToInt32(txtCikanAdet.Text);
+            string id = txtCikanKod.Text;
+            int n = Convert.ToInt32(tes.EquipmentStockNumber);
+            var x = db.tblEquipmentStock.Find(id);
+
+            x.EquipmentStockNumber = (" n - z");
+            db.SaveChanges();
+            MessageBox.Show("İşlem Başarılı.");
+
         }
 
         private void BtnCikanTemizle_Click(object sender, EventArgs e)
