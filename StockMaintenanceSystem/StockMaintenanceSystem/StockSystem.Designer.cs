@@ -62,6 +62,7 @@ namespace StockMaintenanceSystem
             this.dataGridViewYeni = new System.Windows.Forms.DataGridView();
             this.btnYeniSorgula = new System.Windows.Forms.Button();
             this.txtYeniAmacNeden = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYeni)).BeginInit();
             this.SuspendLayout();
             // 
@@ -290,6 +291,7 @@ namespace StockMaintenanceSystem
             this.cmbYeniKategori.Name = "cmbYeniKategori";
             this.cmbYeniKategori.Size = new System.Drawing.Size(121, 21);
             this.cmbYeniKategori.TabIndex = 20;
+            this.cmbYeniKategori.SelectedIndexChanged += new System.EventHandler(this.cmbYeniKategori_SelectedIndexChanged);
             // 
             // dTimeYeniTarih
             // 
@@ -304,6 +306,7 @@ namespace StockMaintenanceSystem
             this.txtYeniAdet.Name = "txtYeniAdet";
             this.txtYeniAdet.Size = new System.Drawing.Size(121, 20);
             this.txtYeniAdet.TabIndex = 22;
+            this.txtYeniAdet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYeniAdet_KeyPress);
             // 
             // txtYeniModel
             // 
@@ -386,12 +389,28 @@ namespace StockMaintenanceSystem
             this.txtYeniAmacNeden.TabIndex = 32;
             this.txtYeniAmacNeden.TextChanged += new System.EventHandler(this.txtYeni_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(872, 212);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 46);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "LİSTELE";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StockSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtYeniAmacNeden);
             this.Controls.Add(this.btnYeniSorgula);
             this.Controls.Add(this.dataGridViewYeni);
@@ -470,5 +489,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.DataGridView dataGridViewYeni;
         private System.Windows.Forms.Button btnYeniSorgula;
         private System.Windows.Forms.TextBox txtYeniAmacNeden;
+        private System.Windows.Forms.Button button1;
     }
 }

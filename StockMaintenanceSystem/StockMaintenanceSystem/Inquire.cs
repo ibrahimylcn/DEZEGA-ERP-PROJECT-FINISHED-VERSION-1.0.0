@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
@@ -43,8 +43,17 @@ namespace StockMaintenanceSystem
 
         private void btnSorgulaSorgula_Click(object sender, EventArgs e)
         {
-            dbStockEntities se = new dbStockEntities();
-            dataGridView1.DataSource = se.tblEquipmentStock.ToList();
+            conn.Open();
+
+            string kayit = "SELECT * from tblEquipmentStock where EquipmentCode=@code";
+            SqlCommand cmd = new SqlCommand(kayit, conn);
+            cmd.Parameters.AddWithValue("@code", txtSorgulaEkipmanKod.Text);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
         }
     }
 }

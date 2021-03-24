@@ -27,6 +27,6 @@ namespace StockMaintenanceSystem
         public string EquipmentAddedDate { get; set; }
         public string EquipmentCategory { get; set; }
         public string PurposeWhy { get; set; }
-        public string EquipmentStockNumber { get; set; }
+        public Nullable<int> EquipmentStockNumber { get; set; }
     }
 }

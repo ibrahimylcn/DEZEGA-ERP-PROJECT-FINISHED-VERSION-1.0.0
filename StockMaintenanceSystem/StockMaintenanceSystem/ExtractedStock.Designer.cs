@@ -62,6 +62,7 @@ namespace StockMaintenanceSystem
             this.btnCikanKaydet = new System.Windows.Forms.Button();
             this.lblCikanKategori = new System.Windows.Forms.Label();
             this.txtCikanKod = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,6 +103,7 @@ namespace StockMaintenanceSystem
             this.txtCikanSerino.Name = "txtCikanSerino";
             this.txtCikanSerino.Size = new System.Drawing.Size(121, 20);
             this.txtCikanSerino.TabIndex = 61;
+            this.txtCikanSerino.TextChanged += new System.EventHandler(this.txtCikanSerino_TextChanged);
             // 
             // txtCikanFirma
             // 
@@ -385,12 +387,28 @@ namespace StockMaintenanceSystem
             this.txtCikanKod.Size = new System.Drawing.Size(121, 20);
             this.txtCikanKod.TabIndex = 33;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(872, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 46);
+            this.button1.TabIndex = 65;
+            this.button1.Text = "LİSTELE";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ExtractedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCikanAmacNeden);
             this.Controls.Add(this.btnCikanSorgula);
             this.Controls.Add(this.dataGridViewCikan);
@@ -469,5 +487,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Button btnCikanKaydet;
         private System.Windows.Forms.Label lblCikanKategori;
         private System.Windows.Forms.TextBox txtCikanKod;
+        private System.Windows.Forms.Button button1;
     }
 }

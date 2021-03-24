@@ -72,3 +72,10 @@ C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMainten
 C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.xml
 C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.csproj.CopyComplete
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.dll
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.xml
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.csproj.CopyComplete
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.MaintenanceList.resources
+C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.StockList.resources

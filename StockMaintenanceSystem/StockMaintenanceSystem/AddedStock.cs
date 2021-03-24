@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
             // Buton Gelen
@@ -76,8 +76,14 @@ namespace StockMaintenanceSystem
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
         {
-            // Button Gelen Kaydet
-            MessageBox.Show("İşlem Başarılı!!");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber+'" +
+                                          int.Parse(txtGelenAdet.Text) + "'where EquipmentCode='" + txtGelenKod.Text + "' ", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Gelen EKipman Kaydetme İşlemi Başarılı!!");
+
         }
 
         private void BtnGelenTemizle_Click(object sender, EventArgs e)
@@ -85,6 +91,27 @@ namespace StockMaintenanceSystem
             // Button Gelen Temizle
             this.Controls.Clear();
             this.InitializeComponent();
+
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT * FROM tblCategory";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
+
+            SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbGelen.Items.Add(dr["CategoryName"]);
+            }
+            conn.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StockList list = new StockList();
+            list.Show();
+            this.Hide();
         }
     }
 }

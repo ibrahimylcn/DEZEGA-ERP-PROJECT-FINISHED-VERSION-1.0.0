@@ -34,9 +34,7 @@ namespace StockMaintenanceSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btn2SorgulaTemizle = new System.Windows.Forms.Button();
-            this.lbl2SorgulaSerino = new System.Windows.Forms.Label();
             this.btn2SorgulaSorgula = new System.Windows.Forms.Button();
-            this.txtSorgulaSerino = new System.Windows.Forms.TextBox();
             this.txtSorgulaEkipmanKod = new System.Windows.Forms.TextBox();
             this.lbl2SorgulaEkipmanKodu = new System.Windows.Forms.Label();
             this.lblBakimİsTuruSorgula = new System.Windows.Forms.Label();
@@ -74,9 +72,9 @@ namespace StockMaintenanceSystem
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 148);
+            this.dataGridView2.Location = new System.Drawing.Point(15, 178);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1245, 484);
+            this.dataGridView2.Size = new System.Drawing.Size(1245, 454);
             this.dataGridView2.TabIndex = 54;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -85,60 +83,42 @@ namespace StockMaintenanceSystem
             this.btn2SorgulaTemizle.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2SorgulaTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btn2SorgulaTemizle.Image")));
             this.btn2SorgulaTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn2SorgulaTemizle.Location = new System.Drawing.Point(832, 69);
+            this.btn2SorgulaTemizle.Location = new System.Drawing.Point(499, 88);
             this.btn2SorgulaTemizle.Name = "btn2SorgulaTemizle";
-            this.btn2SorgulaTemizle.Size = new System.Drawing.Size(115, 48);
+            this.btn2SorgulaTemizle.Size = new System.Drawing.Size(120, 48);
             this.btn2SorgulaTemizle.TabIndex = 53;
             this.btn2SorgulaTemizle.Text = "Temizle";
             this.btn2SorgulaTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn2SorgulaTemizle.UseVisualStyleBackColor = true;
             this.btn2SorgulaTemizle.Click += new System.EventHandler(this.btn2SorgulaTemizle_Click);
             // 
-            // lbl2SorgulaSerino
-            // 
-            this.lbl2SorgulaSerino.AutoSize = true;
-            this.lbl2SorgulaSerino.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2SorgulaSerino.Location = new System.Drawing.Point(472, 86);
-            this.lbl2SorgulaSerino.Name = "lbl2SorgulaSerino";
-            this.lbl2SorgulaSerino.Size = new System.Drawing.Size(112, 18);
-            this.lbl2SorgulaSerino.TabIndex = 52;
-            this.lbl2SorgulaSerino.Text = "Seri Numarası:";
-            // 
             // btn2SorgulaSorgula
             // 
             this.btn2SorgulaSorgula.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2SorgulaSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btn2SorgulaSorgula.Image")));
             this.btn2SorgulaSorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn2SorgulaSorgula.Location = new System.Drawing.Point(832, 14);
+            this.btn2SorgulaSorgula.Location = new System.Drawing.Point(499, 34);
             this.btn2SorgulaSorgula.Name = "btn2SorgulaSorgula";
-            this.btn2SorgulaSorgula.Size = new System.Drawing.Size(115, 49);
+            this.btn2SorgulaSorgula.Size = new System.Drawing.Size(120, 49);
             this.btn2SorgulaSorgula.TabIndex = 51;
             this.btn2SorgulaSorgula.Text = "Sorgula";
             this.btn2SorgulaSorgula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn2SorgulaSorgula.UseVisualStyleBackColor = true;
             this.btn2SorgulaSorgula.Click += new System.EventHandler(this.btn2SorgulaSorgula_Click);
             // 
-            // txtSorgulaSerino
-            // 
-            this.txtSorgulaSerino.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorgulaSerino.Location = new System.Drawing.Point(612, 84);
-            this.txtSorgulaSerino.Name = "txtSorgulaSerino";
-            this.txtSorgulaSerino.Size = new System.Drawing.Size(183, 22);
-            this.txtSorgulaSerino.TabIndex = 50;
-            // 
             // txtSorgulaEkipmanKod
             // 
             this.txtSorgulaEkipmanKod.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorgulaEkipmanKod.Location = new System.Drawing.Point(612, 29);
+            this.txtSorgulaEkipmanKod.Location = new System.Drawing.Point(178, 120);
             this.txtSorgulaEkipmanKod.Name = "txtSorgulaEkipmanKod";
-            this.txtSorgulaEkipmanKod.Size = new System.Drawing.Size(183, 22);
+            this.txtSorgulaEkipmanKod.Size = new System.Drawing.Size(200, 22);
             this.txtSorgulaEkipmanKod.TabIndex = 49;
             // 
             // lbl2SorgulaEkipmanKodu
             // 
             this.lbl2SorgulaEkipmanKodu.AutoSize = true;
             this.lbl2SorgulaEkipmanKodu.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2SorgulaEkipmanKodu.Location = new System.Drawing.Point(469, 31);
+            this.lbl2SorgulaEkipmanKodu.Location = new System.Drawing.Point(35, 122);
             this.lbl2SorgulaEkipmanKodu.Name = "lbl2SorgulaEkipmanKodu";
             this.lbl2SorgulaEkipmanKodu.Size = new System.Drawing.Size(114, 18);
             this.lbl2SorgulaEkipmanKodu.TabIndex = 48;
@@ -194,9 +174,7 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btn2SorgulaTemizle);
-            this.Controls.Add(this.lbl2SorgulaSerino);
             this.Controls.Add(this.btn2SorgulaSorgula);
-            this.Controls.Add(this.txtSorgulaSerino);
             this.Controls.Add(this.txtSorgulaEkipmanKod);
             this.Controls.Add(this.lbl2SorgulaEkipmanKodu);
             this.Name = "MaintenanceInquire";
@@ -216,9 +194,7 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btn2SorgulaTemizle;
-        private System.Windows.Forms.Label lbl2SorgulaSerino;
         private System.Windows.Forms.Button btn2SorgulaSorgula;
-        private System.Windows.Forms.TextBox txtSorgulaSerino;
         private System.Windows.Forms.TextBox txtSorgulaEkipmanKod;
         private System.Windows.Forms.Label lbl2SorgulaEkipmanKodu;
         private System.Windows.Forms.Label lblBakimİsTuruSorgula;

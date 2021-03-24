@@ -293,4 +293,29 @@
         gg==
 </value>
   </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABJxJREFUSEvF
+        VFtMXFUUJSof+tFSRqYfhRhI+LcatUbl6Uc1adKUN5RCKY9ASmqIDaFSaDRGE8DeNFrAUigUSVu0tCm0
+        PGwREKQm7bQwhgEyvGF4DjADA0S6t3tdZyBIGf90JzvnzL3nrLX32uuOy38Wu9zdXtj/UcBnrx8JVvaH
+        BitvhAcrb0YEKW9FBSlvxwQq7xwNVA4cC1TejQ9Q3jseoLx/wl/5INFf8Uv2V/xT/JSAVD8lKM1POZj+
+        4Xmtl8fLdtjN2LXHzfVQdoLx8IU0Dik6SWdu5XNISTIfLIqijy9F8qGyCD5cEc5HqsIo7HoYR/wYStE1
+        IXz0dijH3QmjhNpwTqqL5IymJPLYp9HYYTdjt7uba+iXccboshRKr8mkyKp4Ott0jkKvhVF4dRhF3Qwl
+        AaNjAna8NpwS6yIp5W40pd2LofT6WPqkPo4yGuIptzmdtJ6vPodA4+Ya+U20MfZGLOd1fE3nH+Zx5oNT
+        HC9gJ+oiOPluFKfei+GTAnaqIY4zGuPpdGMCZzYl8pmfk+js/RQ+dz+V89tO014vj+0EGg9316+qvzBe
+        flzIxY8uUMnjb7lU9x1feVJIFU+LuLLre67qusTXukvoRvdlru4upZ/0ZXxT8pb+Ct3Wl/MdfQU3Gq6T
+        52v7thNotVrX1tZW4/z8PE1NTdHMzAw9HbBSc886tfWt05PBZZqcnKTp6emNFWkymdTzeDY3O0srKyvk
+        4+OzM8HCwgKPTpppZnGNmw3rXKMjqu0i/uUPKw8ODvLo6CgNDQ3x2NgYSW48k2Qh4dXV1Z0J2trajItC
+        0NK7TuW/EZd3POMl25+0vLrOpqkZXltbQ9Li4qIKJMnSMa/YbGSz2dQ93u9I0NnZaVxeXqbfDWaq1y1Q
+        w6NNCfR6PUE+i8VCsyIFViRkEkKSzmlubo6cErS3txuXlpa4r6+PJLm/v58BYrVaWYBYyJFkNpvVFb8F
+        lOWOegbPnRJAIlRiNBpJtIXWaF1NVIcBQhqcwR6JrhxnsP9XAsxgYGAAJFh53mymBdF2SgZoEe3RkTgM
+        e3UW6EzugJTFRc6HDImsFguPjIyQJNzB0jpBNlzGCjkcsiyJLLMgE1KQYW8T6ZwOWQ6oFpyYmGCTJC6I
+        S9AJ3KI6Bns8XxZCGfjf3UgHsCm68fb2dj4DdGD3tqo3clqcZJeCRC4MWp3LmJyZFKeNS1GYmxT2zNPT
+        c48ddjNAsPGhySV8ROPj46pEcAgqxWq3JjyvzgIf2vDwsDoznU7HBQUFtULwkh12Mxwd4GPZkMhk2mJH
+        rNAeBOjAcQYFwdKFFy+2i/7udsit4ZgBAEakIodMqBSJjw0rgFGAdEd9vb2qLSFb5dWrDwV8rx1ue4Dg
+        V9hU3DAq4KIti67qAGHPGakaq1gWeuMdGXp6MFT+obKyw9fXV2uHen44ZgCHoHLoDwnQEdyi2lRmgEGD
+        AF30GgxcVlr6QMC3u+afoRK0tIBAdQyc4nALEn/f+DvGOwwV8uTn5dWJLLvtEM5Do9G8mJqa+nluTk6x
+        mrm5W1Oe5UhmZ2cXZ2VlFcfExHzq5eX1iv36/xUuLn8BVt3pzlQZPg8AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
             // Button Çıkan Yeni
@@ -61,34 +61,15 @@ namespace StockMaintenanceSystem
 
         private void btnCikanKaydet_Click(object sender, EventArgs e)
         {
-            /* int id = 8;
-             SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber=EquipmentStockNumber-1 where EquipmentID=@eqId", conn);
-             cmd.Parameters.AddWithValue("@eqId", id);
-             try
-             {
-                 conn.Open();
-                 cmd.ExecuteNonQuery();
-             }
-             catch (Exception hata)
-             {
-                 MessageBox.Show(hata.ToString());
-             }
+            conn.Open();
 
-             finally
-             {
-                 conn.Close();
-             } */
-            dbStockEntities db = new dbStockEntities();
-            tblEquipmentStock tes = new tblEquipmentStock();
+            SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber-'" +
+                                          int.Parse(txtCikanAdet.Text) + "'where EquipmentCode='" + txtCikanKod.Text + "' ", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Çıkan EKipman Kaydetme İşlemi Başarılı!!");
 
-            int z = Convert.ToInt32(txtCikanAdet.Text);
-            string id = txtCikanKod.Text;
-            int n = Convert.ToInt32(tes.EquipmentStockNumber);
-            var x = db.tblEquipmentStock.Find(id);
-
-            x.EquipmentStockNumber = (" n - z");
-            db.SaveChanges();
-            MessageBox.Show("İşlem Başarılı.");
+            
 
         }
 
@@ -96,6 +77,20 @@ namespace StockMaintenanceSystem
         {
             this.Controls.Clear();
             this.InitializeComponent();
+
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT *FROM tblCategory";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
+
+            SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbCikan.Items.Add(dr["CategoryName"]);
+            }
+            conn.Close();
         }
 
         private void ExtractedStock_Load(object sender, EventArgs e)
@@ -113,6 +108,18 @@ namespace StockMaintenanceSystem
                 cmbCikan.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
+        }
+
+        private void txtCikanSerino_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StockList list = new StockList();
+            list.Show();
+            this.Hide();
         }
     }
 }

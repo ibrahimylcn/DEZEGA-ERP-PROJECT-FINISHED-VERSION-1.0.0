@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\StockMaintenanceSystem",
-    "\\StockMaintenanceSystem\\StockMaintenanceSystem"
+    "\\StockMaintenanceSystem"
   ],
-  "SelectedNode": "\\StockMaintenanceSystem\\StockMaintenanceSystem\\ExtractedStock.cs",
+  "SelectedNode": "\\StockMaintenanceSystem\\StockMaintenanceSystem.sln",
   "PreviewInSolutionExplorer": false
 }

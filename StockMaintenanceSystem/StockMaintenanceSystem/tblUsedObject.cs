@@ -17,6 +17,6 @@ namespace StockMaintenanceSystem
         public int UsedObjectID { get; set; }
         public string UsedObjectName { get; set; }
         public string UsedObjectCode { get; set; }
-        public string NumberOfUsedObject { get; set; }
+        public Nullable<int> NumberOfUsedObject { get; set; }
     }
 }

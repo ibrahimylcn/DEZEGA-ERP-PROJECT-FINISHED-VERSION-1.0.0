@@ -29,7 +29,7 @@
           <Property Name="EquipmentAddedDate" Type="nvarchar" MaxLength="50" />
           <Property Name="EquipmentCategory" Type="nvarchar" MaxLength="50" />
           <Property Name="PurposeWhy" Type="nvarchar" MaxLength="50" />
-          <Property Name="EquipmentStockNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentStockNumber" Type="int" />
         </EntityType>
         <EntityType Name="tblMaintenance">
           <Key>
@@ -60,7 +60,7 @@
           <Property Name="UsedObjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UsedObjectName" Type="nvarchar" MaxLength="50" />
           <Property Name="UsedObjectCode" Type="nvarchar" MaxLength="50" />
-          <Property Name="NumberOfUsedObject" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumberOfUsedObject" Type="int" />
         </EntityType>
         <EntityType Name="tblUser">
           <Key>
@@ -107,7 +107,7 @@
           <Property Name="EquipmentAddedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EquipmentCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PurposeWhy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="EquipmentStockNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentStockNumber" Type="Int32" />
         </EntityType>
         <EntityType Name="tblMaintenance">
           <Key>
@@ -138,7 +138,7 @@
           <Property Name="UsedObjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UsedObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UsedObjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="NumberOfUsedObject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfUsedObject" Type="Int32" />
         </EntityType>
         <EntityType Name="tblUser">
           <Key>
@@ -148,7 +148,7 @@
           <Property Name="Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="dbStockEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="dbStockEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tblCategory" EntityType="Self.tblCategory" />
           <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" />
           <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" />
@@ -161,7 +161,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities">
+        <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities3">
           <EntitySetMapping Name="tblCategory">
             <EntityTypeMapping TypeName="dbStockModel.tblCategory">
               <MappingFragment StoreEntitySet="tblCategory">

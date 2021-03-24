@@ -62,6 +62,7 @@ namespace StockMaintenanceSystem
             this.btnGelenKaydet = new System.Windows.Forms.Button();
             this.lblGelenKategori = new System.Windows.Forms.Label();
             this.txtGelenKod = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGelen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -385,12 +386,28 @@ namespace StockMaintenanceSystem
             this.txtGelenKod.Size = new System.Drawing.Size(121, 20);
             this.txtGelenKod.TabIndex = 33;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(872, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 46);
+            this.button1.TabIndex = 65;
+            this.button1.Text = "LİSTELE";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AddedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtGelenAmacNeden);
             this.Controls.Add(this.btnGelenSorgula);
             this.Controls.Add(this.dataGridViewGelen);
@@ -469,5 +486,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Button btnGelenKaydet;
         private System.Windows.Forms.Label lblGelenKategori;
         private System.Windows.Forms.TextBox txtGelenKod;
+        private System.Windows.Forms.Button button1;
     }
 }
