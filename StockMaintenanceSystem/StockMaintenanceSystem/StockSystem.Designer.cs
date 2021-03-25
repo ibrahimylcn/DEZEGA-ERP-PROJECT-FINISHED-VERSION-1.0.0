@@ -63,6 +63,7 @@ namespace StockMaintenanceSystem
             this.btnYeniSorgula = new System.Windows.Forms.Button();
             this.txtYeniAmacNeden = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYeni)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,9 +80,9 @@ namespace StockMaintenanceSystem
             this.lblYeniKategori.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniKategori.Location = new System.Drawing.Point(38, 24);
             this.lblYeniKategori.Name = "lblYeniKategori";
-            this.lblYeniKategori.Size = new System.Drawing.Size(63, 15);
+            this.lblYeniKategori.Size = new System.Drawing.Size(73, 15);
             this.lblYeniKategori.TabIndex = 1;
-            this.lblYeniKategori.Text = "Kategori:";
+            this.lblYeniKategori.Text = "* Kategori:";
             // 
             // btnYeniKaydet
             // 
@@ -210,9 +211,9 @@ namespace StockMaintenanceSystem
             this.lblYeniAdet.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAdet.Location = new System.Drawing.Point(438, 98);
             this.lblYeniAdet.Name = "lblYeniAdet";
-            this.lblYeniAdet.Size = new System.Drawing.Size(40, 15);
+            this.lblYeniAdet.Size = new System.Drawing.Size(50, 15);
             this.lblYeniAdet.TabIndex = 11;
-            this.lblYeniAdet.Text = "Adet:";
+            this.lblYeniAdet.Text = "* Adet:";
             // 
             // lblYeniSerino
             // 
@@ -220,9 +221,9 @@ namespace StockMaintenanceSystem
             this.lblYeniSerino.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniSerino.Location = new System.Drawing.Point(438, 63);
             this.lblYeniSerino.Name = "lblYeniSerino";
-            this.lblYeniSerino.Size = new System.Drawing.Size(97, 15);
+            this.lblYeniSerino.Size = new System.Drawing.Size(107, 15);
             this.lblYeniSerino.TabIndex = 12;
-            this.lblYeniSerino.Text = "Seri Numarası:";
+            this.lblYeniSerino.Text = "* Seri Numarası:";
             // 
             // lblYeniModel
             // 
@@ -230,9 +231,9 @@ namespace StockMaintenanceSystem
             this.lblYeniModel.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniModel.Location = new System.Drawing.Point(38, 183);
             this.lblYeniModel.Name = "lblYeniModel";
-            this.lblYeniModel.Size = new System.Drawing.Size(106, 15);
+            this.lblYeniModel.Size = new System.Drawing.Size(116, 15);
             this.lblYeniModel.TabIndex = 13;
-            this.lblYeniModel.Text = "Ekipman Model:";
+            this.lblYeniModel.Text = "* Ekipman Model:";
             // 
             // lblYeniMarka
             // 
@@ -240,9 +241,9 @@ namespace StockMaintenanceSystem
             this.lblYeniMarka.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniMarka.Location = new System.Drawing.Point(38, 144);
             this.lblYeniMarka.Name = "lblYeniMarka";
-            this.lblYeniMarka.Size = new System.Drawing.Size(105, 15);
+            this.lblYeniMarka.Size = new System.Drawing.Size(115, 15);
             this.lblYeniMarka.TabIndex = 14;
-            this.lblYeniMarka.Text = "Ekipman Marka:";
+            this.lblYeniMarka.Text = "* Ekipman Marka:";
             // 
             // lblYeniKod
             // 
@@ -250,9 +251,9 @@ namespace StockMaintenanceSystem
             this.lblYeniKod.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniKod.Location = new System.Drawing.Point(38, 63);
             this.lblYeniKod.Name = "lblYeniKod";
-            this.lblYeniKod.Size = new System.Drawing.Size(100, 15);
+            this.lblYeniKod.Size = new System.Drawing.Size(110, 15);
             this.lblYeniKod.TabIndex = 15;
-            this.lblYeniKod.Text = "Ekipman Kodu:";
+            this.lblYeniKod.Text = "* Ekipman Kodu:";
             // 
             // lnlYeniTarih
             // 
@@ -260,9 +261,9 @@ namespace StockMaintenanceSystem
             this.lnlYeniTarih.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnlYeniTarih.Location = new System.Drawing.Point(438, 32);
             this.lnlYeniTarih.Name = "lnlYeniTarih";
-            this.lnlYeniTarih.Size = new System.Drawing.Size(43, 15);
+            this.lnlYeniTarih.Size = new System.Drawing.Size(53, 15);
             this.lnlYeniTarih.TabIndex = 17;
-            this.lnlYeniTarih.Text = "Tarih:";
+            this.lnlYeniTarih.Text = "* Tarih:";
             // 
             // lblYeniAlan
             // 
@@ -270,9 +271,9 @@ namespace StockMaintenanceSystem
             this.lblYeniAlan.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAlan.Location = new System.Drawing.Point(38, 226);
             this.lblYeniAlan.Name = "lblYeniAlan";
-            this.lblYeniAlan.Size = new System.Drawing.Size(109, 15);
+            this.lblYeniAlan.Size = new System.Drawing.Size(119, 15);
             this.lblYeniAlan.TabIndex = 18;
-            this.lblYeniAlan.Text = "Bulunduğu Alan:";
+            this.lblYeniAlan.Text = "* Bulunduğu Alan:";
             // 
             // lblYeniAdi
             // 
@@ -280,9 +281,9 @@ namespace StockMaintenanceSystem
             this.lblYeniAdi.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAdi.Location = new System.Drawing.Point(38, 105);
             this.lblYeniAdi.Name = "lblYeniAdi";
-            this.lblYeniAdi.Size = new System.Drawing.Size(89, 15);
+            this.lblYeniAdi.Size = new System.Drawing.Size(99, 15);
             this.lblYeniAdi.TabIndex = 19;
-            this.lblYeniAdi.Text = "Ekipman Adı:";
+            this.lblYeniAdi.Text = "* Ekipman Adı:";
             // 
             // cmbYeniKategori
             // 
@@ -404,12 +405,23 @@ namespace StockMaintenanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(35, 280);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(175, 13);
+            this.label17.TabIndex = 80;
+            this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
+            // 
             // StockSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtYeniAmacNeden);
             this.Controls.Add(this.btnYeniSorgula);
@@ -490,5 +502,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Button btnYeniSorgula;
         private System.Windows.Forms.TextBox txtYeniAmacNeden;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label17;
     }
 }

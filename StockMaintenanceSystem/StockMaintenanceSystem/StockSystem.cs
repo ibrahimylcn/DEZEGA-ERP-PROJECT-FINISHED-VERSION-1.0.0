@@ -60,7 +60,7 @@ namespace StockMaintenanceSystem
             if (txtYeniAdet.Text == " " || txtYeniAdi.Text == " " || txtYeniAlan.Text == " " || txtYeniKod.Text == " " || txtYeniMarkasi.Text == " " || txtYeniModel.Text == " " || txtYeniSerino.Text == " " || cmbYeniKategori.Text == " " || dTimeYeniTarih.Text == " " ||
                txtYeniAdet.Text == String.Empty || txtYeniAdi.Text == String.Empty || txtYeniAlan.Text == String.Empty || txtYeniKod.Text == String.Empty || txtYeniMarkasi.Text == String.Empty || txtYeniModel.Text == String.Empty || txtYeniSerino.Text == String.Empty || cmbYeniKategori.Text == String.Empty || dTimeYeniTarih.Text == String.Empty)
             {
-                MessageBox.Show("Lütfen Tüm Bilgileri Doldurunuz!!");
+                MessageBox.Show("Lütfen (*) Alan Bilgileri Doldurunuz!!");
             }
             else
             {

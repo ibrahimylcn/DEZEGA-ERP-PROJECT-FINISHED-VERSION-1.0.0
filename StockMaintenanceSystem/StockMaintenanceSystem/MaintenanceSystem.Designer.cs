@@ -54,7 +54,6 @@ namespace StockMaintenanceSystem
             this.dateTimeBakimBaslangic = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtBakimKullanilanParAdi = new System.Windows.Forms.TextBox();
-            this.txtBakimEkipmanAdi = new System.Windows.Forms.TextBox();
             this.txtBakimKisiSayisi = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtBakimKullanilanParSayisi = new System.Windows.Forms.TextBox();
@@ -69,6 +68,7 @@ namespace StockMaintenanceSystem
             this.btn_msorgula = new System.Windows.Forms.Button();
             this.cmbBakımIsalani = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtBakimEkipmanAdi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -198,9 +198,9 @@ namespace StockMaintenanceSystem
             this.lblBakimİsTürü.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimİsTürü.Location = new System.Drawing.Point(98, 278);
             this.lblBakimİsTürü.Name = "lblBakimİsTürü";
-            this.lblBakimİsTürü.Size = new System.Drawing.Size(63, 15);
+            this.lblBakimİsTürü.Size = new System.Drawing.Size(73, 15);
             this.lblBakimİsTürü.TabIndex = 40;
-            this.lblBakimİsTürü.Text = "İş Türü : ";
+            this.lblBakimİsTürü.Text = "* İş Türü : ";
             // 
             // lblBakimİsAlani
             // 
@@ -208,9 +208,9 @@ namespace StockMaintenanceSystem
             this.lblBakimİsAlani.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimİsAlani.Location = new System.Drawing.Point(98, 244);
             this.lblBakimİsAlani.Name = "lblBakimİsAlani";
-            this.lblBakimİsAlani.Size = new System.Drawing.Size(66, 15);
+            this.lblBakimİsAlani.Size = new System.Drawing.Size(76, 15);
             this.lblBakimİsAlani.TabIndex = 36;
-            this.lblBakimİsAlani.Text = "İş Alanı : ";
+            this.lblBakimİsAlani.Text = "* İş Alanı : ";
             // 
             // cmbBakimİletimYolu
             // 
@@ -229,9 +229,9 @@ namespace StockMaintenanceSystem
             this.lblBakimİletimYolu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimİletimYolu.Location = new System.Drawing.Point(98, 211);
             this.lblBakimİletimYolu.Name = "lblBakimİletimYolu";
-            this.lblBakimİletimYolu.Size = new System.Drawing.Size(87, 15);
+            this.lblBakimİletimYolu.Size = new System.Drawing.Size(97, 15);
             this.lblBakimİletimYolu.TabIndex = 34;
-            this.lblBakimİletimYolu.Text = "İletim Yolu : ";
+            this.lblBakimİletimYolu.Text = "* İletim Yolu : ";
             // 
             // txtBakimBitisSaati
             // 
@@ -246,9 +246,9 @@ namespace StockMaintenanceSystem
             this.lblBakimBitisSaati.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimBitisSaati.Location = new System.Drawing.Point(98, 169);
             this.lblBakimBitisSaati.Name = "lblBakimBitisSaati";
-            this.lblBakimBitisSaati.Size = new System.Drawing.Size(84, 15);
+            this.lblBakimBitisSaati.Size = new System.Drawing.Size(94, 15);
             this.lblBakimBitisSaati.TabIndex = 32;
-            this.lblBakimBitisSaati.Text = "Bitiş Saati : ";
+            this.lblBakimBitisSaati.Text = "* Bitiş Saati : ";
             // 
             // lblBakimBitisTarih
             // 
@@ -256,9 +256,9 @@ namespace StockMaintenanceSystem
             this.lblBakimBitisTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimBitisTarih.Location = new System.Drawing.Point(98, 143);
             this.lblBakimBitisTarih.Name = "lblBakimBitisTarih";
-            this.lblBakimBitisTarih.Size = new System.Drawing.Size(88, 15);
+            this.lblBakimBitisTarih.Size = new System.Drawing.Size(98, 15);
             this.lblBakimBitisTarih.TabIndex = 31;
-            this.lblBakimBitisTarih.Text = "Bitiş Tarihi : ";
+            this.lblBakimBitisTarih.Text = "* Bitiş Tarihi : ";
             // 
             // dateTimeBakimBitis
             // 
@@ -282,9 +282,9 @@ namespace StockMaintenanceSystem
             this.lblBakimBaslangicSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimBaslangicSaat.Location = new System.Drawing.Point(98, 108);
             this.lblBakimBaslangicSaat.Name = "lblBakimBaslangicSaat";
-            this.lblBakimBaslangicSaat.Size = new System.Drawing.Size(119, 15);
+            this.lblBakimBaslangicSaat.Size = new System.Drawing.Size(129, 15);
             this.lblBakimBaslangicSaat.TabIndex = 28;
-            this.lblBakimBaslangicSaat.Text = "Başlangıç Saati : ";
+            this.lblBakimBaslangicSaat.Text = "* Başlangıç Saati : ";
             // 
             // lblBakimBaslangicTarih
             // 
@@ -292,9 +292,9 @@ namespace StockMaintenanceSystem
             this.lblBakimBaslangicTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimBaslangicTarih.Location = new System.Drawing.Point(98, 71);
             this.lblBakimBaslangicTarih.Name = "lblBakimBaslangicTarih";
-            this.lblBakimBaslangicTarih.Size = new System.Drawing.Size(123, 15);
+            this.lblBakimBaslangicTarih.Size = new System.Drawing.Size(133, 15);
             this.lblBakimBaslangicTarih.TabIndex = 27;
-            this.lblBakimBaslangicTarih.Text = "Başlangıç Tarihi : ";
+            this.lblBakimBaslangicTarih.Text = "* Başlangıç Tarihi : ";
             // 
             // dateTimeBakimBaslangic
             // 
@@ -306,10 +306,9 @@ namespace StockMaintenanceSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.txtBakimKullanilanParAdi);
             this.panel1.Controls.Add(this.txtBakimEkipmanAdi);
+            this.panel1.Controls.Add(this.txtBakimKullanilanParAdi);
             this.panel1.Controls.Add(this.txtBakimKisiSayisi);
-            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.txtBakimKullanilanParSayisi);
             this.panel1.Controls.Add(this.lblBakimKullanilanParSayisi);
             this.panel1.Controls.Add(this.txtBakimKullanilanParKodu);
@@ -331,13 +330,6 @@ namespace StockMaintenanceSystem
             this.txtBakimKullanilanParAdi.Size = new System.Drawing.Size(143, 20);
             this.txtBakimKullanilanParAdi.TabIndex = 81;
             // 
-            // txtBakimEkipmanAdi
-            // 
-            this.txtBakimEkipmanAdi.Location = new System.Drawing.Point(258, 20);
-            this.txtBakimEkipmanAdi.Name = "txtBakimEkipmanAdi";
-            this.txtBakimEkipmanAdi.Size = new System.Drawing.Size(143, 20);
-            this.txtBakimEkipmanAdi.TabIndex = 80;
-            // 
             // txtBakimKisiSayisi
             // 
             this.txtBakimKisiSayisi.Location = new System.Drawing.Point(258, 94);
@@ -351,11 +343,11 @@ namespace StockMaintenanceSystem
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(678, 132);
+            this.label17.Location = new System.Drawing.Point(749, 321);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(167, 13);
+            this.label17.Size = new System.Drawing.Size(175, 13);
             this.label17.TabIndex = 78;
-            this.label17.Text = "* Bu alanlar boş bırakılamaz.\r\n";
+            this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
             // 
             // txtBakimKullanilanParSayisi
             // 
@@ -408,9 +400,9 @@ namespace StockMaintenanceSystem
             this.lblBakimKisiSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimKisiSayisi.Location = new System.Drawing.Point(100, 94);
             this.lblBakimKisiSayisi.Name = "lblBakimKisiSayisi";
-            this.lblBakimKisiSayisi.Size = new System.Drawing.Size(152, 15);
+            this.lblBakimKisiSayisi.Size = new System.Drawing.Size(162, 15);
             this.lblBakimKisiSayisi.TabIndex = 72;
-            this.lblBakimKisiSayisi.Text = "İşi Yapan Kişi - Kişiler:";
+            this.lblBakimKisiSayisi.Text = "* İşi Yapan Kişi - Kişiler:";
             // 
             // txtBakimEkimpanKodu
             // 
@@ -426,9 +418,9 @@ namespace StockMaintenanceSystem
             this.lblBakimEkipmanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimEkipmanKod.Location = new System.Drawing.Point(100, 56);
             this.lblBakimEkipmanKod.Name = "lblBakimEkipmanKod";
-            this.lblBakimEkipmanKod.Size = new System.Drawing.Size(108, 15);
+            this.lblBakimEkipmanKod.Size = new System.Drawing.Size(118, 15);
             this.lblBakimEkipmanKod.TabIndex = 70;
-            this.lblBakimEkipmanKod.Text = "Ekipman Kodu :";
+            this.lblBakimEkipmanKod.Text = "* Ekipman Kodu :";
             // 
             // lblBakimEkipmanAdi
             // 
@@ -436,9 +428,9 @@ namespace StockMaintenanceSystem
             this.lblBakimEkipmanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimEkipmanAdi.Location = new System.Drawing.Point(100, 25);
             this.lblBakimEkipmanAdi.Name = "lblBakimEkipmanAdi";
-            this.lblBakimEkipmanAdi.Size = new System.Drawing.Size(95, 15);
+            this.lblBakimEkipmanAdi.Size = new System.Drawing.Size(105, 15);
             this.lblBakimEkipmanAdi.TabIndex = 69;
-            this.lblBakimEkipmanAdi.Text = "Ekipman Adı :";
+            this.lblBakimEkipmanAdi.Text = "* Ekipman Adı :";
             // 
             // btn_msorgula
             // 
@@ -481,6 +473,14 @@ namespace StockMaintenanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtBakimEkipmanAdi
+            // 
+            this.txtBakimEkipmanAdi.FormattingEnabled = true;
+            this.txtBakimEkipmanAdi.Location = new System.Drawing.Point(258, 21);
+            this.txtBakimEkipmanAdi.Name = "txtBakimEkipmanAdi";
+            this.txtBakimEkipmanAdi.Size = new System.Drawing.Size(143, 21);
+            this.txtBakimEkipmanAdi.TabIndex = 82;
+            // 
             // MaintenanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,6 +490,7 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbBakımIsalani);
             this.Controls.Add(this.btn_msorgula);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBakimAnasayfa);
             this.Controls.Add(this.btnBakimCikis);
@@ -553,7 +554,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.DateTimePicker dateTimeBakimBaslangic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtBakimKullanilanParAdi;
-        private System.Windows.Forms.TextBox txtBakimEkipmanAdi;
         private System.Windows.Forms.TextBox txtBakimKisiSayisi;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtBakimKullanilanParSayisi;
@@ -568,5 +568,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Button btn_msorgula;
         private System.Windows.Forms.ComboBox cmbBakımIsalani;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox txtBakimEkipmanAdi;
     }
 }

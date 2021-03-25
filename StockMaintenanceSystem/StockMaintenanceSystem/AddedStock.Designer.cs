@@ -63,6 +63,7 @@ namespace StockMaintenanceSystem
             this.lblGelenKategori = new System.Windows.Forms.Label();
             this.txtGelenKod = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGelen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,9 +175,9 @@ namespace StockMaintenanceSystem
             this.lblGelenAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenAdi.Location = new System.Drawing.Point(38, 105);
             this.lblGelenAdi.Name = "lblGelenAdi";
-            this.lblGelenAdi.Size = new System.Drawing.Size(91, 15);
+            this.lblGelenAdi.Size = new System.Drawing.Size(101, 15);
             this.lblGelenAdi.TabIndex = 51;
-            this.lblGelenAdi.Text = "Ekipman Adı:";
+            this.lblGelenAdi.Text = "* Ekipman Adı:";
             // 
             // lblGlenAlan
             // 
@@ -184,9 +185,9 @@ namespace StockMaintenanceSystem
             this.lblGlenAlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGlenAlan.Location = new System.Drawing.Point(38, 226);
             this.lblGlenAlan.Name = "lblGlenAlan";
-            this.lblGlenAlan.Size = new System.Drawing.Size(112, 15);
+            this.lblGlenAlan.Size = new System.Drawing.Size(122, 15);
             this.lblGlenAlan.TabIndex = 50;
-            this.lblGlenAlan.Text = "Bulunduğu Alan:";
+            this.lblGlenAlan.Text = "* Bulunduğu Alan:";
             // 
             // lblGelenTarih
             // 
@@ -194,9 +195,9 @@ namespace StockMaintenanceSystem
             this.lblGelenTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenTarih.Location = new System.Drawing.Point(438, 32);
             this.lblGelenTarih.Name = "lblGelenTarih";
-            this.lblGelenTarih.Size = new System.Drawing.Size(44, 15);
+            this.lblGelenTarih.Size = new System.Drawing.Size(54, 15);
             this.lblGelenTarih.TabIndex = 49;
-            this.lblGelenTarih.Text = "Tarih:";
+            this.lblGelenTarih.Text = "* Tarih:";
             // 
             // lblGelenKod
             // 
@@ -204,9 +205,9 @@ namespace StockMaintenanceSystem
             this.lblGelenKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenKod.Location = new System.Drawing.Point(38, 63);
             this.lblGelenKod.Name = "lblGelenKod";
-            this.lblGelenKod.Size = new System.Drawing.Size(104, 15);
+            this.lblGelenKod.Size = new System.Drawing.Size(114, 15);
             this.lblGelenKod.TabIndex = 48;
-            this.lblGelenKod.Text = "Ekipman Kodu:";
+            this.lblGelenKod.Text = "* Ekipman Kodu:";
             // 
             // lblGelenMarkasi
             // 
@@ -214,9 +215,9 @@ namespace StockMaintenanceSystem
             this.lblGelenMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenMarkasi.Location = new System.Drawing.Point(38, 144);
             this.lblGelenMarkasi.Name = "lblGelenMarkasi";
-            this.lblGelenMarkasi.Size = new System.Drawing.Size(111, 15);
+            this.lblGelenMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblGelenMarkasi.TabIndex = 47;
-            this.lblGelenMarkasi.Text = "Ekipman Marka:";
+            this.lblGelenMarkasi.Text = "* Ekipman Marka:";
             // 
             // lblGelenModel
             // 
@@ -224,9 +225,9 @@ namespace StockMaintenanceSystem
             this.lblGelenModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenModel.Location = new System.Drawing.Point(38, 183);
             this.lblGelenModel.Name = "lblGelenModel";
-            this.lblGelenModel.Size = new System.Drawing.Size(111, 15);
+            this.lblGelenModel.Size = new System.Drawing.Size(121, 15);
             this.lblGelenModel.TabIndex = 46;
-            this.lblGelenModel.Text = "Ekipman Model:";
+            this.lblGelenModel.Text = "* Ekipman Model:";
             // 
             // lblGelenSerino
             // 
@@ -234,9 +235,9 @@ namespace StockMaintenanceSystem
             this.lblGelenSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenSerino.Location = new System.Drawing.Point(438, 63);
             this.lblGelenSerino.Name = "lblGelenSerino";
-            this.lblGelenSerino.Size = new System.Drawing.Size(103, 15);
+            this.lblGelenSerino.Size = new System.Drawing.Size(113, 15);
             this.lblGelenSerino.TabIndex = 45;
-            this.lblGelenSerino.Text = "Seri Numarası:";
+            this.lblGelenSerino.Text = "* Seri Numarası:";
             // 
             // lblGelenAdet
             // 
@@ -244,9 +245,9 @@ namespace StockMaintenanceSystem
             this.lblGelenAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenAdet.Location = new System.Drawing.Point(438, 98);
             this.lblGelenAdet.Name = "lblGelenAdet";
-            this.lblGelenAdet.Size = new System.Drawing.Size(39, 15);
+            this.lblGelenAdet.Size = new System.Drawing.Size(49, 15);
             this.lblGelenAdet.TabIndex = 44;
-            this.lblGelenAdet.Text = "Adet:";
+            this.lblGelenAdet.Text = "* Adet:";
             // 
             // lblGelenFirma
             // 
@@ -375,9 +376,9 @@ namespace StockMaintenanceSystem
             this.lblGelenKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblGelenKategori.Location = new System.Drawing.Point(38, 24);
             this.lblGelenKategori.Name = "lblGelenKategori";
-            this.lblGelenKategori.Size = new System.Drawing.Size(65, 15);
+            this.lblGelenKategori.Size = new System.Drawing.Size(75, 15);
             this.lblGelenKategori.TabIndex = 34;
-            this.lblGelenKategori.Text = "Kategori:";
+            this.lblGelenKategori.Text = "* Kategori:";
             // 
             // txtGelenKod
             // 
@@ -401,12 +402,23 @@ namespace StockMaintenanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(38, 280);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(175, 13);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
+            // 
             // AddedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtGelenAmacNeden);
             this.Controls.Add(this.btnGelenSorgula);
@@ -487,5 +499,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label lblGelenKategori;
         private System.Windows.Forms.TextBox txtGelenKod;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label17;
     }
 }

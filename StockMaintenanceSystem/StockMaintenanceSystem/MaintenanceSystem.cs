@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace StockMaintenanceSystem
 {
@@ -16,13 +17,13 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnBakimKaydet_Click(object sender, EventArgs e)
         {
-            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || txtBakimKullanilanParAdi.Text == " " ||  txtBakimKullanilanParKodu.Text == " " || txtBakimKullanilanParSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " || cmbBakimİletimYolu.Text == " " || cmbBakımIsalani.Text == " " || cmbBakimİsTürü.Text == " " ||
-                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || txtBakimKullanilanParAdi.Text == String.Empty || txtBakimKullanilanParKodu.Text == String.Empty || txtBakimKullanilanParSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text == String.Empty || cmbBakimİletimYolu.Text == String.Empty || cmbBakımIsalani.Text == String.Empty || cmbBakimİsTürü.Text == String.Empty)
+            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " || cmbBakimİletimYolu.Text == " " || cmbBakımIsalani.Text == " " || cmbBakimİsTürü.Text == " " ||
+                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text == String.Empty || cmbBakimİletimYolu.Text == String.Empty || cmbBakımIsalani.Text == String.Empty || cmbBakimİsTürü.Text == String.Empty)
             {
-                MessageBox.Show("Lütfen Tüm Bilgileri Doldurunuz!!");
+                MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }
             else
             {
@@ -47,12 +48,13 @@ namespace StockMaintenanceSystem
 
                 u.UsedObjectCode = txtBakimKullanilanParKodu.Text;
                 u.UsedObjectName = txtBakimKullanilanParAdi.Text;
-                u.NumberOfUsedObject = Convert.ToInt32(txtBakimKullanilanParSayisi.Text);
+                //u.NumberOfUsedObject = Convert.ToInt32(txtBakimKullanilanParSayisi.Text);
 
                 db.tblMaintenance.Add(m);
                 db.tblMaintnncEquipment.Add(me);
                 db.tblUsedObject.Add(u);
                 db.SaveChanges();
+
                 MessageBox.Show("Bakım-Onarım başarıyla kaydedilmiştir.");
             }            
         }
@@ -77,7 +79,19 @@ namespace StockMaintenanceSystem
 
         private void MaintenanceSystem_Load(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT * FROM tblEquipmentStock";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
 
+            SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                txtBakimEkipmanAdi.Items.Add(dr["EquipmentName"]);
+            }
+            conn.Close();
         }
 
         private void btn_msorgula_Click(object sender, EventArgs e)

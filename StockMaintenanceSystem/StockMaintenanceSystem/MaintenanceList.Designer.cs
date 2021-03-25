@@ -86,7 +86,7 @@ namespace StockMaintenanceSystem
             // 
             this.btnBakımListele.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakımListele.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBakımListele.Location = new System.Drawing.Point(473, 42);
+            this.btnBakımListele.Location = new System.Drawing.Point(479, 42);
             this.btnBakımListele.Name = "btnBakımListele";
             this.btnBakımListele.Size = new System.Drawing.Size(247, 46);
             this.btnBakımListele.TabIndex = 51;

@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -49,7 +49,32 @@ namespace StockMaintenanceSystem
 
         private void btn2SorgulaSorgula_Click(object sender, EventArgs e)
         {
+            //conn.Open();
 
+            //string kayit = "SELECT * from tblMaintenance where StartingDate=@tarih";
+            //SqlCommand cmd = new SqlCommand(kayit, conn);
+            //cmd.Parameters.AddWithValue("@tarih", dateTimeBaslangicSorgula.Text);
+
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dataGridView2.DataSource = dt;
+            //conn.Close();
+
+            
+
+            conn.Open();
+
+            string kayit = "SELECT * From tblMaintenance m  INNER JOIN tblMaintnncEquipment me ON m.MaintenanceID = me.mEquipmentID where StartingDate=@tarih or mEquipmentCode=@code ";
+            SqlCommand cmd = new SqlCommand(kayit, conn);
+            cmd.Parameters.AddWithValue("@tarih", dateTimeBaslangicSorgula.Text);
+            cmd.Parameters.AddWithValue("@code", txtSorgulaEkipmanKod.Text);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+            conn.Close();
         }
     }
 }

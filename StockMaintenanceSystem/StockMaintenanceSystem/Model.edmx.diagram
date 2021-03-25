@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5f2356b13333410fb4136d473c9edb4f" Name="Diagram1">
+      <Diagram DiagramId="5f2356b13333410fb4136d473c9edb4f" Name="Diagram1" ZoomLevel="98">
         <EntityTypeShape EntityType="dbStockModel.tblCategory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbStockModel.tblEquipmentStock" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbStockModel.tblMaintenance" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbStockModel.tblMaintnncEquipment" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbStockModel.tblUsedObject" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbStockModel.tblUser" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbStockModel.tblMaintenance" Width="1.5" PointX="5.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbStockModel.tblMaintnncEquipment" Width="1.5" PointX="4.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbStockModel.tblUsedObject" Width="1.5" PointX="0.875" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbStockModel.tblUser" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

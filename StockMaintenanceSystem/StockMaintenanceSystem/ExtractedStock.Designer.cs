@@ -63,6 +63,7 @@ namespace StockMaintenanceSystem
             this.lblCikanKategori = new System.Windows.Forms.Label();
             this.txtCikanKod = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,9 +176,9 @@ namespace StockMaintenanceSystem
             this.lblCikanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanAdi.Location = new System.Drawing.Point(38, 105);
             this.lblCikanAdi.Name = "lblCikanAdi";
-            this.lblCikanAdi.Size = new System.Drawing.Size(91, 15);
+            this.lblCikanAdi.Size = new System.Drawing.Size(101, 15);
             this.lblCikanAdi.TabIndex = 51;
-            this.lblCikanAdi.Text = "Ekipman Adı:";
+            this.lblCikanAdi.Text = "* Ekipman Adı:";
             // 
             // lblCikanAlan
             // 
@@ -185,9 +186,9 @@ namespace StockMaintenanceSystem
             this.lblCikanAlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanAlan.Location = new System.Drawing.Point(38, 226);
             this.lblCikanAlan.Name = "lblCikanAlan";
-            this.lblCikanAlan.Size = new System.Drawing.Size(112, 15);
+            this.lblCikanAlan.Size = new System.Drawing.Size(122, 15);
             this.lblCikanAlan.TabIndex = 50;
-            this.lblCikanAlan.Text = "Bulunduğu Alan:";
+            this.lblCikanAlan.Text = "* Bulunduğu Alan:";
             // 
             // lblCikanTarih
             // 
@@ -195,9 +196,9 @@ namespace StockMaintenanceSystem
             this.lblCikanTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanTarih.Location = new System.Drawing.Point(438, 32);
             this.lblCikanTarih.Name = "lblCikanTarih";
-            this.lblCikanTarih.Size = new System.Drawing.Size(44, 15);
+            this.lblCikanTarih.Size = new System.Drawing.Size(54, 15);
             this.lblCikanTarih.TabIndex = 49;
-            this.lblCikanTarih.Text = "Tarih:";
+            this.lblCikanTarih.Text = "* Tarih:";
             // 
             // lblCikanKod
             // 
@@ -205,9 +206,9 @@ namespace StockMaintenanceSystem
             this.lblCikanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanKod.Location = new System.Drawing.Point(38, 63);
             this.lblCikanKod.Name = "lblCikanKod";
-            this.lblCikanKod.Size = new System.Drawing.Size(104, 15);
+            this.lblCikanKod.Size = new System.Drawing.Size(114, 15);
             this.lblCikanKod.TabIndex = 48;
-            this.lblCikanKod.Text = "Ekipman Kodu:";
+            this.lblCikanKod.Text = "* Ekipman Kodu:";
             // 
             // lblCikanMarkasi
             // 
@@ -215,9 +216,9 @@ namespace StockMaintenanceSystem
             this.lblCikanMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanMarkasi.Location = new System.Drawing.Point(38, 144);
             this.lblCikanMarkasi.Name = "lblCikanMarkasi";
-            this.lblCikanMarkasi.Size = new System.Drawing.Size(111, 15);
+            this.lblCikanMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblCikanMarkasi.TabIndex = 47;
-            this.lblCikanMarkasi.Text = "Ekipman Marka:";
+            this.lblCikanMarkasi.Text = "* Ekipman Marka:";
             // 
             // lblCikanModel
             // 
@@ -225,9 +226,9 @@ namespace StockMaintenanceSystem
             this.lblCikanModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanModel.Location = new System.Drawing.Point(38, 183);
             this.lblCikanModel.Name = "lblCikanModel";
-            this.lblCikanModel.Size = new System.Drawing.Size(111, 15);
+            this.lblCikanModel.Size = new System.Drawing.Size(121, 15);
             this.lblCikanModel.TabIndex = 46;
-            this.lblCikanModel.Text = "Ekipman Model:";
+            this.lblCikanModel.Text = "* Ekipman Model:";
             // 
             // lblCikanSerino
             // 
@@ -235,9 +236,9 @@ namespace StockMaintenanceSystem
             this.lblCikanSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanSerino.Location = new System.Drawing.Point(438, 63);
             this.lblCikanSerino.Name = "lblCikanSerino";
-            this.lblCikanSerino.Size = new System.Drawing.Size(103, 15);
+            this.lblCikanSerino.Size = new System.Drawing.Size(113, 15);
             this.lblCikanSerino.TabIndex = 45;
-            this.lblCikanSerino.Text = "Seri Numarası:";
+            this.lblCikanSerino.Text = "* Seri Numarası:";
             // 
             // lblCikanAdet
             // 
@@ -245,9 +246,9 @@ namespace StockMaintenanceSystem
             this.lblCikanAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanAdet.Location = new System.Drawing.Point(438, 98);
             this.lblCikanAdet.Name = "lblCikanAdet";
-            this.lblCikanAdet.Size = new System.Drawing.Size(39, 15);
+            this.lblCikanAdet.Size = new System.Drawing.Size(49, 15);
             this.lblCikanAdet.TabIndex = 44;
-            this.lblCikanAdet.Text = "Adet:";
+            this.lblCikanAdet.Text = "* Adet:";
             // 
             // lblCikanFirma
             // 
@@ -275,9 +276,9 @@ namespace StockMaintenanceSystem
             this.lblCikanAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanAmacNeden.Location = new System.Drawing.Point(438, 226);
             this.lblCikanAmacNeden.Name = "lblCikanAmacNeden";
-            this.lblCikanAmacNeden.Size = new System.Drawing.Size(93, 15);
+            this.lblCikanAmacNeden.Size = new System.Drawing.Size(103, 15);
             this.lblCikanAmacNeden.TabIndex = 41;
-            this.lblCikanAmacNeden.Text = "Amaç-Neden:";
+            this.lblCikanAmacNeden.Text = "* Amaç-Neden:";
             // 
             // btnCikanCikan
             // 
@@ -376,9 +377,9 @@ namespace StockMaintenanceSystem
             this.lblCikanKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblCikanKategori.Location = new System.Drawing.Point(38, 24);
             this.lblCikanKategori.Name = "lblCikanKategori";
-            this.lblCikanKategori.Size = new System.Drawing.Size(65, 15);
+            this.lblCikanKategori.Size = new System.Drawing.Size(75, 15);
             this.lblCikanKategori.TabIndex = 34;
-            this.lblCikanKategori.Text = "Kategori:";
+            this.lblCikanKategori.Text = "* Kategori:";
             // 
             // txtCikanKod
             // 
@@ -402,12 +403,23 @@ namespace StockMaintenanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(38, 280);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(175, 13);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
+            // 
             // ExtractedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCikanAmacNeden);
             this.Controls.Add(this.btnCikanSorgula);
@@ -488,5 +500,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label lblCikanKategori;
         private System.Windows.Forms.TextBox txtCikanKod;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label17;
     }
 }

@@ -61,15 +61,22 @@ namespace StockMaintenanceSystem
 
         private void btnCikanKaydet_Click(object sender, EventArgs e)
         {
-            conn.Open();
 
-            SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber-'" +
-                                          int.Parse(txtCikanAdet.Text) + "'where EquipmentCode='" + txtCikanKod.Text + "' ", conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Çıkan EKipman Kaydetme İşlemi Başarılı!!");
+            if (cmbCikan.Text == " " || txtCikanKod.Text == " " || txtCikanAdi.Text == " " || txtCikanMarkasi.Text == " " || txtCikanModel.Text == " " || txtCikanAlan.Text == " " || dTimeCikanTarih.Text == " " || txtCikanSerino.Text == " " || txtCikanAdet.Text == " " || txtCikanAmacNeden.Text == " " ||
+                cmbCikan.Text == String.Empty || txtCikanKod.Text == String.Empty || txtCikanAdi.Text == String.Empty || txtCikanMarkasi.Text == String.Empty || txtCikanModel.Text == String.Empty || txtCikanAlan.Text == String.Empty || dTimeCikanTarih.Text == String.Empty || txtCikanSerino.Text == String.Empty || txtCikanAdet.Text == String.Empty || txtCikanAmacNeden.Text == String.Empty)
+            {
+                MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
+            }
+            else
+            {
+                conn.Open();
 
-            
+                SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber-'" +
+                                              int.Parse(txtCikanAdet.Text) + "'where EquipmentCode='" + txtCikanKod.Text + "' ", conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Çıkan EKipman Kaydetme İşlemi Başarılı!!");
+            }           
 
         }
 

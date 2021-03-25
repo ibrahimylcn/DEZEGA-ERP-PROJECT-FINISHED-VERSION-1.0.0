@@ -66,6 +66,10 @@ namespace StockMaintenanceSystem
 
             SqlDataReader dr;
             conn.Open();
+
+
+
+            
             dr = komut.ExecuteReader();
             while (dr.Read())
             {
@@ -76,13 +80,22 @@ namespace StockMaintenanceSystem
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
         {
-            conn.Open();
+            if (cmbGelen.Text == " " || txtGelenKod.Text == " " || txtGelenAdi.Text == " " || txtGelenMarkasi.Text == " " || txtGelenModel.Text == " " || txtGelenAlan.Text == " " || dTimeGelenTarih.Text == " " || txtGelenSerino.Text == " " || txtGelenAdet.Text == " " ||
+                cmbGelen.Text == String.Empty || txtGelenKod.Text == String.Empty || txtGelenAdi.Text == String.Empty || txtGelenMarkasi.Text == String.Empty || txtGelenModel.Text == String.Empty || txtGelenAlan.Text == String.Empty || dTimeGelenTarih.Text == String.Empty || txtGelenSerino.Text == String.Empty || txtGelenAdet.Text == String.Empty )
+            {
+                MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
+            }
+            else
+                    {
+                        conn.Open();
 
-            SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber+'" +
-                                          int.Parse(txtGelenAdet.Text) + "'where EquipmentCode='" + txtGelenKod.Text + "' ", conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Gelen EKipman Kaydetme İşlemi Başarılı!!");
+                        SqlCommand cmd = new SqlCommand("Update tblEquipmentStock set EquipmentStockNumber = EquipmentStockNumber+'" +
+                                                      int.Parse(txtGelenAdet.Text) + "'where EquipmentCode='" + txtGelenKod.Text + "' ", conn);
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                        MessageBox.Show("Gelen EKipman Kaydetme İşlemi Başarılı!!");
+                    }
+            
 
         }
 
