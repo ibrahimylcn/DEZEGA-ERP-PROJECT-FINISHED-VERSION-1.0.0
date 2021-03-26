@@ -37,7 +37,7 @@ namespace StockMaintenanceSystem
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            dbStockEntities3 se = new dbStockEntities3();
+            dbStockEntities4 se = new dbStockEntities4();
             dataGridViewTumunuListele.DataSource = se.tblEquipmentStock.ToList();
         }
     }

@@ -57,28 +57,29 @@ namespace StockMaintenanceSystem
 
         private void btnYeniKaydet_Click(object sender, EventArgs e)
         {
-            if (txtYeniAdet.Text == " " || txtYeniAdi.Text == " " || txtYeniAlan.Text == " " || txtYeniKod.Text == " " || txtYeniMarkasi.Text == " " || txtYeniModel.Text == " " || txtYeniSerino.Text == " " || cmbYeniKategori.Text == " " || dTimeYeniTarih.Text == " " ||
-               txtYeniAdet.Text == String.Empty || txtYeniAdi.Text == String.Empty || txtYeniAlan.Text == String.Empty || txtYeniKod.Text == String.Empty || txtYeniMarkasi.Text == String.Empty || txtYeniModel.Text == String.Empty || txtYeniSerino.Text == String.Empty || cmbYeniKategori.Text == String.Empty || dTimeYeniTarih.Text == String.Empty)
+            if (txtYeniAdet.Text == " " || txtYeniAdi.Text == " " || txtYeniKod.Text == " " || txtYeniAdi.Text == " " ||  txtYeniMarkasi.Text == " " || txtYeniModel.Text == " " || txtYeniSerino.Text == " " || cmbYeniKategori.Text == " " || dTimeYeniTarih.Text == " " ||
+               txtYeniAdet.Text == String.Empty || txtYeniAdi.Text == String.Empty || txtYeniKod.Text == String.Empty || txtYeniAdi.Text == String.Empty ||  txtYeniMarkasi.Text == String.Empty || txtYeniModel.Text == String.Empty || txtYeniSerino.Text == String.Empty || cmbYeniKategori.Text == String.Empty || dTimeYeniTarih.Text == String.Empty)
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgileri Doldurunuz!!");
             }
             else
             {
-                dbStockEntities3 db = new dbStockEntities3();
-                tblEquipmentStock tes = new tblEquipmentStock();
-
-                tes.EquipmentCategory = cmbYeniKategori.Text;
-                tes.EquipmentCode = txtYeniKod.Text;
-                tes.EquipmentName = txtYeniAdi.Text;
-                tes.EquipmentBrand = txtYeniMarkasi.Text;
-                tes.EquipmentModel = txtYeniModel.Text;
-                tes.EquipmentArea = txtYeniAlan.Text;
-                tes.EquipmentAddedDate = dTimeYeniTarih.Text;
-                tes.EquipmentSerialNumber = txtYeniSerino.Text;
-                tes.EquipmentStockNumber = Convert.ToInt32(txtYeniAdet.Text);
-                tes.EquipmentCompany = txtYeniFirma.Text;
-                tes.EquipmentOrderCode = txtYeniSiparisKodu.Text;
-                tes.PurposeWhy = txtYeniAmacNeden.Text;
+                dbStockEntities4 db = new dbStockEntities4();
+                tblEquipmentStock tes = new tblEquipmentStock
+                {
+                    EquipmentCategory = cmbYeniKategori.Text,
+                    EquipmentCode = txtYeniKod.Text,
+                    EquipmentName = txtYeniAdi.Text,
+                    EquipmentBrand = txtYeniMarkasi.Text,
+                    EquipmentModel = txtYeniModel.Text,
+                    //EquipmentArea = txtYeniAlan.Text,
+                    EquipmentAddedDate = dTimeYeniTarih.Text,
+                    EquipmentSerialNumber = txtYeniSerino.Text,
+                    EquipmentStockNumber = Convert.ToInt32(txtYeniAdet.Text),
+                    EquipmentCompany = txtYeniFirma.Text,
+                    EquipmentOrderCode = txtYeniSiparisKodu.Text,
+                    PurposeWhy = txtYeniAmacNeden.Text
+                };
 
                 db.tblEquipmentStock.Add(tes);
                 db.SaveChanges();
@@ -131,7 +132,7 @@ namespace StockMaintenanceSystem
                 cmbYeniKategori.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
-
+           
         }
 
         private void cmbYeniKategori_SelectedIndexChanged(object sender, EventArgs e)
@@ -157,6 +158,11 @@ namespace StockMaintenanceSystem
                 MessageBox.Show("Lütfen Sayı Giriniz!");
             }
                
+        }
+
+        private void dataGridViewYeni_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -30,7 +30,6 @@ namespace StockMaintenanceSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockSystem));
-            this.txtYeniKod = new System.Windows.Forms.TextBox();
             this.lblYeniKategori = new System.Windows.Forms.Label();
             this.btnYeniKaydet = new System.Windows.Forms.Button();
             this.btnYeniAnasayfa = new System.Windows.Forms.Button();
@@ -47,15 +46,12 @@ namespace StockMaintenanceSystem
             this.lblYeniMarka = new System.Windows.Forms.Label();
             this.lblYeniKod = new System.Windows.Forms.Label();
             this.lnlYeniTarih = new System.Windows.Forms.Label();
-            this.lblYeniAlan = new System.Windows.Forms.Label();
             this.lblYeniAdi = new System.Windows.Forms.Label();
             this.cmbYeniKategori = new System.Windows.Forms.ComboBox();
             this.dTimeYeniTarih = new System.Windows.Forms.DateTimePicker();
             this.txtYeniAdet = new System.Windows.Forms.TextBox();
             this.txtYeniModel = new System.Windows.Forms.TextBox();
             this.txtYeniMarkasi = new System.Windows.Forms.TextBox();
-            this.txtYeniAdi = new System.Windows.Forms.TextBox();
-            this.txtYeniAlan = new System.Windows.Forms.TextBox();
             this.txtYeniSiparisKodu = new System.Windows.Forms.TextBox();
             this.txtYeniFirma = new System.Windows.Forms.TextBox();
             this.txtYeniSerino = new System.Windows.Forms.TextBox();
@@ -64,21 +60,16 @@ namespace StockMaintenanceSystem
             this.txtYeniAmacNeden = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtYeniKod = new System.Windows.Forms.TextBox();
+            this.txtYeniAdi = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYeni)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtYeniKod
-            // 
-            this.txtYeniKod.Location = new System.Drawing.Point(193, 62);
-            this.txtYeniKod.Name = "txtYeniKod";
-            this.txtYeniKod.Size = new System.Drawing.Size(121, 20);
-            this.txtYeniKod.TabIndex = 0;
             // 
             // lblYeniKategori
             // 
             this.lblYeniKategori.AutoSize = true;
             this.lblYeniKategori.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniKategori.Location = new System.Drawing.Point(38, 24);
+            this.lblYeniKategori.Location = new System.Drawing.Point(43, 39);
             this.lblYeniKategori.Name = "lblYeniKategori";
             this.lblYeniKategori.Size = new System.Drawing.Size(73, 15);
             this.lblYeniKategori.TabIndex = 1;
@@ -229,7 +220,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblYeniModel.AutoSize = true;
             this.lblYeniModel.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniModel.Location = new System.Drawing.Point(38, 183);
+            this.lblYeniModel.Location = new System.Drawing.Point(43, 198);
             this.lblYeniModel.Name = "lblYeniModel";
             this.lblYeniModel.Size = new System.Drawing.Size(116, 15);
             this.lblYeniModel.TabIndex = 13;
@@ -239,7 +230,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblYeniMarka.AutoSize = true;
             this.lblYeniMarka.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniMarka.Location = new System.Drawing.Point(38, 144);
+            this.lblYeniMarka.Location = new System.Drawing.Point(43, 159);
             this.lblYeniMarka.Name = "lblYeniMarka";
             this.lblYeniMarka.Size = new System.Drawing.Size(115, 15);
             this.lblYeniMarka.TabIndex = 14;
@@ -249,7 +240,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblYeniKod.AutoSize = true;
             this.lblYeniKod.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniKod.Location = new System.Drawing.Point(38, 63);
+            this.lblYeniKod.Location = new System.Drawing.Point(43, 78);
             this.lblYeniKod.Name = "lblYeniKod";
             this.lblYeniKod.Size = new System.Drawing.Size(110, 15);
             this.lblYeniKod.TabIndex = 15;
@@ -265,21 +256,11 @@ namespace StockMaintenanceSystem
             this.lnlYeniTarih.TabIndex = 17;
             this.lnlYeniTarih.Text = "* Tarih:";
             // 
-            // lblYeniAlan
-            // 
-            this.lblYeniAlan.AutoSize = true;
-            this.lblYeniAlan.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAlan.Location = new System.Drawing.Point(38, 226);
-            this.lblYeniAlan.Name = "lblYeniAlan";
-            this.lblYeniAlan.Size = new System.Drawing.Size(119, 15);
-            this.lblYeniAlan.TabIndex = 18;
-            this.lblYeniAlan.Text = "* Bulunduğu Alan:";
-            // 
             // lblYeniAdi
             // 
             this.lblYeniAdi.AutoSize = true;
             this.lblYeniAdi.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAdi.Location = new System.Drawing.Point(38, 105);
+            this.lblYeniAdi.Location = new System.Drawing.Point(43, 120);
             this.lblYeniAdi.Name = "lblYeniAdi";
             this.lblYeniAdi.Size = new System.Drawing.Size(99, 15);
             this.lblYeniAdi.TabIndex = 19;
@@ -288,7 +269,7 @@ namespace StockMaintenanceSystem
             // cmbYeniKategori
             // 
             this.cmbYeniKategori.FormattingEnabled = true;
-            this.cmbYeniKategori.Location = new System.Drawing.Point(193, 24);
+            this.cmbYeniKategori.Location = new System.Drawing.Point(198, 39);
             this.cmbYeniKategori.Name = "cmbYeniKategori";
             this.cmbYeniKategori.Size = new System.Drawing.Size(121, 21);
             this.cmbYeniKategori.TabIndex = 20;
@@ -311,31 +292,17 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniModel
             // 
-            this.txtYeniModel.Location = new System.Drawing.Point(193, 183);
+            this.txtYeniModel.Location = new System.Drawing.Point(198, 198);
             this.txtYeniModel.Name = "txtYeniModel";
             this.txtYeniModel.Size = new System.Drawing.Size(121, 20);
             this.txtYeniModel.TabIndex = 23;
             // 
             // txtYeniMarkasi
             // 
-            this.txtYeniMarkasi.Location = new System.Drawing.Point(193, 144);
+            this.txtYeniMarkasi.Location = new System.Drawing.Point(198, 159);
             this.txtYeniMarkasi.Name = "txtYeniMarkasi";
             this.txtYeniMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtYeniMarkasi.TabIndex = 24;
-            // 
-            // txtYeniAdi
-            // 
-            this.txtYeniAdi.Location = new System.Drawing.Point(193, 105);
-            this.txtYeniAdi.Name = "txtYeniAdi";
-            this.txtYeniAdi.Size = new System.Drawing.Size(121, 20);
-            this.txtYeniAdi.TabIndex = 25;
-            // 
-            // txtYeniAlan
-            // 
-            this.txtYeniAlan.Location = new System.Drawing.Point(193, 226);
-            this.txtYeniAlan.Name = "txtYeniAlan";
-            this.txtYeniAlan.Size = new System.Drawing.Size(121, 20);
-            this.txtYeniAlan.TabIndex = 26;
             // 
             // txtYeniSiparisKodu
             // 
@@ -365,6 +332,7 @@ namespace StockMaintenanceSystem
             this.dataGridViewYeni.Name = "dataGridViewYeni";
             this.dataGridViewYeni.Size = new System.Drawing.Size(807, 208);
             this.dataGridViewYeni.TabIndex = 30;
+            this.dataGridViewYeni.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewYeni_CellContentClick);
             // 
             // btnYeniSorgula
             // 
@@ -415,12 +383,27 @@ namespace StockMaintenanceSystem
             this.label17.TabIndex = 80;
             this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
             // 
+            // txtYeniKod
+            // 
+            this.txtYeniKod.Location = new System.Drawing.Point(198, 77);
+            this.txtYeniKod.Name = "txtYeniKod";
+            this.txtYeniKod.Size = new System.Drawing.Size(121, 20);
+            this.txtYeniKod.TabIndex = 0;
+            // 
+            // txtYeniAdi
+            // 
+            this.txtYeniAdi.Location = new System.Drawing.Point(198, 118);
+            this.txtYeniAdi.Name = "txtYeniAdi";
+            this.txtYeniAdi.Size = new System.Drawing.Size(121, 20);
+            this.txtYeniAdi.TabIndex = 81;
+            // 
             // StockSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.txtYeniAdi);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtYeniAmacNeden);
@@ -429,15 +412,12 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.txtYeniSerino);
             this.Controls.Add(this.txtYeniFirma);
             this.Controls.Add(this.txtYeniSiparisKodu);
-            this.Controls.Add(this.txtYeniAlan);
-            this.Controls.Add(this.txtYeniAdi);
             this.Controls.Add(this.txtYeniMarkasi);
             this.Controls.Add(this.txtYeniModel);
             this.Controls.Add(this.txtYeniAdet);
             this.Controls.Add(this.dTimeYeniTarih);
             this.Controls.Add(this.cmbYeniKategori);
             this.Controls.Add(this.lblYeniAdi);
-            this.Controls.Add(this.lblYeniAlan);
             this.Controls.Add(this.lnlYeniTarih);
             this.Controls.Add(this.lblYeniKod);
             this.Controls.Add(this.lblYeniMarka);
@@ -468,8 +448,6 @@ namespace StockMaintenanceSystem
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtYeniKod;
         private System.Windows.Forms.Label lblYeniKategori;
         private System.Windows.Forms.Button btnYeniKaydet;
         private System.Windows.Forms.Button btnYeniAnasayfa;
@@ -486,15 +464,12 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label lblYeniMarka;
         private System.Windows.Forms.Label lblYeniKod;
         private System.Windows.Forms.Label lnlYeniTarih;
-        private System.Windows.Forms.Label lblYeniAlan;
         private System.Windows.Forms.Label lblYeniAdi;
         private System.Windows.Forms.ComboBox cmbYeniKategori;
         private System.Windows.Forms.DateTimePicker dTimeYeniTarih;
         private System.Windows.Forms.TextBox txtYeniAdet;
         private System.Windows.Forms.TextBox txtYeniModel;
         private System.Windows.Forms.TextBox txtYeniMarkasi;
-        private System.Windows.Forms.TextBox txtYeniAdi;
-        private System.Windows.Forms.TextBox txtYeniAlan;
         private System.Windows.Forms.TextBox txtYeniSiparisKodu;
         private System.Windows.Forms.TextBox txtYeniFirma;
         private System.Windows.Forms.TextBox txtYeniSerino;
@@ -503,5 +478,7 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtYeniAmacNeden;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtYeniKod;
+        private System.Windows.Forms.TextBox txtYeniAdi;
     }
 }

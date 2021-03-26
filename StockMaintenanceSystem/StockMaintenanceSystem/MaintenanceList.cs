@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
             InitializeComponent();
         }
         SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
-        dbStockEntities3 me = new dbStockEntities3();
+        dbStockEntities4 me = new dbStockEntities4();
         private void btnBakımListele_Click(object sender, EventArgs e)
         {
             var list = from x in me.tblMaintenance join y in me.tblMaintnncEquipment
@@ -30,8 +30,6 @@ namespace StockMaintenanceSystem
                            x.StartTime,
                            x.DueDate,
                            x.EndTime,
-                           x.TransmissionRoot,
-                           x.BusinessArea,
                            x.JobType,
                            y.mEquipmentID,
                            y.mEquipmentCode,

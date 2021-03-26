@@ -36,15 +36,12 @@ namespace StockMaintenanceSystem
             this.txtCikanSerino = new System.Windows.Forms.TextBox();
             this.txtCikanFirma = new System.Windows.Forms.TextBox();
             this.txtCikanSiparisKod = new System.Windows.Forms.TextBox();
-            this.txtCikanAlan = new System.Windows.Forms.TextBox();
-            this.txtCikanAdi = new System.Windows.Forms.TextBox();
             this.txtCikanMarkasi = new System.Windows.Forms.TextBox();
             this.txtCikanModel = new System.Windows.Forms.TextBox();
             this.txtCikanAdet = new System.Windows.Forms.TextBox();
             this.dTimeCikanTarih = new System.Windows.Forms.DateTimePicker();
             this.cmbCikan = new System.Windows.Forms.ComboBox();
             this.lblCikanAdi = new System.Windows.Forms.Label();
-            this.lblCikanAlan = new System.Windows.Forms.Label();
             this.lblCikanTarih = new System.Windows.Forms.Label();
             this.lblCikanKod = new System.Windows.Forms.Label();
             this.lblCikanMarkasi = new System.Windows.Forms.Label();
@@ -64,6 +61,7 @@ namespace StockMaintenanceSystem
             this.txtCikanKod = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtCikanAdi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,30 +118,16 @@ namespace StockMaintenanceSystem
             this.txtCikanSiparisKod.Size = new System.Drawing.Size(121, 20);
             this.txtCikanSiparisKod.TabIndex = 59;
             // 
-            // txtCikanAlan
-            // 
-            this.txtCikanAlan.Location = new System.Drawing.Point(193, 226);
-            this.txtCikanAlan.Name = "txtCikanAlan";
-            this.txtCikanAlan.Size = new System.Drawing.Size(121, 20);
-            this.txtCikanAlan.TabIndex = 58;
-            // 
-            // txtCikanAdi
-            // 
-            this.txtCikanAdi.Location = new System.Drawing.Point(193, 105);
-            this.txtCikanAdi.Name = "txtCikanAdi";
-            this.txtCikanAdi.Size = new System.Drawing.Size(121, 20);
-            this.txtCikanAdi.TabIndex = 57;
-            // 
             // txtCikanMarkasi
             // 
-            this.txtCikanMarkasi.Location = new System.Drawing.Point(193, 144);
+            this.txtCikanMarkasi.Location = new System.Drawing.Point(195, 169);
             this.txtCikanMarkasi.Name = "txtCikanMarkasi";
             this.txtCikanMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtCikanMarkasi.TabIndex = 56;
             // 
             // txtCikanModel
             // 
-            this.txtCikanModel.Location = new System.Drawing.Point(193, 183);
+            this.txtCikanModel.Location = new System.Drawing.Point(195, 208);
             this.txtCikanModel.Name = "txtCikanModel";
             this.txtCikanModel.Size = new System.Drawing.Size(121, 20);
             this.txtCikanModel.TabIndex = 55;
@@ -165,7 +149,7 @@ namespace StockMaintenanceSystem
             // cmbCikan
             // 
             this.cmbCikan.FormattingEnabled = true;
-            this.cmbCikan.Location = new System.Drawing.Point(193, 24);
+            this.cmbCikan.Location = new System.Drawing.Point(195, 49);
             this.cmbCikan.Name = "cmbCikan";
             this.cmbCikan.Size = new System.Drawing.Size(121, 21);
             this.cmbCikan.TabIndex = 52;
@@ -174,21 +158,11 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAdi.AutoSize = true;
             this.lblCikanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAdi.Location = new System.Drawing.Point(38, 105);
+            this.lblCikanAdi.Location = new System.Drawing.Point(40, 130);
             this.lblCikanAdi.Name = "lblCikanAdi";
             this.lblCikanAdi.Size = new System.Drawing.Size(101, 15);
             this.lblCikanAdi.TabIndex = 51;
             this.lblCikanAdi.Text = "* Ekipman Adı:";
-            // 
-            // lblCikanAlan
-            // 
-            this.lblCikanAlan.AutoSize = true;
-            this.lblCikanAlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAlan.Location = new System.Drawing.Point(38, 226);
-            this.lblCikanAlan.Name = "lblCikanAlan";
-            this.lblCikanAlan.Size = new System.Drawing.Size(122, 15);
-            this.lblCikanAlan.TabIndex = 50;
-            this.lblCikanAlan.Text = "* Bulunduğu Alan:";
             // 
             // lblCikanTarih
             // 
@@ -204,7 +178,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanKod.AutoSize = true;
             this.lblCikanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanKod.Location = new System.Drawing.Point(38, 63);
+            this.lblCikanKod.Location = new System.Drawing.Point(40, 88);
             this.lblCikanKod.Name = "lblCikanKod";
             this.lblCikanKod.Size = new System.Drawing.Size(114, 15);
             this.lblCikanKod.TabIndex = 48;
@@ -214,7 +188,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanMarkasi.AutoSize = true;
             this.lblCikanMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanMarkasi.Location = new System.Drawing.Point(38, 144);
+            this.lblCikanMarkasi.Location = new System.Drawing.Point(40, 169);
             this.lblCikanMarkasi.Name = "lblCikanMarkasi";
             this.lblCikanMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblCikanMarkasi.TabIndex = 47;
@@ -224,7 +198,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanModel.AutoSize = true;
             this.lblCikanModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanModel.Location = new System.Drawing.Point(38, 183);
+            this.lblCikanModel.Location = new System.Drawing.Point(40, 208);
             this.lblCikanModel.Name = "lblCikanModel";
             this.lblCikanModel.Size = new System.Drawing.Size(121, 15);
             this.lblCikanModel.TabIndex = 46;
@@ -375,7 +349,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanKategori.AutoSize = true;
             this.lblCikanKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanKategori.Location = new System.Drawing.Point(38, 24);
+            this.lblCikanKategori.Location = new System.Drawing.Point(40, 49);
             this.lblCikanKategori.Name = "lblCikanKategori";
             this.lblCikanKategori.Size = new System.Drawing.Size(75, 15);
             this.lblCikanKategori.TabIndex = 34;
@@ -383,7 +357,7 @@ namespace StockMaintenanceSystem
             // 
             // txtCikanKod
             // 
-            this.txtCikanKod.Location = new System.Drawing.Point(193, 62);
+            this.txtCikanKod.Location = new System.Drawing.Point(195, 87);
             this.txtCikanKod.Name = "txtCikanKod";
             this.txtCikanKod.Size = new System.Drawing.Size(121, 20);
             this.txtCikanKod.TabIndex = 33;
@@ -413,12 +387,21 @@ namespace StockMaintenanceSystem
             this.label17.TabIndex = 79;
             this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
             // 
+            // txtCikanAdi
+            // 
+            this.txtCikanAdi.FormattingEnabled = true;
+            this.txtCikanAdi.Location = new System.Drawing.Point(195, 130);
+            this.txtCikanAdi.Name = "txtCikanAdi";
+            this.txtCikanAdi.Size = new System.Drawing.Size(121, 21);
+            this.txtCikanAdi.TabIndex = 80;
+            // 
             // ExtractedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.txtCikanAdi);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCikanAmacNeden);
@@ -427,15 +410,12 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.txtCikanSerino);
             this.Controls.Add(this.txtCikanFirma);
             this.Controls.Add(this.txtCikanSiparisKod);
-            this.Controls.Add(this.txtCikanAlan);
-            this.Controls.Add(this.txtCikanAdi);
             this.Controls.Add(this.txtCikanMarkasi);
             this.Controls.Add(this.txtCikanModel);
             this.Controls.Add(this.txtCikanAdet);
             this.Controls.Add(this.dTimeCikanTarih);
             this.Controls.Add(this.cmbCikan);
             this.Controls.Add(this.lblCikanAdi);
-            this.Controls.Add(this.lblCikanAlan);
             this.Controls.Add(this.lblCikanTarih);
             this.Controls.Add(this.lblCikanKod);
             this.Controls.Add(this.lblCikanMarkasi);
@@ -473,15 +453,12 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtCikanSerino;
         private System.Windows.Forms.TextBox txtCikanFirma;
         private System.Windows.Forms.TextBox txtCikanSiparisKod;
-        private System.Windows.Forms.TextBox txtCikanAlan;
-        private System.Windows.Forms.TextBox txtCikanAdi;
         private System.Windows.Forms.TextBox txtCikanMarkasi;
         private System.Windows.Forms.TextBox txtCikanModel;
         private System.Windows.Forms.TextBox txtCikanAdet;
         private System.Windows.Forms.DateTimePicker dTimeCikanTarih;
         private System.Windows.Forms.ComboBox cmbCikan;
         private System.Windows.Forms.Label lblCikanAdi;
-        private System.Windows.Forms.Label lblCikanAlan;
         private System.Windows.Forms.Label lblCikanTarih;
         private System.Windows.Forms.Label lblCikanKod;
         private System.Windows.Forms.Label lblCikanMarkasi;
@@ -501,5 +478,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtCikanKod;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox txtCikanAdi;
     }
 }

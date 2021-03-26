@@ -65,23 +65,33 @@ namespace StockMaintenanceSystem
             komut.CommandType = CommandType.Text;
 
             SqlDataReader dr;
-            conn.Open();
-
-
-
-            
+            conn.Open();            
             dr = komut.ExecuteReader();
             while (dr.Read())
             {
                 cmbGelen.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
+
+            SqlCommand command = new SqlCommand();
+            komut.CommandText = "SELECT *FROM tblEquipmentStock";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
+
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = komut.ExecuteReader();
+            while (dataReader.Read())
+            {
+                txtGelenAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
         }
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
         {
-            if (cmbGelen.Text == " " || txtGelenKod.Text == " " || txtGelenAdi.Text == " " || txtGelenMarkasi.Text == " " || txtGelenModel.Text == " " || txtGelenAlan.Text == " " || dTimeGelenTarih.Text == " " || txtGelenSerino.Text == " " || txtGelenAdet.Text == " " ||
-                cmbGelen.Text == String.Empty || txtGelenKod.Text == String.Empty || txtGelenAdi.Text == String.Empty || txtGelenMarkasi.Text == String.Empty || txtGelenModel.Text == String.Empty || txtGelenAlan.Text == String.Empty || dTimeGelenTarih.Text == String.Empty || txtGelenSerino.Text == String.Empty || txtGelenAdet.Text == String.Empty )
+            if (cmbGelen.Text == " " || txtGelenKod.Text == " " || txtGelenAdi.Text == " " || txtGelenMarkasi.Text == " " || txtGelenModel.Text == " " || dTimeGelenTarih.Text == " " || txtGelenSerino.Text == " " || txtGelenAdet.Text == " " ||
+                cmbGelen.Text == String.Empty || txtGelenKod.Text == String.Empty || txtGelenAdi.Text == String.Empty || txtGelenMarkasi.Text == String.Empty || txtGelenModel.Text == String.Empty || dTimeGelenTarih.Text == String.Empty || txtGelenSerino.Text == String.Empty || txtGelenAdet.Text == String.Empty )
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }

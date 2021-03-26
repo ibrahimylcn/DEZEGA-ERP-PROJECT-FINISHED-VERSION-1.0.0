@@ -17,7 +17,6 @@ namespace StockMaintenanceSystem
         public int EquipmentID { get; set; }
         public string EquipmentCode { get; set; }
         public string EquipmentName { get; set; }
-        public string EquipmentArea { get; set; }
         public string EquipmentBrand { get; set; }
         public string EquipmentModel { get; set; }
         public string EquipmentSerialNumber { get; set; }

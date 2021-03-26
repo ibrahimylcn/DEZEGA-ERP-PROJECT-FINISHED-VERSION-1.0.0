@@ -27,16 +27,17 @@ namespace StockMaintenanceSystem
             }
             else
             {
-                dbStockEntities3 db = new dbStockEntities3();
-                tblMaintenance m = new tblMaintenance();
+                dbStockEntities4 db = new dbStockEntities4();
+                tblMaintenance m = new tblMaintenance
+                {
+                    StartingDate = dateTimeBakimBaslangic.Text,
+                    StartTime = txtBakimBasSaati.Text,
+                    DueDate = dateTimeBakimBitis.Text,
+                    EndTime = txtBakimBitisSaati.Text,
 
-                m.StartingDate = dateTimeBakimBaslangic.Text;
-                m.StartTime = txtBakimBasSaati.Text;
-                m.DueDate = dateTimeBakimBitis.Text;
-                m.EndTime = txtBakimBitisSaati.Text;
-                m.BusinessArea = cmbBakımIsalani.Text;
-                m.JobType = cmbBakimİsTürü.Text;
-                m.TransmissionRoot = cmbBakimİletimYolu.Text;
+                    JobType = cmbBakimİsTürü.Text
+                };
+
 
                 tblMaintnncEquipment me = new tblMaintnncEquipment();
 

@@ -19,8 +19,6 @@ namespace StockMaintenanceSystem
         public string StartTime { get; set; }
         public string DueDate { get; set; }
         public string EndTime { get; set; }
-        public string TransmissionRoot { get; set; }
-        public string BusinessArea { get; set; }
         public string JobType { get; set; }
     }
 }

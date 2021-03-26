@@ -36,15 +36,12 @@ namespace StockMaintenanceSystem
             this.txtGelenSerino = new System.Windows.Forms.TextBox();
             this.txtGelenFirma = new System.Windows.Forms.TextBox();
             this.txtGelenSiparisKod = new System.Windows.Forms.TextBox();
-            this.txtGelenAlan = new System.Windows.Forms.TextBox();
-            this.txtGelenAdi = new System.Windows.Forms.TextBox();
             this.txtGelenMarkasi = new System.Windows.Forms.TextBox();
             this.txtGelenModel = new System.Windows.Forms.TextBox();
             this.txtGelenAdet = new System.Windows.Forms.TextBox();
             this.dTimeGelenTarih = new System.Windows.Forms.DateTimePicker();
             this.cmbGelen = new System.Windows.Forms.ComboBox();
             this.lblGelenAdi = new System.Windows.Forms.Label();
-            this.lblGlenAlan = new System.Windows.Forms.Label();
             this.lblGelenTarih = new System.Windows.Forms.Label();
             this.lblGelenKod = new System.Windows.Forms.Label();
             this.lblGelenMarkasi = new System.Windows.Forms.Label();
@@ -64,6 +61,7 @@ namespace StockMaintenanceSystem
             this.txtGelenKod = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtGelenAdi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGelen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,30 +117,16 @@ namespace StockMaintenanceSystem
             this.txtGelenSiparisKod.Size = new System.Drawing.Size(121, 20);
             this.txtGelenSiparisKod.TabIndex = 59;
             // 
-            // txtGelenAlan
-            // 
-            this.txtGelenAlan.Location = new System.Drawing.Point(193, 226);
-            this.txtGelenAlan.Name = "txtGelenAlan";
-            this.txtGelenAlan.Size = new System.Drawing.Size(121, 20);
-            this.txtGelenAlan.TabIndex = 58;
-            // 
-            // txtGelenAdi
-            // 
-            this.txtGelenAdi.Location = new System.Drawing.Point(193, 105);
-            this.txtGelenAdi.Name = "txtGelenAdi";
-            this.txtGelenAdi.Size = new System.Drawing.Size(121, 20);
-            this.txtGelenAdi.TabIndex = 57;
-            // 
             // txtGelenMarkasi
             // 
-            this.txtGelenMarkasi.Location = new System.Drawing.Point(193, 144);
+            this.txtGelenMarkasi.Location = new System.Drawing.Point(199, 168);
             this.txtGelenMarkasi.Name = "txtGelenMarkasi";
             this.txtGelenMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtGelenMarkasi.TabIndex = 56;
             // 
             // txtGelenModel
             // 
-            this.txtGelenModel.Location = new System.Drawing.Point(193, 183);
+            this.txtGelenModel.Location = new System.Drawing.Point(199, 207);
             this.txtGelenModel.Name = "txtGelenModel";
             this.txtGelenModel.Size = new System.Drawing.Size(121, 20);
             this.txtGelenModel.TabIndex = 55;
@@ -164,7 +148,7 @@ namespace StockMaintenanceSystem
             // cmbGelen
             // 
             this.cmbGelen.FormattingEnabled = true;
-            this.cmbGelen.Location = new System.Drawing.Point(193, 24);
+            this.cmbGelen.Location = new System.Drawing.Point(199, 48);
             this.cmbGelen.Name = "cmbGelen";
             this.cmbGelen.Size = new System.Drawing.Size(121, 21);
             this.cmbGelen.TabIndex = 52;
@@ -173,21 +157,11 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenAdi.AutoSize = true;
             this.lblGelenAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenAdi.Location = new System.Drawing.Point(38, 105);
+            this.lblGelenAdi.Location = new System.Drawing.Point(44, 129);
             this.lblGelenAdi.Name = "lblGelenAdi";
             this.lblGelenAdi.Size = new System.Drawing.Size(101, 15);
             this.lblGelenAdi.TabIndex = 51;
             this.lblGelenAdi.Text = "* Ekipman Adı:";
-            // 
-            // lblGlenAlan
-            // 
-            this.lblGlenAlan.AutoSize = true;
-            this.lblGlenAlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGlenAlan.Location = new System.Drawing.Point(38, 226);
-            this.lblGlenAlan.Name = "lblGlenAlan";
-            this.lblGlenAlan.Size = new System.Drawing.Size(122, 15);
-            this.lblGlenAlan.TabIndex = 50;
-            this.lblGlenAlan.Text = "* Bulunduğu Alan:";
             // 
             // lblGelenTarih
             // 
@@ -203,7 +177,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenKod.AutoSize = true;
             this.lblGelenKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenKod.Location = new System.Drawing.Point(38, 63);
+            this.lblGelenKod.Location = new System.Drawing.Point(44, 87);
             this.lblGelenKod.Name = "lblGelenKod";
             this.lblGelenKod.Size = new System.Drawing.Size(114, 15);
             this.lblGelenKod.TabIndex = 48;
@@ -213,7 +187,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenMarkasi.AutoSize = true;
             this.lblGelenMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenMarkasi.Location = new System.Drawing.Point(38, 144);
+            this.lblGelenMarkasi.Location = new System.Drawing.Point(44, 168);
             this.lblGelenMarkasi.Name = "lblGelenMarkasi";
             this.lblGelenMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblGelenMarkasi.TabIndex = 47;
@@ -223,7 +197,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenModel.AutoSize = true;
             this.lblGelenModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenModel.Location = new System.Drawing.Point(38, 183);
+            this.lblGelenModel.Location = new System.Drawing.Point(44, 207);
             this.lblGelenModel.Name = "lblGelenModel";
             this.lblGelenModel.Size = new System.Drawing.Size(121, 15);
             this.lblGelenModel.TabIndex = 46;
@@ -374,7 +348,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenKategori.AutoSize = true;
             this.lblGelenKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenKategori.Location = new System.Drawing.Point(38, 24);
+            this.lblGelenKategori.Location = new System.Drawing.Point(44, 48);
             this.lblGelenKategori.Name = "lblGelenKategori";
             this.lblGelenKategori.Size = new System.Drawing.Size(75, 15);
             this.lblGelenKategori.TabIndex = 34;
@@ -382,7 +356,7 @@ namespace StockMaintenanceSystem
             // 
             // txtGelenKod
             // 
-            this.txtGelenKod.Location = new System.Drawing.Point(193, 62);
+            this.txtGelenKod.Location = new System.Drawing.Point(199, 86);
             this.txtGelenKod.Name = "txtGelenKod";
             this.txtGelenKod.Size = new System.Drawing.Size(121, 20);
             this.txtGelenKod.TabIndex = 33;
@@ -412,12 +386,21 @@ namespace StockMaintenanceSystem
             this.label17.TabIndex = 79;
             this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
             // 
+            // txtGelenAdi
+            // 
+            this.txtGelenAdi.FormattingEnabled = true;
+            this.txtGelenAdi.Location = new System.Drawing.Point(199, 128);
+            this.txtGelenAdi.Name = "txtGelenAdi";
+            this.txtGelenAdi.Size = new System.Drawing.Size(121, 21);
+            this.txtGelenAdi.TabIndex = 80;
+            // 
             // AddedStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
+            this.Controls.Add(this.txtGelenAdi);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtGelenAmacNeden);
@@ -426,15 +409,12 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.txtGelenSerino);
             this.Controls.Add(this.txtGelenFirma);
             this.Controls.Add(this.txtGelenSiparisKod);
-            this.Controls.Add(this.txtGelenAlan);
-            this.Controls.Add(this.txtGelenAdi);
             this.Controls.Add(this.txtGelenMarkasi);
             this.Controls.Add(this.txtGelenModel);
             this.Controls.Add(this.txtGelenAdet);
             this.Controls.Add(this.dTimeGelenTarih);
             this.Controls.Add(this.cmbGelen);
             this.Controls.Add(this.lblGelenAdi);
-            this.Controls.Add(this.lblGlenAlan);
             this.Controls.Add(this.lblGelenTarih);
             this.Controls.Add(this.lblGelenKod);
             this.Controls.Add(this.lblGelenMarkasi);
@@ -472,15 +452,12 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtGelenSerino;
         private System.Windows.Forms.TextBox txtGelenFirma;
         private System.Windows.Forms.TextBox txtGelenSiparisKod;
-        private System.Windows.Forms.TextBox txtGelenAlan;
-        private System.Windows.Forms.TextBox txtGelenAdi;
         private System.Windows.Forms.TextBox txtGelenMarkasi;
         private System.Windows.Forms.TextBox txtGelenModel;
         private System.Windows.Forms.TextBox txtGelenAdet;
         private System.Windows.Forms.DateTimePicker dTimeGelenTarih;
         private System.Windows.Forms.ComboBox cmbGelen;
         private System.Windows.Forms.Label lblGelenAdi;
-        private System.Windows.Forms.Label lblGlenAlan;
         private System.Windows.Forms.Label lblGelenTarih;
         private System.Windows.Forms.Label lblGelenKod;
         private System.Windows.Forms.Label lblGelenMarkasi;
@@ -500,5 +477,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtGelenKod;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox txtGelenAdi;
     }
 }
