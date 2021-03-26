@@ -61,7 +61,7 @@ namespace StockMaintenanceSystem
             this.txtCikanKod = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtCikanAdi = new System.Windows.Forms.ComboBox();
+            this.cmbCikanAdi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@ namespace StockMaintenanceSystem
             // btnCikanSorgula
             // 
             this.btnCikanSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanSorgula.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanSorgula.Image")));
             this.btnCikanSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCikanSorgula.Location = new System.Drawing.Point(872, 158);
@@ -120,14 +120,14 @@ namespace StockMaintenanceSystem
             // 
             // txtCikanMarkasi
             // 
-            this.txtCikanMarkasi.Location = new System.Drawing.Point(195, 169);
+            this.txtCikanMarkasi.Location = new System.Drawing.Point(195, 178);
             this.txtCikanMarkasi.Name = "txtCikanMarkasi";
             this.txtCikanMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtCikanMarkasi.TabIndex = 56;
             // 
             // txtCikanModel
             // 
-            this.txtCikanModel.Location = new System.Drawing.Point(195, 208);
+            this.txtCikanModel.Location = new System.Drawing.Point(195, 221);
             this.txtCikanModel.Name = "txtCikanModel";
             this.txtCikanModel.Size = new System.Drawing.Size(121, 20);
             this.txtCikanModel.TabIndex = 55;
@@ -158,7 +158,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAdi.AutoSize = true;
             this.lblCikanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAdi.Location = new System.Drawing.Point(40, 130);
+            this.lblCikanAdi.Location = new System.Drawing.Point(40, 92);
             this.lblCikanAdi.Name = "lblCikanAdi";
             this.lblCikanAdi.Size = new System.Drawing.Size(101, 15);
             this.lblCikanAdi.TabIndex = 51;
@@ -178,7 +178,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanKod.AutoSize = true;
             this.lblCikanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanKod.Location = new System.Drawing.Point(40, 88);
+            this.lblCikanKod.Location = new System.Drawing.Point(40, 136);
             this.lblCikanKod.Name = "lblCikanKod";
             this.lblCikanKod.Size = new System.Drawing.Size(114, 15);
             this.lblCikanKod.TabIndex = 48;
@@ -188,7 +188,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanMarkasi.AutoSize = true;
             this.lblCikanMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanMarkasi.Location = new System.Drawing.Point(40, 169);
+            this.lblCikanMarkasi.Location = new System.Drawing.Point(40, 183);
             this.lblCikanMarkasi.Name = "lblCikanMarkasi";
             this.lblCikanMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblCikanMarkasi.TabIndex = 47;
@@ -198,7 +198,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanModel.AutoSize = true;
             this.lblCikanModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanModel.Location = new System.Drawing.Point(40, 208);
+            this.lblCikanModel.Location = new System.Drawing.Point(40, 226);
             this.lblCikanModel.Name = "lblCikanModel";
             this.lblCikanModel.Size = new System.Drawing.Size(121, 15);
             this.lblCikanModel.TabIndex = 46;
@@ -218,7 +218,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAdet.AutoSize = true;
             this.lblCikanAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAdet.Location = new System.Drawing.Point(438, 98);
+            this.lblCikanAdet.Location = new System.Drawing.Point(438, 105);
             this.lblCikanAdet.Name = "lblCikanAdet";
             this.lblCikanAdet.Size = new System.Drawing.Size(49, 15);
             this.lblCikanAdet.TabIndex = 44;
@@ -228,7 +228,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanFirma.AutoSize = true;
             this.lblCikanFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanFirma.Location = new System.Drawing.Point(438, 141);
+            this.lblCikanFirma.Location = new System.Drawing.Point(448, 146);
             this.lblCikanFirma.Name = "lblCikanFirma";
             this.lblCikanFirma.Size = new System.Drawing.Size(48, 15);
             this.lblCikanFirma.TabIndex = 43;
@@ -238,7 +238,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanSiparisKod.AutoSize = true;
             this.lblCikanSiparisKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanSiparisKod.Location = new System.Drawing.Point(438, 183);
+            this.lblCikanSiparisKod.Location = new System.Drawing.Point(448, 183);
             this.lblCikanSiparisKod.Name = "lblCikanSiparisKod";
             this.lblCikanSiparisKod.Size = new System.Drawing.Size(93, 15);
             this.lblCikanSiparisKod.TabIndex = 42;
@@ -257,7 +257,7 @@ namespace StockMaintenanceSystem
             // btnCikanCikan
             // 
             this.btnCikanCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanCikan.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanCikan.Image")));
             this.btnCikanCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCikanCikan.Location = new System.Drawing.Point(872, 105);
@@ -272,7 +272,7 @@ namespace StockMaintenanceSystem
             // btnCikanGelen
             // 
             this.btnCikanGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanGelen.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanGelen.Image")));
             this.btnCikanGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCikanGelen.Location = new System.Drawing.Point(872, 53);
@@ -287,7 +287,7 @@ namespace StockMaintenanceSystem
             // btnCikanYeni
             // 
             this.btnCikanYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanYeni.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCikanYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanYeni.Image")));
             this.btnCikanYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -303,7 +303,7 @@ namespace StockMaintenanceSystem
             // BtnCikanTemizle
             // 
             this.BtnCikanTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnCikanTemizle.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikanTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikanTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnCikanTemizle.Image")));
             this.BtnCikanTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCikanTemizle.Location = new System.Drawing.Point(872, 369);
@@ -318,7 +318,7 @@ namespace StockMaintenanceSystem
             // btnCikanAnasayfa
             // 
             this.btnCikanAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanAnasayfa.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanAnasayfa.Image")));
             this.btnCikanAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCikanAnasayfa.Location = new System.Drawing.Point(872, 436);
@@ -333,7 +333,7 @@ namespace StockMaintenanceSystem
             // btnCikanKaydet
             // 
             this.btnCikanKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCikanKaydet.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikanKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanKaydet.Image")));
             this.btnCikanKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCikanKaydet.Location = new System.Drawing.Point(872, 299);
@@ -357,7 +357,7 @@ namespace StockMaintenanceSystem
             // 
             // txtCikanKod
             // 
-            this.txtCikanKod.Location = new System.Drawing.Point(195, 87);
+            this.txtCikanKod.Location = new System.Drawing.Point(195, 131);
             this.txtCikanKod.Name = "txtCikanKod";
             this.txtCikanKod.Size = new System.Drawing.Size(121, 20);
             this.txtCikanKod.TabIndex = 33;
@@ -365,7 +365,7 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(872, 210);
@@ -387,13 +387,13 @@ namespace StockMaintenanceSystem
             this.label17.TabIndex = 79;
             this.label17.Text = "(*) Bu alanlar boş bırakılamaz.\r\n";
             // 
-            // txtCikanAdi
+            // cmbCikanAdi
             // 
-            this.txtCikanAdi.FormattingEnabled = true;
-            this.txtCikanAdi.Location = new System.Drawing.Point(195, 130);
-            this.txtCikanAdi.Name = "txtCikanAdi";
-            this.txtCikanAdi.Size = new System.Drawing.Size(121, 21);
-            this.txtCikanAdi.TabIndex = 80;
+            this.cmbCikanAdi.FormattingEnabled = true;
+            this.cmbCikanAdi.Location = new System.Drawing.Point(195, 91);
+            this.cmbCikanAdi.Name = "cmbCikanAdi";
+            this.cmbCikanAdi.Size = new System.Drawing.Size(121, 21);
+            this.cmbCikanAdi.TabIndex = 80;
             // 
             // ExtractedStock
             // 
@@ -401,7 +401,7 @@ namespace StockMaintenanceSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1017, 511);
-            this.Controls.Add(this.txtCikanAdi);
+            this.Controls.Add(this.cmbCikanAdi);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCikanAmacNeden);
@@ -478,6 +478,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.TextBox txtCikanKod;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox txtCikanAdi;
+        private System.Windows.Forms.ComboBox cmbCikanAdi;
     }
 }

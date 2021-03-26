@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
@@ -45,9 +45,9 @@ namespace StockMaintenanceSystem
         {
             conn.Open();
 
-            string kayit = "SELECT * from tblEquipmentStock where EquipmentCode=@code";
+            string kayit = "SELECT * from tblEquipmentStock where EquipmentCode=@ad";
             SqlCommand cmd = new SqlCommand(kayit, conn);
-            cmd.Parameters.AddWithValue("@code", txtSorgulaEkipmanKod.Text);
+            cmd.Parameters.AddWithValue("@ad", cmbSorgulaEkipmanAdi.Text);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

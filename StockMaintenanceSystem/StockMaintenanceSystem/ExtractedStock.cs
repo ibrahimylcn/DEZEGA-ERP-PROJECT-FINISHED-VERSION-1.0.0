@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
             // Button Çıkan Yeni
@@ -62,8 +62,8 @@ namespace StockMaintenanceSystem
         private void btnCikanKaydet_Click(object sender, EventArgs e)
         {
 
-            if (cmbCikan.Text == " " || txtCikanKod.Text == " " || txtCikanAdi.Text == " " || txtCikanMarkasi.Text == " " || txtCikanModel.Text == " " || dTimeCikanTarih.Text == " " || txtCikanSerino.Text == " " || txtCikanAdet.Text == " " || txtCikanAmacNeden.Text == " " ||
-                cmbCikan.Text == String.Empty || txtCikanKod.Text == String.Empty || txtCikanAdi.Text == String.Empty || txtCikanMarkasi.Text == String.Empty || txtCikanModel.Text == String.Empty || dTimeCikanTarih.Text == String.Empty || txtCikanSerino.Text == String.Empty || txtCikanAdet.Text == String.Empty || txtCikanAmacNeden.Text == String.Empty)
+            if (cmbCikan.Text == " " || txtCikanKod.Text == " " || cmbCikanAdi.Text == " " || txtCikanMarkasi.Text == " " || txtCikanModel.Text == " " || dTimeCikanTarih.Text == " " || txtCikanSerino.Text == " " || txtCikanAdet.Text == " " || txtCikanAmacNeden.Text == " " ||
+                cmbCikan.Text == String.Empty || txtCikanKod.Text == String.Empty || cmbCikanAdi.Text == String.Empty || txtCikanMarkasi.Text == String.Empty || txtCikanModel.Text == String.Empty || dTimeCikanTarih.Text == String.Empty || txtCikanSerino.Text == String.Empty || txtCikanAdet.Text == String.Empty || txtCikanAmacNeden.Text == String.Empty)
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }
@@ -126,7 +126,7 @@ namespace StockMaintenanceSystem
             dataReader = komut.ExecuteReader();
             while (dataReader.Read())
             {
-                txtCikanAdi.Items.Add(dataReader["EquipmentName"]);
+                cmbCikanAdi.Items.Add(dataReader["EquipmentName"]);
             }
             conn.Close();
         }

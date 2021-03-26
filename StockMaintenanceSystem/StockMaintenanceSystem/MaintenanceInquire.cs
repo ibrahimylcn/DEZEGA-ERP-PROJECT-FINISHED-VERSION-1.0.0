@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -65,10 +65,10 @@ namespace StockMaintenanceSystem
 
             conn.Open();
 
-            string kayit = "SELECT * From tblMaintenance m  INNER JOIN tblMaintnncEquipment me ON m.MaintenanceID = me.mEquipmentID where StartingDate=@tarih or mEquipmentCode=@code ";
+            string kayit = "SELECT * From tblMaintenance m  INNER JOIN tblMaintnncEquipment me ON m.MaintenanceID = me.mEquipmentID where StartingDate=@tarih and mEquipmentName=@ad ";
             SqlCommand cmd = new SqlCommand(kayit, conn);
             cmd.Parameters.AddWithValue("@tarih", dateTimeBaslangicSorgula.Text);
-            cmd.Parameters.AddWithValue("@code", txtSorgulaEkipmanKod.Text);
+            cmd.Parameters.AddWithValue("@ad", txtSorgulaEkipmanAdi.Text);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

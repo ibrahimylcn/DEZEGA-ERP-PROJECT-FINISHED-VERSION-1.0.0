@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
             // Buton Gelen
@@ -83,15 +83,15 @@ namespace StockMaintenanceSystem
             dataReader = komut.ExecuteReader();
             while (dataReader.Read())
             {
-                txtGelenAdi.Items.Add(dataReader["EquipmentName"]);
+                cmbGelenAdi.Items.Add(dataReader["EquipmentName"]);
             }
             conn.Close();
         }
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
         {
-            if (cmbGelen.Text == " " || txtGelenKod.Text == " " || txtGelenAdi.Text == " " || txtGelenMarkasi.Text == " " || txtGelenModel.Text == " " || dTimeGelenTarih.Text == " " || txtGelenSerino.Text == " " || txtGelenAdet.Text == " " ||
-                cmbGelen.Text == String.Empty || txtGelenKod.Text == String.Empty || txtGelenAdi.Text == String.Empty || txtGelenMarkasi.Text == String.Empty || txtGelenModel.Text == String.Empty || dTimeGelenTarih.Text == String.Empty || txtGelenSerino.Text == String.Empty || txtGelenAdet.Text == String.Empty )
+            if (cmbGelen.Text == " " || txtGelenKod.Text == " " || cmbGelenAdi.Text == " " || txtGelenMarkasi.Text == " " || txtGelenModel.Text == " " || dTimeGelenTarih.Text == " " || txtGelenSerino.Text == " " || txtGelenAdet.Text == " " ||
+                cmbGelen.Text == String.Empty || txtGelenKod.Text == String.Empty || cmbGelenAdi.Text == String.Empty || txtGelenMarkasi.Text == String.Empty || txtGelenModel.Text == String.Empty || dTimeGelenTarih.Text == String.Empty || txtGelenSerino.Text == String.Empty || txtGelenAdet.Text == String.Empty )
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }

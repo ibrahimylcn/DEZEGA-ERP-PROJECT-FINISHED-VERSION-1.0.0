@@ -79,3 +79,5 @@ C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMainte
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.csproj.CopyComplete
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.MaintenanceList.resources
 C:\Users\Bartu\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.StockList.resources
+C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.MaintenanceList.resources
+C:\Users\user\Source\Repos\dezegaStockSystem\StockMaintenanceSystem\StockMaintenanceSystem\obj\Debug\StockMaintenanceSystem.StockList.resources

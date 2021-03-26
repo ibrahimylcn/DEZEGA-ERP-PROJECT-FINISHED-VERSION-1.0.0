@@ -17,11 +17,11 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
         private void btnBakimKaydet_Click(object sender, EventArgs e)
         {
-            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " || cmbBakimİletimYolu.Text == " " || cmbBakımIsalani.Text == " " || cmbBakimİsTürü.Text == " " ||
-                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text == String.Empty || cmbBakimİletimYolu.Text == String.Empty || cmbBakımIsalani.Text == String.Empty || cmbBakimİsTürü.Text == String.Empty)
+            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " ||  cmbBakimİsTürü.Text == " " ||
+                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text  == String.Empty || cmbBakimİsTürü.Text == String.Empty)
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }
@@ -93,6 +93,20 @@ namespace StockMaintenanceSystem
                 txtBakimEkipmanAdi.Items.Add(dr["EquipmentName"]);
             }
             conn.Close();
+
+            SqlCommand cmd = new SqlCommand();
+            komut.CommandText = "SELECT *FROM tblCategory";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
+
+            SqlDataReader drr;
+            conn.Open();
+            drr = komut.ExecuteReader();
+            while (drr.Read())
+            {
+                cmbBakimİsTürü.Items.Add(drr["CategoryName"]);
+            }
+            conn.Close();
         }
 
         private void btn_msorgula_Click(object sender, EventArgs e)
@@ -133,6 +147,11 @@ namespace StockMaintenanceSystem
         private void txtBakimKullanilanParSayisi_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void lblBakimİsTürü_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

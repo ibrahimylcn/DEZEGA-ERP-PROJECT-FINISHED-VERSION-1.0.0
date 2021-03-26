@@ -68,17 +68,17 @@ namespace StockMaintenanceSystem
             // lblYeniKategori
             // 
             this.lblYeniKategori.AutoSize = true;
-            this.lblYeniKategori.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniKategori.Location = new System.Drawing.Point(43, 39);
             this.lblYeniKategori.Name = "lblYeniKategori";
-            this.lblYeniKategori.Size = new System.Drawing.Size(73, 15);
+            this.lblYeniKategori.Size = new System.Drawing.Size(80, 16);
             this.lblYeniKategori.TabIndex = 1;
             this.lblYeniKategori.Text = "* Kategori:";
             // 
             // btnYeniKaydet
             // 
             this.btnYeniKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeniKaydet.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniKaydet.Image")));
             this.btnYeniKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnYeniKaydet.Location = new System.Drawing.Point(872, 299);
@@ -93,7 +93,7 @@ namespace StockMaintenanceSystem
             // btnYeniAnasayfa
             // 
             this.btnYeniAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeniAnasayfa.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniAnasayfa.Image")));
             this.btnYeniAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnYeniAnasayfa.Location = new System.Drawing.Point(872, 437);
@@ -108,7 +108,7 @@ namespace StockMaintenanceSystem
             // BtnYeniTemizle
             // 
             this.BtnYeniTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnYeniTemizle.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnYeniTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnYeniTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnYeniTemizle.Image")));
             this.BtnYeniTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnYeniTemizle.Location = new System.Drawing.Point(872, 369);
@@ -123,7 +123,7 @@ namespace StockMaintenanceSystem
             // btnYeni
             // 
             this.btnYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeni.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnYeni.Image")));
             this.btnYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -139,7 +139,7 @@ namespace StockMaintenanceSystem
             // btnYeniGelen
             // 
             this.btnYeniGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeniGelen.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniGelen.Image")));
             this.btnYeniGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnYeniGelen.Location = new System.Drawing.Point(872, 57);
@@ -154,7 +154,7 @@ namespace StockMaintenanceSystem
             // btnYeniCikan
             // 
             this.btnYeniCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeniCikan.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniCikan.Image")));
             this.btnYeniCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnYeniCikan.Location = new System.Drawing.Point(872, 109);
@@ -169,100 +169,100 @@ namespace StockMaintenanceSystem
             // lblYeniAmacNeden
             // 
             this.lblYeniAmacNeden.AutoSize = true;
-            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAmacNeden.Location = new System.Drawing.Point(438, 226);
             this.lblYeniAmacNeden.Name = "lblYeniAmacNeden";
-            this.lblYeniAmacNeden.Size = new System.Drawing.Size(90, 15);
+            this.lblYeniAmacNeden.Size = new System.Drawing.Size(102, 16);
             this.lblYeniAmacNeden.TabIndex = 8;
             this.lblYeniAmacNeden.Text = "Amaç-Neden:";
             // 
             // lblYeniSiparisKodu
             // 
             this.lblYeniSiparisKodu.AutoSize = true;
-            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniSiparisKodu.Location = new System.Drawing.Point(438, 183);
             this.lblYeniSiparisKodu.Name = "lblYeniSiparisKodu";
-            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(88, 15);
+            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(100, 16);
             this.lblYeniSiparisKodu.TabIndex = 9;
             this.lblYeniSiparisKodu.Text = "Sipariş Kodu:";
             // 
             // lblYeniFirma
             // 
             this.lblYeniFirma.AutoSize = true;
-            this.lblYeniFirma.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniFirma.Location = new System.Drawing.Point(438, 141);
             this.lblYeniFirma.Name = "lblYeniFirma";
-            this.lblYeniFirma.Size = new System.Drawing.Size(46, 15);
+            this.lblYeniFirma.Size = new System.Drawing.Size(51, 16);
             this.lblYeniFirma.TabIndex = 10;
             this.lblYeniFirma.Text = "Firma:";
             // 
             // lblYeniAdet
             // 
             this.lblYeniAdet.AutoSize = true;
-            this.lblYeniAdet.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniAdet.Location = new System.Drawing.Point(438, 98);
             this.lblYeniAdet.Name = "lblYeniAdet";
-            this.lblYeniAdet.Size = new System.Drawing.Size(50, 15);
+            this.lblYeniAdet.Size = new System.Drawing.Size(54, 16);
             this.lblYeniAdet.TabIndex = 11;
             this.lblYeniAdet.Text = "* Adet:";
             // 
             // lblYeniSerino
             // 
             this.lblYeniSerino.AutoSize = true;
-            this.lblYeniSerino.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniSerino.Location = new System.Drawing.Point(438, 63);
             this.lblYeniSerino.Name = "lblYeniSerino";
-            this.lblYeniSerino.Size = new System.Drawing.Size(107, 15);
+            this.lblYeniSerino.Size = new System.Drawing.Size(120, 16);
             this.lblYeniSerino.TabIndex = 12;
             this.lblYeniSerino.Text = "* Seri Numarası:";
             // 
             // lblYeniModel
             // 
             this.lblYeniModel.AutoSize = true;
-            this.lblYeniModel.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniModel.Location = new System.Drawing.Point(43, 198);
             this.lblYeniModel.Name = "lblYeniModel";
-            this.lblYeniModel.Size = new System.Drawing.Size(116, 15);
+            this.lblYeniModel.Size = new System.Drawing.Size(129, 16);
             this.lblYeniModel.TabIndex = 13;
             this.lblYeniModel.Text = "* Ekipman Model:";
             // 
             // lblYeniMarka
             // 
             this.lblYeniMarka.AutoSize = true;
-            this.lblYeniMarka.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeniMarka.Location = new System.Drawing.Point(43, 159);
             this.lblYeniMarka.Name = "lblYeniMarka";
-            this.lblYeniMarka.Size = new System.Drawing.Size(115, 15);
+            this.lblYeniMarka.Size = new System.Drawing.Size(129, 16);
             this.lblYeniMarka.TabIndex = 14;
             this.lblYeniMarka.Text = "* Ekipman Marka:";
             // 
             // lblYeniKod
             // 
             this.lblYeniKod.AutoSize = true;
-            this.lblYeniKod.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniKod.Location = new System.Drawing.Point(43, 78);
+            this.lblYeniKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniKod.Location = new System.Drawing.Point(43, 122);
             this.lblYeniKod.Name = "lblYeniKod";
-            this.lblYeniKod.Size = new System.Drawing.Size(110, 15);
+            this.lblYeniKod.Size = new System.Drawing.Size(121, 16);
             this.lblYeniKod.TabIndex = 15;
             this.lblYeniKod.Text = "* Ekipman Kodu:";
             // 
             // lnlYeniTarih
             // 
             this.lnlYeniTarih.AutoSize = true;
-            this.lnlYeniTarih.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnlYeniTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnlYeniTarih.Location = new System.Drawing.Point(438, 32);
             this.lnlYeniTarih.Name = "lnlYeniTarih";
-            this.lnlYeniTarih.Size = new System.Drawing.Size(53, 15);
+            this.lnlYeniTarih.Size = new System.Drawing.Size(58, 16);
             this.lnlYeniTarih.TabIndex = 17;
             this.lnlYeniTarih.Text = "* Tarih:";
             // 
             // lblYeniAdi
             // 
             this.lblYeniAdi.AutoSize = true;
-            this.lblYeniAdi.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAdi.Location = new System.Drawing.Point(43, 120);
+            this.lblYeniAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYeniAdi.Location = new System.Drawing.Point(43, 78);
             this.lblYeniAdi.Name = "lblYeniAdi";
-            this.lblYeniAdi.Size = new System.Drawing.Size(99, 15);
+            this.lblYeniAdi.Size = new System.Drawing.Size(109, 16);
             this.lblYeniAdi.TabIndex = 19;
             this.lblYeniAdi.Text = "* Ekipman Adı:";
             // 
@@ -337,7 +337,7 @@ namespace StockMaintenanceSystem
             // btnYeniSorgula
             // 
             this.btnYeniSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnYeniSorgula.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniSorgula.Image")));
             this.btnYeniSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnYeniSorgula.Location = new System.Drawing.Point(872, 160);
@@ -361,7 +361,7 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(872, 212);
@@ -385,14 +385,14 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniKod
             // 
-            this.txtYeniKod.Location = new System.Drawing.Point(198, 77);
+            this.txtYeniKod.Location = new System.Drawing.Point(198, 118);
             this.txtYeniKod.Name = "txtYeniKod";
             this.txtYeniKod.Size = new System.Drawing.Size(121, 20);
             this.txtYeniKod.TabIndex = 0;
             // 
             // txtYeniAdi
             // 
-            this.txtYeniAdi.Location = new System.Drawing.Point(198, 118);
+            this.txtYeniAdi.Location = new System.Drawing.Point(198, 74);
             this.txtYeniAdi.Name = "txtYeniAdi";
             this.txtYeniAdi.Size = new System.Drawing.Size(121, 20);
             this.txtYeniAdi.TabIndex = 81;
