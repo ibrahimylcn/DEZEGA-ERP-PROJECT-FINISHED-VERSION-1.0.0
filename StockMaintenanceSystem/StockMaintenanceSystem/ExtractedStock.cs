@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
             // Button Çıkan Yeni
@@ -117,13 +117,13 @@ namespace StockMaintenanceSystem
             conn.Close();
 
             SqlCommand command = new SqlCommand();
-            komut.CommandText = "SELECT *FROM tblEquipmentStock";
-            komut.Connection = conn;
-            komut.CommandType = CommandType.Text;
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
 
             SqlDataReader dataReader;
             conn.Open();
-            dataReader = komut.ExecuteReader();
+            dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
                 cmbCikanAdi.Items.Add(dataReader["EquipmentName"]);
@@ -141,6 +141,24 @@ namespace StockMaintenanceSystem
             StockList list = new StockList();
             list.Show();
             this.Hide();
+        }
+
+        private void cmbCikanAdi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + cmbCikanAdi.Text + "'", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+
+                txtCikanKod.Text = read["EquipmentCode"].ToString();
+                txtCikanMarkasi.Text = read["EquipmentBrand"].ToString();
+                txtCikanModel.Text = read["EquipmentModel"].ToString();
+                txtCikanSerino.Text = read["EquipmentSerialNumber"].ToString();
+
+
+            }
+            conn.Close();
         }
     }
 }

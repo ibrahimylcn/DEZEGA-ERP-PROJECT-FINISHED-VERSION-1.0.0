@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnBakimKaydet_Click(object sender, EventArgs e)
         {
             if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " ||  cmbBakimİsTürü.Text == " " ||
@@ -39,17 +39,19 @@ namespace StockMaintenanceSystem
                 };
 
 
-                tblMaintnncEquipment me = new tblMaintnncEquipment();
+                tblMaintnncEquipment me = new tblMaintnncEquipment
+                {
+                    mEquipmentCode = txtBakimEkimpanKodu.Text,
+                    mEquipmentName = txtBakimEkipmanAdi.Text,
+                    mNumberOfEquipment = txtBakimKisiSayisi.Text
+                };
 
-                me.mEquipmentCode = txtBakimEkimpanKodu.Text;
-                me.mEquipmentName = txtBakimEkipmanAdi.Text;
-                me.mNumberOfEquipment = txtBakimKisiSayisi.Text;
-
-                tblUsedObject u = new tblUsedObject();
-
-                u.UsedObjectCode = txtBakimKullanilanParKodu.Text;
-                u.UsedObjectName = txtBakimKullanilanParAdi.Text;
-                //u.NumberOfUsedObject = Convert.ToInt32(txtBakimKullanilanParSayisi.Text);
+                tblUsedObject u = new tblUsedObject
+                {
+                    UsedObjectCode = txtBakimKullanilanParKodu.Text,
+                    UsedObjectName = txtBakimKullanilanParAdi.Text
+                };
+                
 
                 db.tblMaintenance.Add(m);
                 db.tblMaintnncEquipment.Add(me);

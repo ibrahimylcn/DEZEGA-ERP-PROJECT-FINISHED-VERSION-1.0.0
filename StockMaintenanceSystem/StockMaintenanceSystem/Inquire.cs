@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
@@ -29,11 +29,39 @@ namespace StockMaintenanceSystem
         {
             this.Controls.Clear();
             this.InitializeComponent();
+
+            SqlCommand command = new SqlCommand
+            {
+                CommandText = "SELECT *FROM tblEquipmentStock",
+                Connection = conn,
+                CommandType = CommandType.Text
+            };
+
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                cmbSorgulaEkipmanAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
         }
 
         private void Inquire_Load(object sender, EventArgs e)
         {
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
 
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                cmbSorgulaEkipmanAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
         }
 
         private void txtSorgulaEkipmanKod_TextChanged(object sender, EventArgs e)
@@ -45,7 +73,7 @@ namespace StockMaintenanceSystem
         {
             conn.Open();
 
-            string kayit = "SELECT * from tblEquipmentStock where EquipmentCode=@ad";
+            string kayit = "SELECT * from tblEquipmentStock where EquipmentName=@ad";
             SqlCommand cmd = new SqlCommand(kayit, conn);
             cmd.Parameters.AddWithValue("@ad", cmbSorgulaEkipmanAdi.Text);
 
@@ -54,6 +82,6 @@ namespace StockMaintenanceSystem
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
-        }
+        } 
     }
 }

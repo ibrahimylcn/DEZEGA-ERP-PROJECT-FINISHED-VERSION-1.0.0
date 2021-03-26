@@ -98,9 +98,9 @@ namespace StockMaintenanceSystem
             // 
             // txtGelenSerino
             // 
-            this.txtGelenSerino.Location = new System.Drawing.Point(559, 63);
+            this.txtGelenSerino.Location = new System.Drawing.Point(559, 32);
             this.txtGelenSerino.Name = "txtGelenSerino";
-            this.txtGelenSerino.Size = new System.Drawing.Size(121, 20);
+            this.txtGelenSerino.Size = new System.Drawing.Size(286, 20);
             this.txtGelenSerino.TabIndex = 61;
             // 
             // txtGelenFirma
@@ -140,7 +140,7 @@ namespace StockMaintenanceSystem
             // 
             // dTimeGelenTarih
             // 
-            this.dTimeGelenTarih.Location = new System.Drawing.Point(559, 32);
+            this.dTimeGelenTarih.Location = new System.Drawing.Point(559, 63);
             this.dTimeGelenTarih.Name = "dTimeGelenTarih";
             this.dTimeGelenTarih.Size = new System.Drawing.Size(200, 20);
             this.dTimeGelenTarih.TabIndex = 53;
@@ -157,7 +157,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenAdi.AutoSize = true;
             this.lblGelenAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenAdi.Location = new System.Drawing.Point(53, 87);
+            this.lblGelenAdi.Location = new System.Drawing.Point(53, 82);
             this.lblGelenAdi.Name = "lblGelenAdi";
             this.lblGelenAdi.Size = new System.Drawing.Size(101, 15);
             this.lblGelenAdi.TabIndex = 51;
@@ -167,7 +167,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenTarih.AutoSize = true;
             this.lblGelenTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenTarih.Location = new System.Drawing.Point(438, 32);
+            this.lblGelenTarih.Location = new System.Drawing.Point(438, 63);
             this.lblGelenTarih.Name = "lblGelenTarih";
             this.lblGelenTarih.Size = new System.Drawing.Size(54, 15);
             this.lblGelenTarih.TabIndex = 49;
@@ -207,7 +207,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenSerino.AutoSize = true;
             this.lblGelenSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenSerino.Location = new System.Drawing.Point(438, 63);
+            this.lblGelenSerino.Location = new System.Drawing.Point(438, 32);
             this.lblGelenSerino.Name = "lblGelenSerino";
             this.lblGelenSerino.Size = new System.Drawing.Size(113, 15);
             this.lblGelenSerino.TabIndex = 45;
@@ -348,7 +348,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenKategori.AutoSize = true;
             this.lblGelenKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenKategori.Location = new System.Drawing.Point(53, 42);
+            this.lblGelenKategori.Location = new System.Drawing.Point(53, 37);
             this.lblGelenKategori.Name = "lblGelenKategori";
             this.lblGelenKategori.Size = new System.Drawing.Size(75, 15);
             this.lblGelenKategori.TabIndex = 34;
@@ -389,10 +389,11 @@ namespace StockMaintenanceSystem
             // cmbGelenAdi
             // 
             this.cmbGelenAdi.FormattingEnabled = true;
-            this.cmbGelenAdi.Location = new System.Drawing.Point(199, 86);
+            this.cmbGelenAdi.Location = new System.Drawing.Point(199, 81);
             this.cmbGelenAdi.Name = "cmbGelenAdi";
             this.cmbGelenAdi.Size = new System.Drawing.Size(121, 21);
             this.cmbGelenAdi.TabIndex = 80;
+            this.cmbGelenAdi.SelectedIndexChanged += new System.EventHandler(this.cmbGelenAdi_SelectedIndexChanged);
             // 
             // AddedStock
             // 

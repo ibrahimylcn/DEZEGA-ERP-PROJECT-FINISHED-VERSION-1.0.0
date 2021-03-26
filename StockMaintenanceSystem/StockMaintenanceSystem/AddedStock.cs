@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-F1FAI6Q\SQLEXPRESS; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
             // Buton Gelen
@@ -59,10 +59,12 @@ namespace StockMaintenanceSystem
 
         private void AddedStock_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand();
-            komut.CommandText = "SELECT *FROM tblCategory";
-            komut.Connection = conn;
-            komut.CommandType = CommandType.Text;
+            SqlCommand komut = new SqlCommand
+            {
+                CommandText = "SELECT *FROM tblCategory",
+                Connection = conn,
+                CommandType = CommandType.Text
+            };
 
             SqlDataReader dr;
             conn.Open();            
@@ -72,20 +74,21 @@ namespace StockMaintenanceSystem
                 cmbGelen.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
-
+            
             SqlCommand command = new SqlCommand();
-            komut.CommandText = "SELECT *FROM tblEquipmentStock";
-            komut.Connection = conn;
-            komut.CommandType = CommandType.Text;
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
 
             SqlDataReader dataReader;
             conn.Open();
-            dataReader = komut.ExecuteReader();
+            dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
                 cmbGelenAdi.Items.Add(dataReader["EquipmentName"]);
             }
             conn.Close();
+            
         }
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
@@ -115,10 +118,12 @@ namespace StockMaintenanceSystem
             this.Controls.Clear();
             this.InitializeComponent();
 
-            SqlCommand komut = new SqlCommand();
-            komut.CommandText = "SELECT * FROM tblCategory";
-            komut.Connection = conn;
-            komut.CommandType = CommandType.Text;
+            SqlCommand komut = new SqlCommand
+            {
+                CommandText = "SELECT * FROM tblCategory",
+                Connection = conn,
+                CommandType = CommandType.Text
+            };
 
             SqlDataReader dr;
             conn.Open();
@@ -135,6 +140,25 @@ namespace StockMaintenanceSystem
             StockList list = new StockList();
             list.Show();
             this.Hide();
+        }
+
+        private void cmbGelenAdi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + cmbGelenAdi.Text + "'",conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while(read.Read()){
+
+                txtGelenKod.Text = read["EquipmentCode"].ToString();
+                txtGelenMarkasi.Text = read["EquipmentBrand"].ToString();
+                txtGelenModel.Text = read["EquipmentModel"].ToString();
+                txtGelenSerino.Text = read["EquipmentSerialNumber"].ToString();
+
+
+            }
+            conn.Close();
+
+
         }
     }
 }

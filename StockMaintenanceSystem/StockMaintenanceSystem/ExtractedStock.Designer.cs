@@ -67,7 +67,7 @@ namespace StockMaintenanceSystem
             // 
             // txtCikanAmacNeden
             // 
-            this.txtCikanAmacNeden.Location = new System.Drawing.Point(559, 226);
+            this.txtCikanAmacNeden.Location = new System.Drawing.Point(559, 221);
             this.txtCikanAmacNeden.Multiline = true;
             this.txtCikanAmacNeden.Name = "txtCikanAmacNeden";
             this.txtCikanAmacNeden.Size = new System.Drawing.Size(286, 67);
@@ -98,9 +98,9 @@ namespace StockMaintenanceSystem
             // 
             // txtCikanSerino
             // 
-            this.txtCikanSerino.Location = new System.Drawing.Point(559, 63);
+            this.txtCikanSerino.Location = new System.Drawing.Point(559, 33);
             this.txtCikanSerino.Name = "txtCikanSerino";
-            this.txtCikanSerino.Size = new System.Drawing.Size(121, 20);
+            this.txtCikanSerino.Size = new System.Drawing.Size(286, 20);
             this.txtCikanSerino.TabIndex = 61;
             this.txtCikanSerino.TextChanged += new System.EventHandler(this.txtCikanSerino_TextChanged);
             // 
@@ -141,7 +141,7 @@ namespace StockMaintenanceSystem
             // 
             // dTimeCikanTarih
             // 
-            this.dTimeCikanTarih.Location = new System.Drawing.Point(559, 32);
+            this.dTimeCikanTarih.Location = new System.Drawing.Point(559, 69);
             this.dTimeCikanTarih.Name = "dTimeCikanTarih";
             this.dTimeCikanTarih.Size = new System.Drawing.Size(200, 20);
             this.dTimeCikanTarih.TabIndex = 53;
@@ -149,7 +149,7 @@ namespace StockMaintenanceSystem
             // cmbCikan
             // 
             this.cmbCikan.FormattingEnabled = true;
-            this.cmbCikan.Location = new System.Drawing.Point(195, 49);
+            this.cmbCikan.Location = new System.Drawing.Point(195, 32);
             this.cmbCikan.Name = "cmbCikan";
             this.cmbCikan.Size = new System.Drawing.Size(121, 21);
             this.cmbCikan.TabIndex = 52;
@@ -158,7 +158,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAdi.AutoSize = true;
             this.lblCikanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAdi.Location = new System.Drawing.Point(40, 92);
+            this.lblCikanAdi.Location = new System.Drawing.Point(40, 80);
             this.lblCikanAdi.Name = "lblCikanAdi";
             this.lblCikanAdi.Size = new System.Drawing.Size(101, 15);
             this.lblCikanAdi.TabIndex = 51;
@@ -168,7 +168,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanTarih.AutoSize = true;
             this.lblCikanTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanTarih.Location = new System.Drawing.Point(438, 32);
+            this.lblCikanTarih.Location = new System.Drawing.Point(428, 69);
             this.lblCikanTarih.Name = "lblCikanTarih";
             this.lblCikanTarih.Size = new System.Drawing.Size(54, 15);
             this.lblCikanTarih.TabIndex = 49;
@@ -178,7 +178,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanKod.AutoSize = true;
             this.lblCikanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanKod.Location = new System.Drawing.Point(40, 136);
+            this.lblCikanKod.Location = new System.Drawing.Point(40, 131);
             this.lblCikanKod.Name = "lblCikanKod";
             this.lblCikanKod.Size = new System.Drawing.Size(114, 15);
             this.lblCikanKod.TabIndex = 48;
@@ -188,7 +188,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanMarkasi.AutoSize = true;
             this.lblCikanMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanMarkasi.Location = new System.Drawing.Point(40, 183);
+            this.lblCikanMarkasi.Location = new System.Drawing.Point(40, 178);
             this.lblCikanMarkasi.Name = "lblCikanMarkasi";
             this.lblCikanMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblCikanMarkasi.TabIndex = 47;
@@ -208,7 +208,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanSerino.AutoSize = true;
             this.lblCikanSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanSerino.Location = new System.Drawing.Point(438, 63);
+            this.lblCikanSerino.Location = new System.Drawing.Point(428, 33);
             this.lblCikanSerino.Name = "lblCikanSerino";
             this.lblCikanSerino.Size = new System.Drawing.Size(113, 15);
             this.lblCikanSerino.TabIndex = 45;
@@ -218,7 +218,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAdet.AutoSize = true;
             this.lblCikanAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAdet.Location = new System.Drawing.Point(438, 105);
+            this.lblCikanAdet.Location = new System.Drawing.Point(428, 105);
             this.lblCikanAdet.Name = "lblCikanAdet";
             this.lblCikanAdet.Size = new System.Drawing.Size(49, 15);
             this.lblCikanAdet.TabIndex = 44;
@@ -228,7 +228,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanFirma.AutoSize = true;
             this.lblCikanFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanFirma.Location = new System.Drawing.Point(448, 146);
+            this.lblCikanFirma.Location = new System.Drawing.Point(434, 146);
             this.lblCikanFirma.Name = "lblCikanFirma";
             this.lblCikanFirma.Size = new System.Drawing.Size(48, 15);
             this.lblCikanFirma.TabIndex = 43;
@@ -238,7 +238,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanSiparisKod.AutoSize = true;
             this.lblCikanSiparisKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanSiparisKod.Location = new System.Drawing.Point(448, 183);
+            this.lblCikanSiparisKod.Location = new System.Drawing.Point(434, 179);
             this.lblCikanSiparisKod.Name = "lblCikanSiparisKod";
             this.lblCikanSiparisKod.Size = new System.Drawing.Size(93, 15);
             this.lblCikanSiparisKod.TabIndex = 42;
@@ -248,7 +248,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanAmacNeden.AutoSize = true;
             this.lblCikanAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanAmacNeden.Location = new System.Drawing.Point(438, 226);
+            this.lblCikanAmacNeden.Location = new System.Drawing.Point(434, 221);
             this.lblCikanAmacNeden.Name = "lblCikanAmacNeden";
             this.lblCikanAmacNeden.Size = new System.Drawing.Size(103, 15);
             this.lblCikanAmacNeden.TabIndex = 41;
@@ -349,7 +349,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblCikanKategori.AutoSize = true;
             this.lblCikanKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCikanKategori.Location = new System.Drawing.Point(40, 49);
+            this.lblCikanKategori.Location = new System.Drawing.Point(40, 32);
             this.lblCikanKategori.Name = "lblCikanKategori";
             this.lblCikanKategori.Size = new System.Drawing.Size(75, 15);
             this.lblCikanKategori.TabIndex = 34;
@@ -390,10 +390,11 @@ namespace StockMaintenanceSystem
             // cmbCikanAdi
             // 
             this.cmbCikanAdi.FormattingEnabled = true;
-            this.cmbCikanAdi.Location = new System.Drawing.Point(195, 91);
+            this.cmbCikanAdi.Location = new System.Drawing.Point(195, 80);
             this.cmbCikanAdi.Name = "cmbCikanAdi";
             this.cmbCikanAdi.Size = new System.Drawing.Size(121, 21);
             this.cmbCikanAdi.TabIndex = 80;
+            this.cmbCikanAdi.SelectedIndexChanged += new System.EventHandler(this.cmbCikanAdi_SelectedIndexChanged);
             // 
             // ExtractedStock
             // 
