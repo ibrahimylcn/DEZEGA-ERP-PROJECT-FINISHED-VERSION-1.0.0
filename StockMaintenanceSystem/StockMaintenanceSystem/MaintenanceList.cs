@@ -17,8 +17,8 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
-        dbStockEntities4 me = new dbStockEntities4();
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
+        dbStockEntities5 me = new dbStockEntities5();
         private void btnBakımListele_Click(object sender, EventArgs e)
         {
             var list = from x in me.tblMaintenance join y in me.tblMaintnncEquipment
@@ -48,6 +48,23 @@ namespace StockMaintenanceSystem
             MaintenanceSystem maintenanceSystem = new MaintenanceSystem();
             maintenanceSystem.Show();
             this.Hide();
+        }
+
+        private void MaintenanceList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MaintenanceList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
         }
     }
 }

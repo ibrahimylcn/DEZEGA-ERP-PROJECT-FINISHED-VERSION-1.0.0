@@ -17,17 +17,17 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void btnBakimKaydet_Click(object sender, EventArgs e)
         {
-            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " ||  cmbBakimİsTürü.Text == " " ||
-                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text  == String.Empty || cmbBakimİsTürü.Text == String.Empty)
+            if (txtBakimBasSaati.Text == " " || txtBakimBitisSaati.Text == " " || txtBakimEkimpanKodu.Text == " " || txtBakimEkipmanAdi.Text == " " || txtBakimKisiSayisi.Text == " " || dateTimeBakimBaslangic.Text == " " || dateTimeBakimBitis.Text == " " ||  cmbBakimİsTürü.Text == " " || cmbbakimkategori.Text == " " ||
+                txtBakimBasSaati.Text == String.Empty || txtBakimBitisSaati.Text == String.Empty || txtBakimEkimpanKodu.Text == String.Empty || txtBakimEkipmanAdi.Text == String.Empty || txtBakimKisiSayisi.Text == String.Empty || dateTimeBakimBaslangic.Text == String.Empty || dateTimeBakimBitis.Text  == String.Empty || cmbBakimİsTürü.Text == String.Empty || cmbbakimkategori.Text == string.Empty)
             {
                 MessageBox.Show("Lütfen (*) Alan Bilgilerini Doldurunuz!!");
             }
             else
             {
-                dbStockEntities4 db = new dbStockEntities4();
+                dbStockEntities5 db = new dbStockEntities5();
                 tblMaintenance m = new tblMaintenance
                 {
                     StartingDate = dateTimeBakimBaslangic.Text,
@@ -48,7 +48,7 @@ namespace StockMaintenanceSystem
 
                 tblUsedObject u = new tblUsedObject
                 {
-                    UsedObjectCode = txtBakimKullanilanParKodu.Text,
+                    
                     UsedObjectName = txtBakimKullanilanParAdi.Text
                 };
                 
@@ -66,22 +66,7 @@ namespace StockMaintenanceSystem
         {
             this.Controls.Clear();
             this.InitializeComponent();
-        }
 
-        private void btnBakimAnasayfa_Click(object sender, EventArgs e)
-        {
-            Homepage home = new Homepage();
-            home.Show();
-            this.Hide();
-        }
-
-        private void btnBakimCikis_Click(object sender, EventArgs e)
-        {
-            Application.ExitThread();
-        }
-
-        private void MaintenanceSystem_Load(object sender, EventArgs e)
-        {
             SqlCommand komut = new SqlCommand();
             komut.CommandText = "SELECT * FROM tblEquipmentStock";
             komut.Connection = conn;
@@ -96,17 +81,78 @@ namespace StockMaintenanceSystem
             }
             conn.Close();
 
-            SqlCommand cmd = new SqlCommand();
-            komut.CommandText = "SELECT *FROM tblCategory";
-            komut.Connection = conn;
-            komut.CommandType = CommandType.Text;
+            SqlCommand komut2 = new SqlCommand
+            {
+                CommandText = "SELECT *FROM tblCategory",
+                Connection = conn,
+                CommandType = CommandType.Text
+
+            };
 
             SqlDataReader drr;
             conn.Open();
-            drr = komut.ExecuteReader();
+            drr = komut2.ExecuteReader();
             while (drr.Read())
             {
-                cmbBakimİsTürü.Items.Add(drr["CategoryName"]);
+                cmbbakimkategori.Items.Add(drr["CategoryName"]);
+            }
+            conn.Close();
+        }
+
+        private void btnBakimAnasayfa_Click(object sender, EventArgs e)
+        {
+            Homepage home = new Homepage();
+            home.Show();
+            this.Hide();
+        }
+
+        private void btnBakimCikis_Click(object sender, EventArgs e)
+        {
+            DialogResult x = MessageBox.Show("Çıkmak İstediğinizden Emin Misiniz?", "Bakım Onarım Takip", MessageBoxButtons.YesNo , MessageBoxIcon.Warning);
+            if (x == DialogResult.Yes)
+            {
+                //Evet tıklandığında Yapılacak İşlemler
+                MessageBox.Show("Sağlıcakla Kalın!!");
+                Environment.Exit(0); // Evet tıklandığında uygulama kapanacak
+
+            }
+            else if (x == DialogResult.No)
+            {
+                // Hayır tıklandığında yapılacak işlemler
+
+            }
+        }
+
+        private void MaintenanceSystem_Load(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand();
+            komut.CommandText = "SELECT * FROM tblEquipmentStock";
+            komut.Connection = conn;
+            komut.CommandType = CommandType.Text;
+       
+        SqlDataReader dr;
+            conn.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                txtBakimEkipmanAdi.Items.Add(dr["EquipmentName"]);
+            }
+            conn.Close();
+
+            SqlCommand komut2 = new SqlCommand
+            {
+                CommandText = "SELECT *FROM tblCategory",
+                Connection = conn, 
+                CommandType = CommandType.Text
+               
+            };
+
+            SqlDataReader drr;
+            conn.Open();
+            drr = komut2.ExecuteReader();
+            while (drr.Read())
+            {
+                cmbbakimkategori.Items.Add(drr["CategoryName"]);
             }
             conn.Close();
         }
@@ -154,6 +200,42 @@ namespace StockMaintenanceSystem
         private void lblBakimİsTürü_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MaintenanceSystem_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void MaintenanceSystem_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+        }
+
+        private void cmbBakimİsTürü_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBakimEkipmanAdi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + txtBakimEkipmanAdi.Text + "'", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+
+                txtBakimEkimpanKodu.Text = read["EquipmentCode"].ToString();
+                
+
+            }
+            conn.Close();
         }
     }
 }

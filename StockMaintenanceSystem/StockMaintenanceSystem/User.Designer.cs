@@ -46,12 +46,12 @@ namespace StockMaintenanceSystem
             // lbluser
             // 
             this.lbluser.AutoSize = true;
-            this.lbluser.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbluser.Location = new System.Drawing.Point(107, 128);
             this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(38, 15);
+            this.lbluser.Size = new System.Drawing.Size(97, 16);
             this.lbluser.TabIndex = 0;
-            this.lbluser.Text = "User:";
+            this.lbluser.Text = "Kullanıcı Adı:";
             // 
             // txtuser
             // 
@@ -65,24 +65,25 @@ namespace StockMaintenanceSystem
             // 
             this.btnlogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnlogin.BackColor = System.Drawing.Color.White;
-            this.btnlogin.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Location = new System.Drawing.Point(211, 244);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(123, 44);
             this.btnlogin.TabIndex = 2;
-            this.btnlogin.Text = "Login";
+            this.btnlogin.Text = "Oturum Aç";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // lblpswd
             // 
             this.lblpswd.AutoSize = true;
-            this.lblpswd.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpswd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpswd.Location = new System.Drawing.Point(107, 201);
             this.lblpswd.Name = "lblpswd";
-            this.lblpswd.Size = new System.Drawing.Size(69, 15);
+            this.lblpswd.Size = new System.Drawing.Size(44, 16);
             this.lblpswd.TabIndex = 3;
-            this.lblpswd.Text = "Password:";
+            this.lblpswd.Text = "Şifre:";
             this.lblpswd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblpswd.Click += new System.EventHandler(this.lblpswd_Click);
             // 
@@ -105,6 +106,7 @@ namespace StockMaintenanceSystem
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBoxUser
             // 
@@ -147,7 +149,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login Screen";
+            this.Text = "Giriş Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.User_FormClosing);
             this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();

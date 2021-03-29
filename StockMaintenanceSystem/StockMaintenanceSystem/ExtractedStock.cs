@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void btnCikanYeni_Click(object sender, EventArgs e)
         {
             // Button Çıkan Yeni
@@ -98,6 +98,35 @@ namespace StockMaintenanceSystem
                 cmbCikan.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
+
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                cmbCikanAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + cmbCikanAdi.Text + "'", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+
+                txtCikanKod.Text = read["EquipmentCode"].ToString();
+                txtCikanMarkasi.Text = read["EquipmentBrand"].ToString();
+                txtCikanModel.Text = read["EquipmentModel"].ToString();
+                txtCikanSerino.Text = read["EquipmentSerialNumber"].ToString();
+
+
+            }
+            conn.Close();
         }
 
         private void ExtractedStock_Load(object sender, EventArgs e)
@@ -159,6 +188,18 @@ namespace StockMaintenanceSystem
 
             }
             conn.Close();
+        }
+
+        private void ExtractedStock_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
         }
     }
 }

@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void btnlogin_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -34,7 +34,7 @@ namespace StockMaintenanceSystem
             }
             else
             {
-                MessageBox.Show("Kullanıcı Bulunmamaktadır.");
+                MessageBox.Show("Kullanıcı Bulunmamaktadır!!");
             }
             conn.Close();
 
@@ -48,6 +48,23 @@ namespace StockMaintenanceSystem
 
         private void lblpswd_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void User_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
 
         }
     }

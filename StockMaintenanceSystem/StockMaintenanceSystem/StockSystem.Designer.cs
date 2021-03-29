@@ -68,16 +68,17 @@ namespace StockMaintenanceSystem
             // lblYeniKategori
             // 
             this.lblYeniKategori.AutoSize = true;
-            this.lblYeniKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniKategori.Location = new System.Drawing.Point(43, 39);
+            this.lblYeniKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniKategori.Location = new System.Drawing.Point(40, 32);
             this.lblYeniKategori.Name = "lblYeniKategori";
-            this.lblYeniKategori.Size = new System.Drawing.Size(80, 16);
+            this.lblYeniKategori.Size = new System.Drawing.Size(75, 15);
             this.lblYeniKategori.TabIndex = 1;
             this.lblYeniKategori.Text = "* Kategori:";
             // 
             // btnYeniKaydet
             // 
             this.btnYeniKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeniKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniKaydet.Image")));
             this.btnYeniKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -93,6 +94,7 @@ namespace StockMaintenanceSystem
             // btnYeniAnasayfa
             // 
             this.btnYeniAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniAnasayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeniAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniAnasayfa.Image")));
             this.btnYeniAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -108,6 +110,7 @@ namespace StockMaintenanceSystem
             // BtnYeniTemizle
             // 
             this.BtnYeniTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnYeniTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnYeniTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnYeniTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnYeniTemizle.Image")));
             this.BtnYeniTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -123,11 +126,12 @@ namespace StockMaintenanceSystem
             // btnYeni
             // 
             this.btnYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeni.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnYeni.Image")));
             this.btnYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeni.Location = new System.Drawing.Point(872, 6);
+            this.btnYeni.Location = new System.Drawing.Point(872, 1);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(111, 46);
             this.btnYeni.TabIndex = 5;
@@ -139,10 +143,11 @@ namespace StockMaintenanceSystem
             // btnYeniGelen
             // 
             this.btnYeniGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniGelen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeniGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniGelen.Image")));
             this.btnYeniGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeniGelen.Location = new System.Drawing.Point(872, 57);
+            this.btnYeniGelen.Location = new System.Drawing.Point(872, 53);
             this.btnYeniGelen.Name = "btnYeniGelen";
             this.btnYeniGelen.Size = new System.Drawing.Size(111, 46);
             this.btnYeniGelen.TabIndex = 6;
@@ -154,12 +159,13 @@ namespace StockMaintenanceSystem
             // btnYeniCikan
             // 
             this.btnYeniCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniCikan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeniCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniCikan.Image")));
             this.btnYeniCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeniCikan.Location = new System.Drawing.Point(872, 109);
+            this.btnYeniCikan.Location = new System.Drawing.Point(872, 105);
             this.btnYeniCikan.Name = "btnYeniCikan";
-            this.btnYeniCikan.Size = new System.Drawing.Size(111, 45);
+            this.btnYeniCikan.Size = new System.Drawing.Size(111, 46);
             this.btnYeniCikan.TabIndex = 7;
             this.btnYeniCikan.Text = "ÇIKAN";
             this.btnYeniCikan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -169,107 +175,107 @@ namespace StockMaintenanceSystem
             // lblYeniAmacNeden
             // 
             this.lblYeniAmacNeden.AutoSize = true;
-            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAmacNeden.Location = new System.Drawing.Point(438, 226);
+            this.lblYeniAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAmacNeden.Location = new System.Drawing.Point(434, 221);
             this.lblYeniAmacNeden.Name = "lblYeniAmacNeden";
-            this.lblYeniAmacNeden.Size = new System.Drawing.Size(102, 16);
+            this.lblYeniAmacNeden.Size = new System.Drawing.Size(93, 15);
             this.lblYeniAmacNeden.TabIndex = 8;
             this.lblYeniAmacNeden.Text = "Amaç-Neden:";
             // 
             // lblYeniSiparisKodu
             // 
             this.lblYeniSiparisKodu.AutoSize = true;
-            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniSiparisKodu.Location = new System.Drawing.Point(438, 183);
+            this.lblYeniSiparisKodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniSiparisKodu.Location = new System.Drawing.Point(434, 179);
             this.lblYeniSiparisKodu.Name = "lblYeniSiparisKodu";
-            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(100, 16);
+            this.lblYeniSiparisKodu.Size = new System.Drawing.Size(93, 15);
             this.lblYeniSiparisKodu.TabIndex = 9;
             this.lblYeniSiparisKodu.Text = "Sipariş Kodu:";
             // 
             // lblYeniFirma
             // 
             this.lblYeniFirma.AutoSize = true;
-            this.lblYeniFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniFirma.Location = new System.Drawing.Point(438, 141);
+            this.lblYeniFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniFirma.Location = new System.Drawing.Point(434, 146);
             this.lblYeniFirma.Name = "lblYeniFirma";
-            this.lblYeniFirma.Size = new System.Drawing.Size(51, 16);
+            this.lblYeniFirma.Size = new System.Drawing.Size(48, 15);
             this.lblYeniFirma.TabIndex = 10;
             this.lblYeniFirma.Text = "Firma:";
             // 
             // lblYeniAdet
             // 
             this.lblYeniAdet.AutoSize = true;
-            this.lblYeniAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAdet.Location = new System.Drawing.Point(438, 98);
+            this.lblYeniAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAdet.Location = new System.Drawing.Point(428, 105);
             this.lblYeniAdet.Name = "lblYeniAdet";
-            this.lblYeniAdet.Size = new System.Drawing.Size(54, 16);
+            this.lblYeniAdet.Size = new System.Drawing.Size(49, 15);
             this.lblYeniAdet.TabIndex = 11;
             this.lblYeniAdet.Text = "* Adet:";
             // 
             // lblYeniSerino
             // 
             this.lblYeniSerino.AutoSize = true;
-            this.lblYeniSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniSerino.Location = new System.Drawing.Point(438, 63);
+            this.lblYeniSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniSerino.Location = new System.Drawing.Point(428, 33);
             this.lblYeniSerino.Name = "lblYeniSerino";
-            this.lblYeniSerino.Size = new System.Drawing.Size(120, 16);
+            this.lblYeniSerino.Size = new System.Drawing.Size(113, 15);
             this.lblYeniSerino.TabIndex = 12;
             this.lblYeniSerino.Text = "* Seri Numarası:";
             // 
             // lblYeniModel
             // 
             this.lblYeniModel.AutoSize = true;
-            this.lblYeniModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniModel.Location = new System.Drawing.Point(43, 198);
+            this.lblYeniModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniModel.Location = new System.Drawing.Point(40, 226);
             this.lblYeniModel.Name = "lblYeniModel";
-            this.lblYeniModel.Size = new System.Drawing.Size(129, 16);
+            this.lblYeniModel.Size = new System.Drawing.Size(121, 15);
             this.lblYeniModel.TabIndex = 13;
             this.lblYeniModel.Text = "* Ekipman Model:";
             // 
             // lblYeniMarka
             // 
             this.lblYeniMarka.AutoSize = true;
-            this.lblYeniMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniMarka.Location = new System.Drawing.Point(43, 159);
+            this.lblYeniMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniMarka.Location = new System.Drawing.Point(40, 178);
             this.lblYeniMarka.Name = "lblYeniMarka";
-            this.lblYeniMarka.Size = new System.Drawing.Size(129, 16);
+            this.lblYeniMarka.Size = new System.Drawing.Size(121, 15);
             this.lblYeniMarka.TabIndex = 14;
             this.lblYeniMarka.Text = "* Ekipman Marka:";
             // 
             // lblYeniKod
             // 
             this.lblYeniKod.AutoSize = true;
-            this.lblYeniKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniKod.Location = new System.Drawing.Point(43, 122);
+            this.lblYeniKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniKod.Location = new System.Drawing.Point(40, 131);
             this.lblYeniKod.Name = "lblYeniKod";
-            this.lblYeniKod.Size = new System.Drawing.Size(121, 16);
+            this.lblYeniKod.Size = new System.Drawing.Size(114, 15);
             this.lblYeniKod.TabIndex = 15;
             this.lblYeniKod.Text = "* Ekipman Kodu:";
             // 
             // lnlYeniTarih
             // 
             this.lnlYeniTarih.AutoSize = true;
-            this.lnlYeniTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnlYeniTarih.Location = new System.Drawing.Point(438, 32);
+            this.lnlYeniTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lnlYeniTarih.Location = new System.Drawing.Point(428, 69);
             this.lnlYeniTarih.Name = "lnlYeniTarih";
-            this.lnlYeniTarih.Size = new System.Drawing.Size(58, 16);
+            this.lnlYeniTarih.Size = new System.Drawing.Size(54, 15);
             this.lnlYeniTarih.TabIndex = 17;
             this.lnlYeniTarih.Text = "* Tarih:";
             // 
             // lblYeniAdi
             // 
             this.lblYeniAdi.AutoSize = true;
-            this.lblYeniAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeniAdi.Location = new System.Drawing.Point(43, 78);
+            this.lblYeniAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblYeniAdi.Location = new System.Drawing.Point(40, 80);
             this.lblYeniAdi.Name = "lblYeniAdi";
-            this.lblYeniAdi.Size = new System.Drawing.Size(109, 16);
+            this.lblYeniAdi.Size = new System.Drawing.Size(101, 15);
             this.lblYeniAdi.TabIndex = 19;
             this.lblYeniAdi.Text = "* Ekipman Adı:";
             // 
             // cmbYeniKategori
             // 
             this.cmbYeniKategori.FormattingEnabled = true;
-            this.cmbYeniKategori.Location = new System.Drawing.Point(198, 39);
+            this.cmbYeniKategori.Location = new System.Drawing.Point(195, 32);
             this.cmbYeniKategori.Name = "cmbYeniKategori";
             this.cmbYeniKategori.Size = new System.Drawing.Size(121, 21);
             this.cmbYeniKategori.TabIndex = 20;
@@ -277,7 +283,7 @@ namespace StockMaintenanceSystem
             // 
             // dTimeYeniTarih
             // 
-            this.dTimeYeniTarih.Location = new System.Drawing.Point(559, 32);
+            this.dTimeYeniTarih.Location = new System.Drawing.Point(559, 69);
             this.dTimeYeniTarih.Name = "dTimeYeniTarih";
             this.dTimeYeniTarih.Size = new System.Drawing.Size(200, 20);
             this.dTimeYeniTarih.TabIndex = 21;
@@ -292,14 +298,14 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniModel
             // 
-            this.txtYeniModel.Location = new System.Drawing.Point(198, 198);
+            this.txtYeniModel.Location = new System.Drawing.Point(195, 221);
             this.txtYeniModel.Name = "txtYeniModel";
             this.txtYeniModel.Size = new System.Drawing.Size(121, 20);
             this.txtYeniModel.TabIndex = 23;
             // 
             // txtYeniMarkasi
             // 
-            this.txtYeniMarkasi.Location = new System.Drawing.Point(198, 159);
+            this.txtYeniMarkasi.Location = new System.Drawing.Point(195, 178);
             this.txtYeniMarkasi.Name = "txtYeniMarkasi";
             this.txtYeniMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtYeniMarkasi.TabIndex = 24;
@@ -320,9 +326,9 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniSerino
             // 
-            this.txtYeniSerino.Location = new System.Drawing.Point(559, 63);
+            this.txtYeniSerino.Location = new System.Drawing.Point(559, 33);
             this.txtYeniSerino.Name = "txtYeniSerino";
-            this.txtYeniSerino.Size = new System.Drawing.Size(121, 20);
+            this.txtYeniSerino.Size = new System.Drawing.Size(286, 20);
             this.txtYeniSerino.TabIndex = 29;
             // 
             // dataGridViewYeni
@@ -337,10 +343,11 @@ namespace StockMaintenanceSystem
             // btnYeniSorgula
             // 
             this.btnYeniSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnYeniSorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYeniSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYeniSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniSorgula.Image")));
             this.btnYeniSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnYeniSorgula.Location = new System.Drawing.Point(872, 160);
+            this.btnYeniSorgula.Location = new System.Drawing.Point(872, 158);
             this.btnYeniSorgula.Name = "btnYeniSorgula";
             this.btnYeniSorgula.Size = new System.Drawing.Size(111, 46);
             this.btnYeniSorgula.TabIndex = 31;
@@ -351,7 +358,7 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniAmacNeden
             // 
-            this.txtYeniAmacNeden.Location = new System.Drawing.Point(559, 226);
+            this.txtYeniAmacNeden.Location = new System.Drawing.Point(559, 221);
             this.txtYeniAmacNeden.Multiline = true;
             this.txtYeniAmacNeden.Name = "txtYeniAmacNeden";
             this.txtYeniAmacNeden.Size = new System.Drawing.Size(286, 67);
@@ -361,10 +368,11 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(872, 212);
+            this.button1.Location = new System.Drawing.Point(872, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 46);
             this.button1.TabIndex = 33;
@@ -377,7 +385,7 @@ namespace StockMaintenanceSystem
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(35, 280);
+            this.label17.Location = new System.Drawing.Point(38, 280);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(175, 13);
             this.label17.TabIndex = 80;
@@ -385,14 +393,14 @@ namespace StockMaintenanceSystem
             // 
             // txtYeniKod
             // 
-            this.txtYeniKod.Location = new System.Drawing.Point(198, 118);
+            this.txtYeniKod.Location = new System.Drawing.Point(195, 131);
             this.txtYeniKod.Name = "txtYeniKod";
             this.txtYeniKod.Size = new System.Drawing.Size(121, 20);
             this.txtYeniKod.TabIndex = 0;
             // 
             // txtYeniAdi
             // 
-            this.txtYeniAdi.Location = new System.Drawing.Point(198, 74);
+            this.txtYeniAdi.Location = new System.Drawing.Point(195, 80);
             this.txtYeniAdi.Name = "txtYeniAdi";
             this.txtYeniAdi.Size = new System.Drawing.Size(121, 20);
             this.txtYeniAdi.TabIndex = 81;
@@ -439,7 +447,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "StockSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "STOK TAKİP YENİ";
+            this.Text = "Stok Takip Yeni";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StockSystem_FormClosing);
             this.Load += new System.EventHandler(this.StockSystem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewYeni)).EndInit();
             this.ResumeLayout(false);

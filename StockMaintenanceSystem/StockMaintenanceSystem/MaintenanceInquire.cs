@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -28,6 +28,24 @@ namespace StockMaintenanceSystem
         {
             this.Controls.Clear();
             this.InitializeComponent();
+
+            SqlCommand command = new SqlCommand
+            {
+                CommandText = "SELECT *FROM tblEquipmentStock",
+                Connection = conn,
+                CommandType = CommandType.Text
+            };
+
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                SorgulaEkipmanAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
+
+
         }
 
         private void btn2SorgulaAnasayfayadon_Click(object sender, EventArgs e)
@@ -39,7 +57,19 @@ namespace StockMaintenanceSystem
 
         private void MaintenanceInquire_Load(object sender, EventArgs e)
         {
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
 
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                SorgulaEkipmanAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
         }
 
         private void dateTimeBaslangicSorgula_ValueChanged(object sender, EventArgs e)
@@ -68,13 +98,25 @@ namespace StockMaintenanceSystem
             string kayit = "SELECT * From tblMaintenance m  INNER JOIN tblMaintnncEquipment me ON m.MaintenanceID = me.mEquipmentID where StartingDate=@tarih and mEquipmentName=@ad ";
             SqlCommand cmd = new SqlCommand(kayit, conn);
             cmd.Parameters.AddWithValue("@tarih", dateTimeBaslangicSorgula.Text);
-            cmd.Parameters.AddWithValue("@ad", txtSorgulaEkipmanAdi.Text);
+            cmd.Parameters.AddWithValue("@ad", SorgulaEkipmanAdi.Text);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView2.DataSource = dt;
             conn.Close();
+        }
+
+        private void MaintenanceInquire_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
         }
     }
 }

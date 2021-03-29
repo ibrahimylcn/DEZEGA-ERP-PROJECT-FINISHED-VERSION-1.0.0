@@ -53,6 +53,7 @@ namespace StockMaintenanceSystem
             // 
             // btnSorgulaSorgula
             // 
+            this.btnSorgulaSorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSorgulaSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSorgulaSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgulaSorgula.Image")));
             this.btnSorgulaSorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -67,6 +68,7 @@ namespace StockMaintenanceSystem
             // 
             // btnSorgulaTemizle
             // 
+            this.btnSorgulaTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSorgulaTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSorgulaTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnSorgulaTemizle.Image")));
             this.btnSorgulaTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,6 +120,7 @@ namespace StockMaintenanceSystem
             this.cmbSorgulaEkipmanAdi.Name = "cmbSorgulaEkipmanAdi";
             this.cmbSorgulaEkipmanAdi.Size = new System.Drawing.Size(226, 21);
             this.cmbSorgulaEkipmanAdi.TabIndex = 48;
+            this.cmbSorgulaEkipmanAdi.SelectedIndexChanged += new System.EventHandler(this.cmbSorgulaEkipmanAdi_SelectedIndexChanged);
             // 
             // Inquire
             // 
@@ -137,7 +140,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "Inquire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " STOK TAKİP SORGULAMA";
+            this.Text = "Stok Takip Sorgulama Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inquire_FormClosing);
             this.Load += new System.EventHandler(this.Inquire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

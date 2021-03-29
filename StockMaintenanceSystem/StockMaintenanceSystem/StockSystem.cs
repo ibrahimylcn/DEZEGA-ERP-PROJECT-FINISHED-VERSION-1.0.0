@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void txtYeni_TextChanged(object sender, EventArgs e)
         {
 
@@ -64,7 +64,7 @@ namespace StockMaintenanceSystem
             }
             else
             {
-                dbStockEntities4 db = new dbStockEntities4();
+                dbStockEntities5 db = new dbStockEntities5();
                 tblEquipmentStock tes = new tblEquipmentStock
                 {
                     EquipmentCategory = cmbYeniKategori.Text,
@@ -162,6 +162,18 @@ namespace StockMaintenanceSystem
 
         private void dataGridViewYeni_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void StockSystem_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
 
         }
     }

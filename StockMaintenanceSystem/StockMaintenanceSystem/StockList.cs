@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void pictureBox1_Click(object sender, EventArgs e)
         {
                 
@@ -37,8 +37,25 @@ namespace StockMaintenanceSystem
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            dbStockEntities4 se = new dbStockEntities4();
+            dbStockEntities5 se = new dbStockEntities5();
             dataGridViewTumunuListele.DataSource = se.tblEquipmentStock.ToList();
+        }
+
+        private void StockList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StockList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
         }
     }
 }

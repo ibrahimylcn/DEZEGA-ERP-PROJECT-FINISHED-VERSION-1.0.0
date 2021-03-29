@@ -142,7 +142,7 @@
           <Property Name="Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="dbStockEntities4" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="dbStockEntities5" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tblCategory" EntityType="Self.tblCategory" />
           <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" />
           <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" />
@@ -155,7 +155,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities4">
+        <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities5">
           <EntitySetMapping Name="tblCategory">
             <EntityTypeMapping TypeName="dbStockModel.tblCategory">
               <MappingFragment StoreEntitySet="tblCategory">

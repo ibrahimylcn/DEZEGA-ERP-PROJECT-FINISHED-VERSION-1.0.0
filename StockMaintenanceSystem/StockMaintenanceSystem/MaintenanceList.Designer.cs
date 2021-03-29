@@ -52,7 +52,7 @@ namespace StockMaintenanceSystem
             // 
             // btnLBakimAnasayfaDon
             // 
-            this.btnLBakimAnasayfaDon.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLBakimAnasayfaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLBakimAnasayfaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnLBakimAnasayfaDon.Image")));
             this.btnLBakimAnasayfaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLBakimAnasayfaDon.Location = new System.Drawing.Point(1187, 94);
@@ -84,7 +84,8 @@ namespace StockMaintenanceSystem
             // 
             // btnBakımListele
             // 
-            this.btnBakımListele.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBakımListele.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBakımListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakımListele.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBakımListele.Location = new System.Drawing.Point(479, 42);
             this.btnBakımListele.Name = "btnBakımListele";
@@ -105,12 +106,14 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.dataGridViewBakimListele);
             this.Controls.Add(this.btnLBakimAnasayfaDon);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MaintenanceList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MaintenanceList";
+            this.Text = "Bakım Onarım Listeleme Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaintenanceList_FormClosing);
+            this.Load += new System.EventHandler(this.MaintenanceList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBakimListele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBakim)).EndInit();

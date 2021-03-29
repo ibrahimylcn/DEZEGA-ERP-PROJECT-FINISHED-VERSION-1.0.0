@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities4">
+  <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities5">
     <EntitySetMapping Name="tblCategory">
       <EntityTypeMapping TypeName="dbStockModel.tblCategory">
         <MappingFragment StoreEntitySet="tblCategory">

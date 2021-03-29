@@ -18,7 +18,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void btnGelenGelen_Click(object sender, EventArgs e)
         {
             // Buton Gelen
@@ -88,7 +88,23 @@ namespace StockMaintenanceSystem
                 cmbGelenAdi.Items.Add(dataReader["EquipmentName"]);
             }
             conn.Close();
-            
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + cmbGelenAdi.Text + "'", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+
+                txtGelenKod.Text = read["EquipmentCode"].ToString();
+                txtGelenMarkasi.Text = read["EquipmentBrand"].ToString();
+                txtGelenModel.Text = read["EquipmentModel"].ToString();
+                txtGelenSerino.Text = read["EquipmentSerialNumber"].ToString();
+
+
+            }
+            conn.Close();
+
+
         }
 
         private void btnGelenKaydet_Click(object sender, EventArgs e)
@@ -118,6 +134,8 @@ namespace StockMaintenanceSystem
             this.Controls.Clear();
             this.InitializeComponent();
 
+
+
             SqlCommand komut = new SqlCommand
             {
                 CommandText = "SELECT * FROM tblCategory",
@@ -133,6 +151,36 @@ namespace StockMaintenanceSystem
                 cmbGelen.Items.Add(dr["CategoryName"]);
             }
             conn.Close();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "SELECT *FROM tblEquipmentStock";
+            command.Connection = conn;
+            command.CommandType = CommandType.Text;
+
+            SqlDataReader dataReader;
+            conn.Open();
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                cmbGelenAdi.Items.Add(dataReader["EquipmentName"]);
+            }
+            conn.Close();
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEquipmentStock WHERE EquipmentName like'" + cmbGelenAdi.Text + "'", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+
+                txtGelenKod.Text = read["EquipmentCode"].ToString();
+                txtGelenMarkasi.Text = read["EquipmentBrand"].ToString();
+                txtGelenModel.Text = read["EquipmentModel"].ToString();
+                txtGelenSerino.Text = read["EquipmentSerialNumber"].ToString();
+
+
+            }
+            conn.Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -158,6 +206,28 @@ namespace StockMaintenanceSystem
             }
             conn.Close();
 
+
+        }
+
+        private void AddedStock_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
+        }
+
+        private void cmbGelen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGelenKategori_Click(object sender, EventArgs e)
+        {
 
         }
     }

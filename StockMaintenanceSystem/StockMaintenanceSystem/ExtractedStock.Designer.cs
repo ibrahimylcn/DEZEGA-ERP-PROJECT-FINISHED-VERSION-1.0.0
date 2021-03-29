@@ -76,6 +76,7 @@ namespace StockMaintenanceSystem
             // btnCikanSorgula
             // 
             this.btnCikanSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanSorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanSorgula.Image")));
             this.btnCikanSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -257,6 +258,7 @@ namespace StockMaintenanceSystem
             // btnCikanCikan
             // 
             this.btnCikanCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanCikan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanCikan.Image")));
             this.btnCikanCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -272,6 +274,7 @@ namespace StockMaintenanceSystem
             // btnCikanGelen
             // 
             this.btnCikanGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanGelen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanGelen.Image")));
             this.btnCikanGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -287,6 +290,7 @@ namespace StockMaintenanceSystem
             // btnCikanYeni
             // 
             this.btnCikanYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanYeni.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCikanYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanYeni.Image")));
@@ -303,6 +307,7 @@ namespace StockMaintenanceSystem
             // BtnCikanTemizle
             // 
             this.BtnCikanTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnCikanTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCikanTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikanTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnCikanTemizle.Image")));
             this.BtnCikanTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -318,6 +323,7 @@ namespace StockMaintenanceSystem
             // btnCikanAnasayfa
             // 
             this.btnCikanAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanAnasayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanAnasayfa.Image")));
             this.btnCikanAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -333,6 +339,7 @@ namespace StockMaintenanceSystem
             // btnCikanKaydet
             // 
             this.btnCikanKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCikanKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikanKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCikanKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnCikanKaydet.Image")));
             this.btnCikanKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -365,6 +372,7 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -438,7 +446,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "ExtractedStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "STOK TAKİP ÇIKAN";
+            this.Text = "Stok Takip Çıkan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExtractedStock_FormClosing);
             this.Load += new System.EventHandler(this.ExtractedStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCikan)).EndInit();
             this.ResumeLayout(false);

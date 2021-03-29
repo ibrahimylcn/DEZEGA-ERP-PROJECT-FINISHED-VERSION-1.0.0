@@ -55,8 +55,6 @@ namespace StockMaintenanceSystem
             this.txtBakimKisiSayisi = new System.Windows.Forms.TextBox();
             this.txtBakimKullanilanParSayisi = new System.Windows.Forms.TextBox();
             this.lblBakimKullanilanParSayisi = new System.Windows.Forms.Label();
-            this.txtBakimKullanilanParKodu = new System.Windows.Forms.TextBox();
-            this.lblBakimKullanilanParKodu = new System.Windows.Forms.Label();
             this.lblBakimKullanilanParAdi = new System.Windows.Forms.Label();
             this.lblBakimKisiSayisi = new System.Windows.Forms.Label();
             this.txtBakimEkimpanKodu = new System.Windows.Forms.TextBox();
@@ -65,12 +63,15 @@ namespace StockMaintenanceSystem
             this.label17 = new System.Windows.Forms.Label();
             this.btn_msorgula = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblbakimkategori = new System.Windows.Forms.Label();
+            this.cmbbakimkategori = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBakimAnasayfa
             // 
+            this.btnBakimAnasayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBakimAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakimAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimAnasayfa.Image")));
             this.btnBakimAnasayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,6 +86,7 @@ namespace StockMaintenanceSystem
             // 
             // btnBakimCikis
             // 
+            this.btnBakimCikis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBakimCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakimCikis.ForeColor = System.Drawing.Color.Red;
             this.btnBakimCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimCikis.Image")));
@@ -129,6 +131,7 @@ namespace StockMaintenanceSystem
             // 
             // btnBakimTemizle
             // 
+            this.btnBakimTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBakimTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakimTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimTemizle.Image")));
             this.btnBakimTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,6 +146,7 @@ namespace StockMaintenanceSystem
             // 
             // btnBakimKaydet
             // 
+            this.btnBakimKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBakimKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBakimKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnBakimKaydet.Image")));
             this.btnBakimKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -187,6 +191,7 @@ namespace StockMaintenanceSystem
             this.cmbBakimİsTürü.Name = "cmbBakimİsTürü";
             this.cmbBakimİsTürü.Size = new System.Drawing.Size(121, 21);
             this.cmbBakimİsTürü.TabIndex = 41;
+            this.cmbBakimİsTürü.SelectedIndexChanged += new System.EventHandler(this.cmbBakimİsTürü_SelectedIndexChanged);
             // 
             // lblBakimİsTürü
             // 
@@ -277,8 +282,6 @@ namespace StockMaintenanceSystem
             this.panel1.Controls.Add(this.txtBakimKisiSayisi);
             this.panel1.Controls.Add(this.txtBakimKullanilanParSayisi);
             this.panel1.Controls.Add(this.lblBakimKullanilanParSayisi);
-            this.panel1.Controls.Add(this.txtBakimKullanilanParKodu);
-            this.panel1.Controls.Add(this.lblBakimKullanilanParKodu);
             this.panel1.Controls.Add(this.lblBakimKullanilanParAdi);
             this.panel1.Controls.Add(this.lblBakimKisiSayisi);
             this.panel1.Controls.Add(this.txtBakimEkimpanKodu);
@@ -296,12 +299,13 @@ namespace StockMaintenanceSystem
             this.txtBakimEkipmanAdi.Name = "txtBakimEkipmanAdi";
             this.txtBakimEkipmanAdi.Size = new System.Drawing.Size(143, 21);
             this.txtBakimEkipmanAdi.TabIndex = 82;
+            this.txtBakimEkipmanAdi.SelectedIndexChanged += new System.EventHandler(this.txtBakimEkipmanAdi_SelectedIndexChanged);
             // 
             // txtBakimKullanilanParAdi
             // 
-            this.txtBakimKullanilanParAdi.Location = new System.Drawing.Point(681, 21);
+            this.txtBakimKullanilanParAdi.Location = new System.Drawing.Point(718, 50);
             this.txtBakimKullanilanParAdi.Name = "txtBakimKullanilanParAdi";
-            this.txtBakimKullanilanParAdi.Size = new System.Drawing.Size(143, 20);
+            this.txtBakimKullanilanParAdi.Size = new System.Drawing.Size(140, 20);
             this.txtBakimKullanilanParAdi.TabIndex = 81;
             // 
             // txtBakimKisiSayisi
@@ -315,9 +319,9 @@ namespace StockMaintenanceSystem
             // 
             // txtBakimKullanilanParSayisi
             // 
-            this.txtBakimKullanilanParSayisi.Location = new System.Drawing.Point(681, 94);
+            this.txtBakimKullanilanParSayisi.Location = new System.Drawing.Point(718, 91);
             this.txtBakimKullanilanParSayisi.Name = "txtBakimKullanilanParSayisi";
-            this.txtBakimKullanilanParSayisi.Size = new System.Drawing.Size(65, 20);
+            this.txtBakimKullanilanParSayisi.Size = new System.Drawing.Size(140, 20);
             this.txtBakimKullanilanParSayisi.TabIndex = 77;
             this.txtBakimKullanilanParSayisi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBakimKullanilanParSayisi_KeyPress);
             // 
@@ -325,34 +329,17 @@ namespace StockMaintenanceSystem
             // 
             this.lblBakimKullanilanParSayisi.AutoSize = true;
             this.lblBakimKullanilanParSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBakimKullanilanParSayisi.Location = new System.Drawing.Point(513, 94);
+            this.lblBakimKullanilanParSayisi.Location = new System.Drawing.Point(547, 91);
             this.lblBakimKullanilanParSayisi.Name = "lblBakimKullanilanParSayisi";
             this.lblBakimKullanilanParSayisi.Size = new System.Drawing.Size(165, 15);
             this.lblBakimKullanilanParSayisi.TabIndex = 76;
             this.lblBakimKullanilanParSayisi.Text = "Kullanılan Parça Adedi : \r\n";
             // 
-            // txtBakimKullanilanParKodu
-            // 
-            this.txtBakimKullanilanParKodu.Location = new System.Drawing.Point(681, 57);
-            this.txtBakimKullanilanParKodu.Name = "txtBakimKullanilanParKodu";
-            this.txtBakimKullanilanParKodu.Size = new System.Drawing.Size(143, 20);
-            this.txtBakimKullanilanParKodu.TabIndex = 75;
-            // 
-            // lblBakimKullanilanParKodu
-            // 
-            this.lblBakimKullanilanParKodu.AutoSize = true;
-            this.lblBakimKullanilanParKodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBakimKullanilanParKodu.Location = new System.Drawing.Point(513, 58);
-            this.lblBakimKullanilanParKodu.Name = "lblBakimKullanilanParKodu";
-            this.lblBakimKullanilanParKodu.Size = new System.Drawing.Size(162, 15);
-            this.lblBakimKullanilanParKodu.TabIndex = 74;
-            this.lblBakimKullanilanParKodu.Text = "Kullanılan Parça Kodu : ";
-            // 
             // lblBakimKullanilanParAdi
             // 
             this.lblBakimKullanilanParAdi.AutoSize = true;
             this.lblBakimKullanilanParAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBakimKullanilanParAdi.Location = new System.Drawing.Point(513, 27);
+            this.lblBakimKullanilanParAdi.Location = new System.Drawing.Point(547, 56);
             this.lblBakimKullanilanParAdi.Name = "lblBakimKullanilanParAdi";
             this.lblBakimKullanilanParAdi.Size = new System.Drawing.Size(149, 15);
             this.lblBakimKullanilanParAdi.TabIndex = 73;
@@ -382,9 +369,9 @@ namespace StockMaintenanceSystem
             this.lblBakimEkipmanKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimEkipmanKod.Location = new System.Drawing.Point(100, 56);
             this.lblBakimEkipmanKod.Name = "lblBakimEkipmanKod";
-            this.lblBakimEkipmanKod.Size = new System.Drawing.Size(109, 15);
+            this.lblBakimEkipmanKod.Size = new System.Drawing.Size(118, 15);
             this.lblBakimEkipmanKod.TabIndex = 70;
-            this.lblBakimEkipmanKod.Text = "* Makine Kodu :";
+            this.lblBakimEkipmanKod.Text = "* Ekipman Kodu :";
             // 
             // lblBakimEkipmanAdi
             // 
@@ -392,9 +379,9 @@ namespace StockMaintenanceSystem
             this.lblBakimEkipmanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBakimEkipmanAdi.Location = new System.Drawing.Point(100, 25);
             this.lblBakimEkipmanAdi.Name = "lblBakimEkipmanAdi";
-            this.lblBakimEkipmanAdi.Size = new System.Drawing.Size(96, 15);
+            this.lblBakimEkipmanAdi.Size = new System.Drawing.Size(105, 15);
             this.lblBakimEkipmanAdi.TabIndex = 69;
-            this.lblBakimEkipmanAdi.Text = "* Makine Adı :";
+            this.lblBakimEkipmanAdi.Text = "* Ekipman Adı :";
             // 
             // label17
             // 
@@ -408,6 +395,7 @@ namespace StockMaintenanceSystem
             // 
             // btn_msorgula
             // 
+            this.btn_msorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_msorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_msorgula.Image = ((System.Drawing.Image)(resources.GetObject("btn_msorgula.Image")));
             this.btn_msorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -423,6 +411,7 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -435,12 +424,32 @@ namespace StockMaintenanceSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblbakimkategori
+            // 
+            this.lblbakimkategori.AutoSize = true;
+            this.lblbakimkategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbakimkategori.Location = new System.Drawing.Point(95, 285);
+            this.lblbakimkategori.Name = "lblbakimkategori";
+            this.lblbakimkategori.Size = new System.Drawing.Size(79, 15);
+            this.lblbakimkategori.TabIndex = 79;
+            this.lblbakimkategori.Text = "* Kategori :";
+            // 
+            // cmbbakimkategori
+            // 
+            this.cmbbakimkategori.FormattingEnabled = true;
+            this.cmbbakimkategori.Location = new System.Drawing.Point(252, 285);
+            this.cmbbakimkategori.Name = "cmbbakimkategori";
+            this.cmbbakimkategori.Size = new System.Drawing.Size(121, 21);
+            this.cmbbakimkategori.TabIndex = 80;
+            // 
             // MaintenanceSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(927, 520);
+            this.Controls.Add(this.cmbbakimkategori);
+            this.Controls.Add(this.lblbakimkategori);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_msorgula);
             this.Controls.Add(this.label17);
@@ -468,7 +477,9 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "MaintenanceSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MaintenanceSystem";
+            this.Text = "Bakım Onarım Takip";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaintenanceSystem_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MaintenanceSystem_FormClosed);
             this.Load += new System.EventHandler(this.MaintenanceSystem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -505,8 +516,6 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtBakimKullanilanParSayisi;
         private System.Windows.Forms.Label lblBakimKullanilanParSayisi;
-        private System.Windows.Forms.TextBox txtBakimKullanilanParKodu;
-        private System.Windows.Forms.Label lblBakimKullanilanParKodu;
         private System.Windows.Forms.Label lblBakimKullanilanParAdi;
         private System.Windows.Forms.Label lblBakimKisiSayisi;
         private System.Windows.Forms.TextBox txtBakimEkimpanKodu;
@@ -515,5 +524,7 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.Button btn_msorgula;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox txtBakimEkipmanAdi;
+        private System.Windows.Forms.Label lblbakimkategori;
+        private System.Windows.Forms.ComboBox cmbbakimkategori;
     }
 }

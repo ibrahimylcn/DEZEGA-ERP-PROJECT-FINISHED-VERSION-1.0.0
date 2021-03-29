@@ -13,10 +13,10 @@ namespace StockMaintenanceSystem
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbStockEntities4 : DbContext
+    public partial class dbStockEntities5 : DbContext
     {
-        public dbStockEntities4()
-            : base("name=dbStockEntities4")
+        public dbStockEntities5()
+            : base("name=dbStockEntities5")
         {
         }
     

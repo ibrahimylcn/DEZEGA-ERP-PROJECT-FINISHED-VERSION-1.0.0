@@ -77,12 +77,12 @@ namespace StockMaintenanceSystem
             // loadText
             // 
             this.loadText.AutoSize = true;
-            this.loadText.Font = new System.Drawing.Font("Leelawadee", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadText.Location = new System.Drawing.Point(354, 325);
             this.loadText.Name = "loadText";
-            this.loadText.Size = new System.Drawing.Size(74, 16);
+            this.loadText.Size = new System.Drawing.Size(99, 17);
             this.loadText.TabIndex = 3;
-            this.loadText.Text = "Loading...";
+            this.loadText.Text = "Yükleniyor...";
             this.loadText.Click += new System.EventHandler(this.label2_Click);
             // 
             // Load
@@ -99,7 +99,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "Load";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Loading Screen";
+            this.Text = "Yükleme Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Load_FormClosing);
             this.Load += new System.EventHandler(this.Load_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

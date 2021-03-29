@@ -67,7 +67,7 @@ namespace StockMaintenanceSystem
             // 
             // txtGelenAmacNeden
             // 
-            this.txtGelenAmacNeden.Location = new System.Drawing.Point(559, 226);
+            this.txtGelenAmacNeden.Location = new System.Drawing.Point(559, 221);
             this.txtGelenAmacNeden.Multiline = true;
             this.txtGelenAmacNeden.Name = "txtGelenAmacNeden";
             this.txtGelenAmacNeden.Size = new System.Drawing.Size(286, 67);
@@ -76,12 +76,13 @@ namespace StockMaintenanceSystem
             // btnGelenSorgula
             // 
             this.btnGelenSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenSorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenSorgula.Image")));
             this.btnGelenSorgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGelenSorgula.Location = new System.Drawing.Point(872, 156);
+            this.btnGelenSorgula.Location = new System.Drawing.Point(872, 158);
             this.btnGelenSorgula.Name = "btnGelenSorgula";
-            this.btnGelenSorgula.Size = new System.Drawing.Size(111, 47);
+            this.btnGelenSorgula.Size = new System.Drawing.Size(111, 46);
             this.btnGelenSorgula.TabIndex = 63;
             this.btnGelenSorgula.Text = "SORGULA";
             this.btnGelenSorgula.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -98,7 +99,7 @@ namespace StockMaintenanceSystem
             // 
             // txtGelenSerino
             // 
-            this.txtGelenSerino.Location = new System.Drawing.Point(559, 32);
+            this.txtGelenSerino.Location = new System.Drawing.Point(559, 33);
             this.txtGelenSerino.Name = "txtGelenSerino";
             this.txtGelenSerino.Size = new System.Drawing.Size(286, 20);
             this.txtGelenSerino.TabIndex = 61;
@@ -119,14 +120,14 @@ namespace StockMaintenanceSystem
             // 
             // txtGelenMarkasi
             // 
-            this.txtGelenMarkasi.Location = new System.Drawing.Point(199, 168);
+            this.txtGelenMarkasi.Location = new System.Drawing.Point(195, 178);
             this.txtGelenMarkasi.Name = "txtGelenMarkasi";
             this.txtGelenMarkasi.Size = new System.Drawing.Size(121, 20);
             this.txtGelenMarkasi.TabIndex = 56;
             // 
             // txtGelenModel
             // 
-            this.txtGelenModel.Location = new System.Drawing.Point(199, 208);
+            this.txtGelenModel.Location = new System.Drawing.Point(195, 221);
             this.txtGelenModel.Name = "txtGelenModel";
             this.txtGelenModel.Size = new System.Drawing.Size(121, 20);
             this.txtGelenModel.TabIndex = 55;
@@ -140,7 +141,7 @@ namespace StockMaintenanceSystem
             // 
             // dTimeGelenTarih
             // 
-            this.dTimeGelenTarih.Location = new System.Drawing.Point(559, 63);
+            this.dTimeGelenTarih.Location = new System.Drawing.Point(559, 69);
             this.dTimeGelenTarih.Name = "dTimeGelenTarih";
             this.dTimeGelenTarih.Size = new System.Drawing.Size(200, 20);
             this.dTimeGelenTarih.TabIndex = 53;
@@ -148,16 +149,17 @@ namespace StockMaintenanceSystem
             // cmbGelen
             // 
             this.cmbGelen.FormattingEnabled = true;
-            this.cmbGelen.Location = new System.Drawing.Point(199, 36);
+            this.cmbGelen.Location = new System.Drawing.Point(195, 32);
             this.cmbGelen.Name = "cmbGelen";
             this.cmbGelen.Size = new System.Drawing.Size(121, 21);
             this.cmbGelen.TabIndex = 52;
+            this.cmbGelen.SelectedIndexChanged += new System.EventHandler(this.cmbGelen_SelectedIndexChanged);
             // 
             // lblGelenAdi
             // 
             this.lblGelenAdi.AutoSize = true;
             this.lblGelenAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenAdi.Location = new System.Drawing.Point(53, 82);
+            this.lblGelenAdi.Location = new System.Drawing.Point(40, 80);
             this.lblGelenAdi.Name = "lblGelenAdi";
             this.lblGelenAdi.Size = new System.Drawing.Size(101, 15);
             this.lblGelenAdi.TabIndex = 51;
@@ -167,7 +169,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenTarih.AutoSize = true;
             this.lblGelenTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenTarih.Location = new System.Drawing.Point(438, 63);
+            this.lblGelenTarih.Location = new System.Drawing.Point(428, 69);
             this.lblGelenTarih.Name = "lblGelenTarih";
             this.lblGelenTarih.Size = new System.Drawing.Size(54, 15);
             this.lblGelenTarih.TabIndex = 49;
@@ -177,7 +179,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenKod.AutoSize = true;
             this.lblGelenKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenKod.Location = new System.Drawing.Point(53, 131);
+            this.lblGelenKod.Location = new System.Drawing.Point(40, 131);
             this.lblGelenKod.Name = "lblGelenKod";
             this.lblGelenKod.Size = new System.Drawing.Size(114, 15);
             this.lblGelenKod.TabIndex = 48;
@@ -187,7 +189,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenMarkasi.AutoSize = true;
             this.lblGelenMarkasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenMarkasi.Location = new System.Drawing.Point(53, 168);
+            this.lblGelenMarkasi.Location = new System.Drawing.Point(40, 178);
             this.lblGelenMarkasi.Name = "lblGelenMarkasi";
             this.lblGelenMarkasi.Size = new System.Drawing.Size(121, 15);
             this.lblGelenMarkasi.TabIndex = 47;
@@ -197,7 +199,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenModel.AutoSize = true;
             this.lblGelenModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenModel.Location = new System.Drawing.Point(53, 209);
+            this.lblGelenModel.Location = new System.Drawing.Point(40, 226);
             this.lblGelenModel.Name = "lblGelenModel";
             this.lblGelenModel.Size = new System.Drawing.Size(121, 15);
             this.lblGelenModel.TabIndex = 46;
@@ -207,7 +209,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenSerino.AutoSize = true;
             this.lblGelenSerino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenSerino.Location = new System.Drawing.Point(438, 32);
+            this.lblGelenSerino.Location = new System.Drawing.Point(428, 33);
             this.lblGelenSerino.Name = "lblGelenSerino";
             this.lblGelenSerino.Size = new System.Drawing.Size(113, 15);
             this.lblGelenSerino.TabIndex = 45;
@@ -217,7 +219,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenAdet.AutoSize = true;
             this.lblGelenAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenAdet.Location = new System.Drawing.Point(438, 98);
+            this.lblGelenAdet.Location = new System.Drawing.Point(428, 105);
             this.lblGelenAdet.Name = "lblGelenAdet";
             this.lblGelenAdet.Size = new System.Drawing.Size(49, 15);
             this.lblGelenAdet.TabIndex = 44;
@@ -227,7 +229,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenFirma.AutoSize = true;
             this.lblGelenFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenFirma.Location = new System.Drawing.Point(444, 135);
+            this.lblGelenFirma.Location = new System.Drawing.Point(434, 146);
             this.lblGelenFirma.Name = "lblGelenFirma";
             this.lblGelenFirma.Size = new System.Drawing.Size(48, 15);
             this.lblGelenFirma.TabIndex = 43;
@@ -237,7 +239,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenSiparisKod.AutoSize = true;
             this.lblGelenSiparisKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenSiparisKod.Location = new System.Drawing.Point(444, 182);
+            this.lblGelenSiparisKod.Location = new System.Drawing.Point(434, 179);
             this.lblGelenSiparisKod.Name = "lblGelenSiparisKod";
             this.lblGelenSiparisKod.Size = new System.Drawing.Size(93, 15);
             this.lblGelenSiparisKod.TabIndex = 42;
@@ -247,7 +249,7 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenAmacNeden.AutoSize = true;
             this.lblGelenAmacNeden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenAmacNeden.Location = new System.Drawing.Point(444, 226);
+            this.lblGelenAmacNeden.Location = new System.Drawing.Point(434, 221);
             this.lblGelenAmacNeden.Name = "lblGelenAmacNeden";
             this.lblGelenAmacNeden.Size = new System.Drawing.Size(93, 15);
             this.lblGelenAmacNeden.TabIndex = 41;
@@ -256,12 +258,13 @@ namespace StockMaintenanceSystem
             // btnGelenCikan
             // 
             this.btnGelenCikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenCikan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenCikan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenCikan.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenCikan.Image")));
             this.btnGelenCikan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnGelenCikan.Location = new System.Drawing.Point(872, 105);
             this.btnGelenCikan.Name = "btnGelenCikan";
-            this.btnGelenCikan.Size = new System.Drawing.Size(111, 45);
+            this.btnGelenCikan.Size = new System.Drawing.Size(111, 46);
             this.btnGelenCikan.TabIndex = 40;
             this.btnGelenCikan.Text = "ÇIKAN";
             this.btnGelenCikan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -271,10 +274,11 @@ namespace StockMaintenanceSystem
             // btnGelenGelen
             // 
             this.btnGelenGelen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenGelen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenGelen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenGelen.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenGelen.Image")));
             this.btnGelenGelen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGelenGelen.Location = new System.Drawing.Point(872, 56);
+            this.btnGelenGelen.Location = new System.Drawing.Point(872, 53);
             this.btnGelenGelen.Name = "btnGelenGelen";
             this.btnGelenGelen.Size = new System.Drawing.Size(111, 46);
             this.btnGelenGelen.TabIndex = 39;
@@ -286,11 +290,12 @@ namespace StockMaintenanceSystem
             // btnGelenYeni
             // 
             this.btnGelenYeni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenYeni.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenYeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenYeni.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnGelenYeni.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenYeni.Image")));
             this.btnGelenYeni.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGelenYeni.Location = new System.Drawing.Point(872, 4);
+            this.btnGelenYeni.Location = new System.Drawing.Point(872, 1);
             this.btnGelenYeni.Name = "btnGelenYeni";
             this.btnGelenYeni.Size = new System.Drawing.Size(111, 46);
             this.btnGelenYeni.TabIndex = 38;
@@ -302,12 +307,13 @@ namespace StockMaintenanceSystem
             // BtnGelenTemizle
             // 
             this.BtnGelenTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnGelenTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnGelenTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGelenTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGelenTemizle.Image")));
             this.BtnGelenTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnGelenTemizle.Location = new System.Drawing.Point(872, 370);
+            this.BtnGelenTemizle.Location = new System.Drawing.Point(872, 369);
             this.BtnGelenTemizle.Name = "BtnGelenTemizle";
-            this.BtnGelenTemizle.Size = new System.Drawing.Size(111, 53);
+            this.BtnGelenTemizle.Size = new System.Drawing.Size(111, 51);
             this.BtnGelenTemizle.TabIndex = 37;
             this.BtnGelenTemizle.Text = "TEMİZLE";
             this.BtnGelenTemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -317,12 +323,13 @@ namespace StockMaintenanceSystem
             // btnGelenAnasayfa
             // 
             this.btnGelenAnasayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenAnasayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenAnasayfa.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenAnasayfa.Image")));
             this.btnGelenAnasayfa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGelenAnasayfa.Location = new System.Drawing.Point(872, 438);
+            this.btnGelenAnasayfa.Location = new System.Drawing.Point(872, 436);
             this.btnGelenAnasayfa.Name = "btnGelenAnasayfa";
-            this.btnGelenAnasayfa.Size = new System.Drawing.Size(111, 48);
+            this.btnGelenAnasayfa.Size = new System.Drawing.Size(111, 51);
             this.btnGelenAnasayfa.TabIndex = 36;
             this.btnGelenAnasayfa.Text = "ANASAYFA";
             this.btnGelenAnasayfa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -332,12 +339,13 @@ namespace StockMaintenanceSystem
             // btnGelenKaydet
             // 
             this.btnGelenKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGelenKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGelenKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGelenKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnGelenKaydet.Image")));
             this.btnGelenKaydet.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnGelenKaydet.Location = new System.Drawing.Point(872, 299);
             this.btnGelenKaydet.Name = "btnGelenKaydet";
-            this.btnGelenKaydet.Size = new System.Drawing.Size(111, 53);
+            this.btnGelenKaydet.Size = new System.Drawing.Size(111, 51);
             this.btnGelenKaydet.TabIndex = 35;
             this.btnGelenKaydet.Text = "KAYDET";
             this.btnGelenKaydet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -348,15 +356,16 @@ namespace StockMaintenanceSystem
             // 
             this.lblGelenKategori.AutoSize = true;
             this.lblGelenKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblGelenKategori.Location = new System.Drawing.Point(53, 37);
+            this.lblGelenKategori.Location = new System.Drawing.Point(40, 32);
             this.lblGelenKategori.Name = "lblGelenKategori";
             this.lblGelenKategori.Size = new System.Drawing.Size(75, 15);
             this.lblGelenKategori.TabIndex = 34;
             this.lblGelenKategori.Text = "* Kategori:";
+            this.lblGelenKategori.Click += new System.EventHandler(this.lblGelenKategori_Click);
             // 
             // txtGelenKod
             // 
-            this.txtGelenKod.Location = new System.Drawing.Point(199, 126);
+            this.txtGelenKod.Location = new System.Drawing.Point(195, 131);
             this.txtGelenKod.Name = "txtGelenKod";
             this.txtGelenKod.Size = new System.Drawing.Size(121, 20);
             this.txtGelenKod.TabIndex = 33;
@@ -364,10 +373,11 @@ namespace StockMaintenanceSystem
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(872, 209);
+            this.button1.Location = new System.Drawing.Point(872, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 46);
             this.button1.TabIndex = 65;
@@ -389,7 +399,7 @@ namespace StockMaintenanceSystem
             // cmbGelenAdi
             // 
             this.cmbGelenAdi.FormattingEnabled = true;
-            this.cmbGelenAdi.Location = new System.Drawing.Point(199, 81);
+            this.cmbGelenAdi.Location = new System.Drawing.Point(195, 80);
             this.cmbGelenAdi.Name = "cmbGelenAdi";
             this.cmbGelenAdi.Size = new System.Drawing.Size(121, 21);
             this.cmbGelenAdi.TabIndex = 80;
@@ -437,7 +447,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "AddedStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "STOK TAKİP GELEN";
+            this.Text = "Stok Takip Gelen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddedStock_FormClosing);
             this.Load += new System.EventHandler(this.AddedStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGelen)).EndInit();
             this.ResumeLayout(false);

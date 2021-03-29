@@ -53,7 +53,7 @@ namespace StockMaintenanceSystem
             // 
             // btnListeleAnasayfaDon
             // 
-            this.btnListeleAnasayfaDon.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListeleAnasayfaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListeleAnasayfaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnListeleAnasayfaDon.Image")));
             this.btnListeleAnasayfaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListeleAnasayfaDon.Location = new System.Drawing.Point(1189, 94);
@@ -87,16 +87,17 @@ namespace StockMaintenanceSystem
             // lblListele
             // 
             this.lblListele.AutoSize = true;
-            this.lblListele.Font = new System.Drawing.Font("Leelawadee", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListele.Location = new System.Drawing.Point(12, 121);
             this.lblListele.Name = "lblListele";
-            this.lblListele.Size = new System.Drawing.Size(159, 14);
+            this.lblListele.Size = new System.Drawing.Size(176, 15);
             this.lblListele.TabIndex = 51;
             this.lblListele.Text = "Tüm Stoklarınızı Listeleyin\r\n";
             // 
             // btnListele
             // 
-            this.btnListele.Font = new System.Drawing.Font("Leelawadee", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListele.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListele.Location = new System.Drawing.Point(505, 42);
             this.btnListele.Name = "btnListele";
@@ -118,12 +119,14 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.btnListeleAnasayfaDon);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnListele);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StockList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "List";
+            this.Text = "Stok Takip Listeleme Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StockList_FormClosing);
+            this.Load += new System.EventHandler(this.StockList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTumunuListele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxList)).EndInit();

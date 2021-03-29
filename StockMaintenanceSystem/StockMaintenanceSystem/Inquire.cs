@@ -17,7 +17,7 @@ namespace StockMaintenanceSystem
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-0RNQ9SP\MSSQLSERVER01; Initial Catalog = dbStock; Integrated Security = True");
+        SqlConnection conn = new SqlConnection(@"Data Source= DESKTOP-FMSK50S; Initial Catalog = dbStock; Integrated Security = True");
         private void btnSorgulaAnasayfayadon_Click(object sender, EventArgs e)
         {
             StockSystem sS = new StockSystem();
@@ -82,6 +82,23 @@ namespace StockMaintenanceSystem
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
-        } 
+        }
+
+        private void Inquire_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show("Çıkmak İstediğinizden Emin misiniz ?", "Çıkış Yapılıyor...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sonuc == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
+
+        }
+
+        private void cmbSorgulaEkipmanAdi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

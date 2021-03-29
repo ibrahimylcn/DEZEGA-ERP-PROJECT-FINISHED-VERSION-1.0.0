@@ -66,6 +66,7 @@ namespace StockMaintenanceSystem
             // 
             this.btnStokTakip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStokTakip.AutoSize = true;
+            this.btnStokTakip.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStokTakip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStokTakip.Location = new System.Drawing.Point(552, 183);
             this.btnStokTakip.Name = "btnStokTakip";
@@ -78,6 +79,7 @@ namespace StockMaintenanceSystem
             // btnBakımTakip
             // 
             this.btnBakımTakip.AutoSize = true;
+            this.btnBakımTakip.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBakımTakip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBakımTakip.Location = new System.Drawing.Point(12, 183);
             this.btnBakımTakip.Name = "btnBakımTakip";
@@ -112,7 +114,8 @@ namespace StockMaintenanceSystem
             this.MaximizeBox = false;
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Homepage";
+            this.Text = "Anasayfa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Homepage_FormClosing);
             this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

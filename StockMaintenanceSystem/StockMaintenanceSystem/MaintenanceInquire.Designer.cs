@@ -35,10 +35,10 @@ namespace StockMaintenanceSystem
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btn2SorgulaTemizle = new System.Windows.Forms.Button();
             this.btn2SorgulaSorgula = new System.Windows.Forms.Button();
-            this.txtSorgulaEkipmanAdi = new System.Windows.Forms.TextBox();
             this.lbl2SorgulaEkipmanAdi = new System.Windows.Forms.Label();
             this.lblBakimBaslangicTarihSorgula = new System.Windows.Forms.Label();
             this.dateTimeBaslangicSorgula = new System.Windows.Forms.DateTimePicker();
+            this.SorgulaEkipmanAdi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,7 @@ namespace StockMaintenanceSystem
             // 
             // btn2SorgulaTemizle
             // 
+            this.btn2SorgulaTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn2SorgulaTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2SorgulaTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btn2SorgulaTemizle.Image")));
             this.btn2SorgulaTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,6 +93,7 @@ namespace StockMaintenanceSystem
             // 
             // btn2SorgulaSorgula
             // 
+            this.btn2SorgulaSorgula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn2SorgulaSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2SorgulaSorgula.Image = ((System.Drawing.Image)(resources.GetObject("btn2SorgulaSorgula.Image")));
             this.btn2SorgulaSorgula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -104,23 +106,15 @@ namespace StockMaintenanceSystem
             this.btn2SorgulaSorgula.UseVisualStyleBackColor = true;
             this.btn2SorgulaSorgula.Click += new System.EventHandler(this.btn2SorgulaSorgula_Click);
             // 
-            // txtSorgulaEkipmanAdi
-            // 
-            this.txtSorgulaEkipmanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorgulaEkipmanAdi.Location = new System.Drawing.Point(393, 91);
-            this.txtSorgulaEkipmanAdi.Name = "txtSorgulaEkipmanAdi";
-            this.txtSorgulaEkipmanAdi.Size = new System.Drawing.Size(200, 21);
-            this.txtSorgulaEkipmanAdi.TabIndex = 49;
-            // 
             // lbl2SorgulaEkipmanAdi
             // 
             this.lbl2SorgulaEkipmanAdi.AutoSize = true;
             this.lbl2SorgulaEkipmanAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2SorgulaEkipmanAdi.Location = new System.Drawing.Point(250, 93);
             this.lbl2SorgulaEkipmanAdi.Name = "lbl2SorgulaEkipmanAdi";
-            this.lbl2SorgulaEkipmanAdi.Size = new System.Drawing.Size(95, 18);
+            this.lbl2SorgulaEkipmanAdi.Size = new System.Drawing.Size(110, 18);
             this.lbl2SorgulaEkipmanAdi.TabIndex = 48;
-            this.lbl2SorgulaEkipmanAdi.Text = "Makine Adı:";
+            this.lbl2SorgulaEkipmanAdi.Text = "Ekipman Adıı:";
             // 
             // lblBakimBaslangicTarihSorgula
             // 
@@ -140,12 +134,21 @@ namespace StockMaintenanceSystem
             this.dateTimeBaslangicSorgula.TabIndex = 59;
             this.dateTimeBaslangicSorgula.ValueChanged += new System.EventHandler(this.dateTimeBaslangicSorgula_ValueChanged);
             // 
+            // SorgulaEkipmanAdi
+            // 
+            this.SorgulaEkipmanAdi.FormattingEnabled = true;
+            this.SorgulaEkipmanAdi.Location = new System.Drawing.Point(393, 90);
+            this.SorgulaEkipmanAdi.Name = "SorgulaEkipmanAdi";
+            this.SorgulaEkipmanAdi.Size = new System.Drawing.Size(200, 21);
+            this.SorgulaEkipmanAdi.TabIndex = 60;
+            // 
             // MaintenanceInquire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1275, 647);
+            this.Controls.Add(this.SorgulaEkipmanAdi);
             this.Controls.Add(this.dateTimeBaslangicSorgula);
             this.Controls.Add(this.lblBakimBaslangicTarihSorgula);
             this.Controls.Add(this.btn2SorgulaAnasayfayaDon);
@@ -153,11 +156,12 @@ namespace StockMaintenanceSystem
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btn2SorgulaTemizle);
             this.Controls.Add(this.btn2SorgulaSorgula);
-            this.Controls.Add(this.txtSorgulaEkipmanAdi);
             this.Controls.Add(this.lbl2SorgulaEkipmanAdi);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MaintenanceInquire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MaintenanceInquire";
+            this.Text = "Bakım Onarım Sorgulama Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaintenanceInquire_FormClosing);
             this.Load += new System.EventHandler(this.MaintenanceInquire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -173,9 +177,9 @@ namespace StockMaintenanceSystem
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btn2SorgulaTemizle;
         private System.Windows.Forms.Button btn2SorgulaSorgula;
-        private System.Windows.Forms.TextBox txtSorgulaEkipmanAdi;
         private System.Windows.Forms.Label lbl2SorgulaEkipmanAdi;
         private System.Windows.Forms.Label lblBakimBaslangicTarihSorgula;
         private System.Windows.Forms.DateTimePicker dateTimeBaslangicSorgula;
+        private System.Windows.Forms.ComboBox SorgulaEkipmanAdi;
     }
 }
