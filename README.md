@@ -29,8 +29,9 @@ Codes and screenshots about the application
 
 ## Screenshots
 
-
-
+<p align="center">
+  <img src="images/load.jpg" alt="Size Limit CLI" width="450">
+</p>
 <p align="center">
   <img src="images/user.jpg" alt="Size Limit CLI" width="350">
 </p>
