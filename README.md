@@ -6,7 +6,7 @@ Codes and screenshots about the application
 ## Contributors
 - Bartu BOZKURT <https://github.com/bartubozkurt>
 - Zülfü Nur EŞİT <https://github.com/zulfunur>
-- ibrahim YALÇIN <https://github.com/ibrahimylcn> 
+- İbrahim YALÇIN <https://github.com/ibrahimylcn> 
 
 ## License & Copyright
 - © Bartu Bozkurt DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
