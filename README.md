@@ -10,7 +10,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/dezega/dezegaStockSystem?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/dezega/dezegaStockSystem?style=plastic)
 
-** Version 1.0.0**
+**Version 1.0.0**
 
 Codes and screenshots about the application
 
