@@ -25,7 +25,7 @@ Codes and screenshots about the application
 - © İbrahim Yalçın DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
 
 ### Technologies
-<img src= "images/1_ymVNbsdd7KxHXHC4-LP7kw.png" width="150" height= "150"> <img src= "images/sqlserver.png" width="150" height= "150"> <img src= "images/1280px-Git-logo.svg.png" width="150" height= "150"> <img src= "images/Entity-Framework.png" width="150" height= "150"> <img src= "images/hqdefault.jpg" width="150" height= "150"> <img src= "images/GitHub-logo.jpg" width="150" height= "150">
+<img src= "images/1_ymVNbsdd7KxHXHC4-LP7kw.png" width="150" height= "150"> <img src= "images/sqlserver.png" width="150" height= "150"> <img src= "images/git.png" width="150" height= "150"> <img src= "images/Entity-Framework.png" width="150" height= "150"> <img src= "images/hqdefault.jpg" width="150" height= "150"> <img src= "images/GitHub-logo.jpg" width="150" height= "150">
 
 ## Screenshots
 
