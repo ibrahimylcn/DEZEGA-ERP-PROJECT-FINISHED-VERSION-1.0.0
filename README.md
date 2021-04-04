@@ -3,7 +3,6 @@
 <img src= "images/indir (2).png" width="1200" height= "200">
   </h1>
   
-  <h4 align="center">Stock and Maintenance Tracker System in C# </h4>
   
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dezega/dezegaStockSystem?style=plastic)
