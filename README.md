@@ -9,6 +9,6 @@ Codes and screenshots about the application
 - ibrahim YALÇIN <https://github.com/ibrahimylcn> 
 
 ## License & Copyright
-© Bartu Bozkurt DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
-© Zülfü Nur Eşit DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
-© İbrahim Yalçın DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
+- © Bartu Bozkurt DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
+- © Zülfü Nur Eşit DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
+- © İbrahim Yalçın DEZEGA Sp Güvenlik Ürünleri San. ve Tic. A.Ş.
