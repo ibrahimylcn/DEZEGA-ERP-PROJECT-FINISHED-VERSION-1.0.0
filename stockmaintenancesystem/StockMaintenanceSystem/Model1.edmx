@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbStockModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblCategory">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblEquipmentStock">
+          <Key>
+            <PropertyRef Name="EquipmentID" />
+          </Key>
+          <Property Name="EquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EquipmentCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentBrand" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentModel" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentSerialNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentOrderCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentCompany" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentExtractedDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentAddedDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentCategory" Type="nvarchar" MaxLength="50" />
+          <Property Name="PurposeWhy" Type="nvarchar" MaxLength="50" />
+          <Property Name="EquipmentStockNumber" Type="int" />
+        </EntityType>
+        <EntityType Name="tblMaintenance">
+          <Key>
+            <PropertyRef Name="MaintenanceID" />
+          </Key>
+          <Property Name="MaintenanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartingDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="DueDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="JobType" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblMaintnncEquipment">
+          <Key>
+            <PropertyRef Name="mEquipmentID" />
+          </Key>
+          <Property Name="mEquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="mEquipmentName" Type="nvarchar" MaxLength="50" />
+          <Property Name="mEquipmentCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="mNumberOfEquipment" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblUsedObject">
+          <Key>
+            <PropertyRef Name="UsedObjectID" />
+          </Key>
+          <Property Name="UsedObjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsedObjectName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UsedObjectCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumberOfUsedObject" Type="int" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Admin" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="dbStockModelStoreContainer">
+          <EntitySet Name="tblCategory" EntityType="Self.tblCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMaintnncEquipment" EntityType="Self.tblMaintnncEquipment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUsedObject" EntityType="Self.tblUsedObject" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbStockModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblCategory">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblEquipmentStock">
+          <Key>
+            <PropertyRef Name="EquipmentID" />
+          </Key>
+          <Property Name="EquipmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EquipmentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentSerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentOrderCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentExtractedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentAddedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PurposeWhy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EquipmentStockNumber" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblMaintenance">
+          <Key>
+            <PropertyRef Name="MaintenanceID" />
+          </Key>
+          <Property Name="MaintenanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartingDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StartTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DueDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EndTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="JobType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblMaintnncEquipment">
+          <Key>
+            <PropertyRef Name="mEquipmentID" />
+          </Key>
+          <Property Name="mEquipmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mEquipmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mEquipmentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mNumberOfEquipment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblUsedObject">
+          <Key>
+            <PropertyRef Name="UsedObjectID" />
+          </Key>
+          <Property Name="UsedObjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsedObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UsedObjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfUsedObject" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="dbStockEntities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblCategory" EntityType="Self.tblCategory" />
+          <EntitySet Name="tblEquipmentStock" EntityType="Self.tblEquipmentStock" />
+          <EntitySet Name="tblMaintenance" EntityType="Self.tblMaintenance" />
+          <EntitySet Name="tblMaintnncEquipment" EntityType="Self.tblMaintnncEquipment" />
+          <EntitySet Name="tblUsedObject" EntityType="Self.tblUsedObject" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbStockModelStoreContainer" CdmEntityContainer="dbStockEntities5">
+          <EntitySetMapping Name="tblCategory">
+            <EntityTypeMapping TypeName="dbStockModel.tblCategory">
+              <MappingFragment StoreEntitySet="tblCategory">
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEquipmentStock">
+            <EntityTypeMapping TypeName="dbStockModel.tblEquipmentStock">
+              <MappingFragment StoreEntitySet="tblEquipmentStock">
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="EquipmentCode" ColumnName="EquipmentCode" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="EquipmentBrand" ColumnName="EquipmentBrand" />
+                <ScalarProperty Name="EquipmentModel" ColumnName="EquipmentModel" />
+                <ScalarProperty Name="EquipmentSerialNumber" ColumnName="EquipmentSerialNumber" />
+                <ScalarProperty Name="EquipmentOrderCode" ColumnName="EquipmentOrderCode" />
+                <ScalarProperty Name="EquipmentCompany" ColumnName="EquipmentCompany" />
+                <ScalarProperty Name="EquipmentExtractedDate" ColumnName="EquipmentExtractedDate" />
+                <ScalarProperty Name="EquipmentAddedDate" ColumnName="EquipmentAddedDate" />
+                <ScalarProperty Name="EquipmentCategory" ColumnName="EquipmentCategory" />
+                <ScalarProperty Name="PurposeWhy" ColumnName="PurposeWhy" />
+                <ScalarProperty Name="EquipmentStockNumber" ColumnName="EquipmentStockNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMaintenance">
+            <EntityTypeMapping TypeName="dbStockModel.tblMaintenance">
+              <MappingFragment StoreEntitySet="tblMaintenance">
+                <ScalarProperty Name="MaintenanceID" ColumnName="MaintenanceID" />
+                <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="JobType" ColumnName="JobType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMaintnncEquipment">
+            <EntityTypeMapping TypeName="dbStockModel.tblMaintnncEquipment">
+              <MappingFragment StoreEntitySet="tblMaintnncEquipment">
+                <ScalarProperty Name="mEquipmentID" ColumnName="mEquipmentID" />
+                <ScalarProperty Name="mEquipmentName" ColumnName="mEquipmentName" />
+                <ScalarProperty Name="mEquipmentCode" ColumnName="mEquipmentCode" />
+                <ScalarProperty Name="mNumberOfEquipment" ColumnName="mNumberOfEquipment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUsedObject">
+            <EntityTypeMapping TypeName="dbStockModel.tblUsedObject">
+              <MappingFragment StoreEntitySet="tblUsedObject">
+                <ScalarProperty Name="UsedObjectID" ColumnName="UsedObjectID" />
+                <ScalarProperty Name="UsedObjectName" ColumnName="UsedObjectName" />
+                <ScalarProperty Name="UsedObjectCode" ColumnName="UsedObjectCode" />
+                <ScalarProperty Name="NumberOfUsedObject" ColumnName="NumberOfUsedObject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUser">
+            <EntityTypeMapping TypeName="dbStockModel.tblUser">
+              <MappingFragment StoreEntitySet="tblUser">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
